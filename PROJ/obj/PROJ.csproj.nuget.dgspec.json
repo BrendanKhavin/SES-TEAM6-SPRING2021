@@ -1,32 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Akask\\source\\repos\\SES-TEAM6-SPRING2021\\PROJ\\PROJ.csproj": {}
+    "C:\\Users\\Brendan Khavin\\UTS\\SES-TEAM6-SPRING2021\\proj\\PROJ.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Akask\\source\\repos\\SES-TEAM6-SPRING2021\\PROJ\\PROJ.csproj": {
+    "C:\\Users\\Brendan Khavin\\UTS\\SES-TEAM6-SPRING2021\\proj\\PROJ.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Akask\\source\\repos\\SES-TEAM6-SPRING2021\\PROJ\\PROJ.csproj",
+        "projectUniqueName": "C:\\Users\\Brendan Khavin\\UTS\\SES-TEAM6-SPRING2021\\proj\\PROJ.csproj",
         "projectName": "PROJ",
-        "projectPath": "C:\\Users\\Akask\\source\\repos\\SES-TEAM6-SPRING2021\\PROJ\\PROJ.csproj",
-        "packagesPath": "C:\\Users\\Akask\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Akask\\source\\repos\\SES-TEAM6-SPRING2021\\PROJ\\obj\\",
+        "projectPath": "C:\\Users\\Brendan Khavin\\UTS\\SES-TEAM6-SPRING2021\\proj\\PROJ.csproj",
+        "packagesPath": "C:\\Users\\Brendan Khavin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Brendan Khavin\\UTS\\SES-TEAM6-SPRING2021\\proj\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Akask\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Brendan Khavin\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },
@@ -37,8 +35,14 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.SpaServices.Extensions": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -49,12 +53,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.1.13, 3.1.13]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -63,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

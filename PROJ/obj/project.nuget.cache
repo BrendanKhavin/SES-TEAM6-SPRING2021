@@ -1,10 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "fihCDqx9qPLd2Ousb72ON26mL1rl3cGseJ2jdZo9ltR7UJ8SnJ+1SjzPkZz5PL1Jz72n7wrw/vfQ8oHdZreELQ==",
+  "dgSpecHash": "cJVTAkAuqXo0mdDeVe6+U+avwno36/dOOxrvpiOBTvZ+Ivwzq92b88yT61eqA3XlBdN6FsqwXIpnPchB4KSmuw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Akask\\source\\repos\\SES-TEAM6-SPRING2021\\PROJ\\PROJ.csproj",
+  "projectFilePath": "C:\\Users\\Brendan Khavin\\UTS\\SES-TEAM6-SPRING2021\\proj\\PROJ.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Akask\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
+    "C:\\Users\\Brendan Khavin\\.nuget\\packages\\microsoft.aspnetcore.spaservices.extensions\\5.0.2\\microsoft.aspnetcore.spaservices.extensions.5.0.2.nupkg.sha512",
+    "C:\\Users\\Brendan Khavin\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\5.0.0\\microsoft.extensions.fileproviders.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Brendan Khavin\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\5.0.0\\microsoft.extensions.fileproviders.physical.5.0.0.nupkg.sha512",
+    "C:\\Users\\Brendan Khavin\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\5.0.0\\microsoft.extensions.filesystemglobbing.5.0.0.nupkg.sha512",
+    "C:\\Users\\Brendan Khavin\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }
