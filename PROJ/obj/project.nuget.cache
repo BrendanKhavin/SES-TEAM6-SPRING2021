@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "fihCDqx9qPLd2Ousb72ON26mL1rl3cGseJ2jdZo9ltR7UJ8SnJ+1SjzPkZz5PL1Jz72n7wrw/vfQ8oHdZreELQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Akask\\source\\repos\\SES-TEAM6-SPRING2021\\PROJ\\PROJ.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Akask\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
+  ],
+  "logs": []
+}
