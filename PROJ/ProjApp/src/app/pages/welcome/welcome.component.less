@@ -1,0 +1,49 @@
+@greenColourBtn: rgb(135, 221, 135);
+@blueColourBtn: rgb(135, 197, 221);
+@greenColourBtnHover: rgb(92, 221, 92);
+@blueColourBtnHover: rgb(89, 191, 231);
+
+.buttonTransition() {
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition:    background-color 1s ease-out;
+    -ms-transition:     background-color 1s ease-out;
+    -o-transition:      background-color 1s ease-out;
+    transition:         background-color 1s ease-out;
+}
+
+#registrationButtons {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    height: 100%;
+    gap: 2em;
+}
+
+.buttons {
+    width: 100%;
+    height: 100%;
+    border-radius: 2em;
+    border: none;
+    cursor: pointer;
+}
+
+#loginBtn {
+    background-color: @greenColourBtn;
+    .buttonTransition();
+}
+
+#loginBtn:hover {
+    background-color: @greenColourBtnHover;
+}
+
+#registerBtn {
+    background-color: @blueColourBtn;
+    .buttonTransition()
+}
+#registerBtn:hover {
+    background-color: @blueColourBtnHover;
+}
+
+i {
+    font-size: 10em;
+}
