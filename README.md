@@ -12,7 +12,7 @@ Also, ignore any AspNetCore.SpaServices issues in your terminal, this is a known
 
 Please merge to dev first, after this, other members can verify that the branch you've created is working and no new issues have emerged. After this, we can agree and push from dev to master
 
-## Refrences
+## References
 Frontend Language: Angular - https://angular.io/
 
 Frontend Libraries: NGZorro (UI Components) - https://ng.ant.design/components/overview/en
