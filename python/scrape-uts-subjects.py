@@ -1,21 +1,9 @@
+import json 
 import re
 import requests
-from pprint import pprint
 
 from bs4 import BeautifulSoup
 from pymongo import MongoClient
-
-
-def get_request(url):
-    header = {
-        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36",
-        "referer": "https://www.google.com/",
-    }
-
-    return requests.get(
-        url,
-        headers=header,
-    )
 
 
 def get_soup(url):
@@ -31,9 +19,31 @@ def get_soup(url):
 
 
 def get_subject_availability(code):
-    soup = get_soup(f"https://handbook.uts.edu.au/subjects/{code}.html")
-    sessions = re.findall("\w+ session", soup.get_text())
-    return [session.replace("campus", "") for session in sessions]
+    valid_sessions = [
+        'Autumn session',
+        'Spring session',
+        'Summer session',
+        'Winter session',
+        'January session',
+        'February session',
+        'March session',
+        'April session',
+        'May session',
+        'June session',
+        'July session',
+        'August session',
+        'September session',
+        'October session',
+        'November session',
+        'December session',
+
+    ]
+    page_text = get_soup(f"https://handbook.uts.edu.au/subjects/{code}.html").get_text()
+    available = []
+    for session in valid_sessions:
+        if re.findall(session, page_text):
+            available.append(session)
+    return available
 
 
 def get_subject_details(code):
@@ -46,17 +56,17 @@ def get_subject_details(code):
 
     for em in soup.find_all("em"):
         if "Credit points" in str(em):
-            subject_details["Credit Points"] = em.next_sibling.split(" ")[1]
+            subject_details["Credit Points"] = em.next_sibling.split(" ")[1] 
         if "Requisite(s)" in str(em):
             # Requires a parser for the grammer  UTS uses but for now just store as string
             # requisites = parse_requisites(str(em.text).split("Requisite(s): ")[1])
-            subject_details["Requisites"] = str(em.text).split("Requisite(s): ")[1]
+            subject_details["Requisites"] = (str(em.text).split("Requisite(s): ")[1]).strip()
         if "Anti-requisite(s)" in str(em):
-            subject_details["Anti-requisites"] = str(em.text).split(
+            subject_details["Anti-requisites"] = (str(em.text).split(
                 "Anti-requisite(s): "
-            )[1]
+            )[1]).strip()
         if "Result type" in str(em):
-            subject_details["Result type"] = em.next_sibling.split(":")[1]
+            subject_details["Result type"] = (str(em.next_sibling.split(":")[1])).strip()
 
     for h3 in soup.find_all("h3"):
         if "Description" in h3:
@@ -129,7 +139,22 @@ def get_course_subject_list(course_key):
     return subject_list
 
 
-course_area_url_keys = {
+def export_to_mongodb(host, db_name, data):
+    client = MongoClient(host)
+    db = client[db_name]
+    # Storing in local database
+    for code, details in subject_catalogue.items():
+        db["subjects"].insert_one(subject_catalogue[code])
+
+
+def export_as_json(data, filename="subjects.json"):
+    with open(filename, 'w') as f:
+        json.dump(data, f)
+
+
+
+
+course_areas = {
     "ads": "Analytics and Data Science",
     "bus": "Business",
     "comm": "Communication",
@@ -145,25 +170,25 @@ course_area_url_keys = {
     "sci": "Science",
     "tdi": "Transdisciplinary Innovation",
 }
+ 
 
-# Storing in local database
-client = MongoClient("mongodb://localhost:27017/")
-db = client["ses2a"]
+# Get subject details for engineering and IT
+catalogue = {}
+subjects = get_course_subject_list("")
+for course_key in ["eng", "it"]:
+    subjects = get_course_subject_list(course_key)
+    for subject_code in subjects:
+        subject_details = get_subject_details(subject_code)
+        subject_details["course area"] = course_areas[course_key]
+        catalogue[subject_code] = subject_details
+        print(subject_details)
 
-subject_catalogue = {}
+export_as_json(catalogue)
 
-# Get subject codes from all course areas
-for key, area in course_area_url_keys.items():
-    subjects = get_course_subject_list(key)
-    for subject in subjects:
-        subject_catalogue[subject] = subject_catalogue.get(subject, {})
-        # A subject can only be in one course area
-        subject_catalogue[subject]["course_area"] = area
+  
 
-# Get subject details for each code
-for subject_code in subject_catalogue.keys():
-    subject_details = get_subject_details(subject_code)
-    for k, v in subject_details.items():
-        subject_catalogue[subject_code][k] = v
 
-    db["subjects"].insert_one(subject_catalogue[subject_code])
+
+# export_to_mongodb(client, db, aubject_catalogue)
+
+
