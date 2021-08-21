@@ -1,0 +1,27 @@
+<div>
+    <div class="filters">
+        <div id="filterHeader">
+            <h1>Filters</h1>
+        </div>
+        <div id="facultyFilter">
+            <h2>Faculties</h2>
+            <nz-select 
+                nzMode="multiple" 
+                nzPlaceHolder="Select faculties"
+                nzAllowClear='true'
+                [(ngModel)]="selectedFaculties">
+                <nz-option *ngFor="let faculty of faculties" [nzLabel]="faculty" [nzValue]="faculty"></nz-option>
+            </nz-select>
+        </div>
+        <div id="creditPointFilter">
+            <h2>Credit Points</h2>
+            <nz-select 
+                nzMode="multiple" 
+                nzPlaceHolder="Select credit points"
+                nzAllowClear='true'
+                [(ngModel)]="selectedFaculties">
+                <nz-option *ngFor="let creditPoint of creditPoints" [nzLabel]="creditPoint" [nzValue]="creditPoint"></nz-option>
+            </nz-select>
+        </div>
+    </div>
+</div>
