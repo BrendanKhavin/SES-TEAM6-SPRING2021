@@ -117,6 +117,7 @@ def get_subject_details(code):
             for attribute in attributes:
                 if attribute in row.th.text:
                     task_details[attribute] = row.td.text.strip()
+        task_details["task_name"] = task.previous_sibling.string
         assessment_tasks.append(task_details)
     subject_details["Assessment tasks"] = assessment_tasks
     subject_details["Availability"] = get_subject_availability(code)
@@ -143,8 +144,8 @@ def export_to_mongodb(host, db_name, data):
     client = MongoClient(host)
     db = client[db_name]
     # Storing in local database
-    for code, details in subject_catalogue.items():
-        db["subjects"].insert_one(subject_catalogue[code])
+    for code, details in data.items():
+        db["subjects"].insert_one(data[code])
 
 
 def export_as_json(data, filename="subjects.json"):
