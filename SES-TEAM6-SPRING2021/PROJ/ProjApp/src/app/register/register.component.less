@@ -1,0 +1,47 @@
+
+@button-colour: #90EE90;
+
+
+input {
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid #808080;
+    width: 100%;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+button {
+    display: block;
+    margin: auto;
+    background: @button-colour;
+    border: 1px solid darken(@button-colour, 5%);
+    border-radius: 3px;
+    box-shadow: inset 0px 1px fadeout(white, 80%);
+    padding: 5px 20px;
+
+    &:hover {
+        background: lighten(@button-colour, 5%);
+    }
+    &:active {
+        background: @button-colour;
+        box-shadow: inset 0px 1px fadeout(black, 90%);
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+#registrationForm {
+    display: block;
+    margin: auto;
+    min-width: 320px;
+    max-width: 475px;
+    width: 100%;
+    box-shadow: 0px 2px 5px rgba(0,0,0,.25);
+    padding: 20px;
+}
