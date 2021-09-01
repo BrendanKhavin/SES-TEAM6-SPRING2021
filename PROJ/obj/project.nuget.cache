@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "cJVTAkAuqXo0mdDeVe6+U+avwno36/dOOxrvpiOBTvZ+Ivwzq92b88yT61eqA3XlBdN6FsqwXIpnPchB4KSmuw==",
+  "dgSpecHash": "v9hrb6ScY/RjQT+IGGMEitb4T+HaFk/rurlS+6s8SCS0Nwp/MFancb1A1otLba2NJFmBIEsZJnkkJxbw754Tbw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Brendan Khavin\\UTS\\SES-TEAM6-SPRING2021\\proj\\PROJ.csproj",
+  "projectFilePath": "/Users/cmm/Desktop/Semester 2/2A-VS BACKEND/PROJ/PROJ.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Brendan Khavin\\.nuget\\packages\\microsoft.aspnetcore.spaservices.extensions\\5.0.2\\microsoft.aspnetcore.spaservices.extensions.5.0.2.nupkg.sha512",
-    "C:\\Users\\Brendan Khavin\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\5.0.0\\microsoft.extensions.fileproviders.abstractions.5.0.0.nupkg.sha512",
-    "C:\\Users\\Brendan Khavin\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\5.0.0\\microsoft.extensions.fileproviders.physical.5.0.0.nupkg.sha512",
-    "C:\\Users\\Brendan Khavin\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\5.0.0\\microsoft.extensions.filesystemglobbing.5.0.0.nupkg.sha512",
-    "C:\\Users\\Brendan Khavin\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512"
+    "/Users/cmm/.nuget/packages/microsoft.aspnetcore.spaservices.extensions/5.0.9/microsoft.aspnetcore.spaservices.extensions.5.0.9.nupkg.sha512",
+    "/Users/cmm/.nuget/packages/microsoft.extensions.fileproviders.abstractions/5.0.0/microsoft.extensions.fileproviders.abstractions.5.0.0.nupkg.sha512",
+    "/Users/cmm/.nuget/packages/microsoft.extensions.fileproviders.physical/5.0.0/microsoft.extensions.fileproviders.physical.5.0.0.nupkg.sha512",
+    "/Users/cmm/.nuget/packages/microsoft.extensions.filesystemglobbing/5.0.0/microsoft.extensions.filesystemglobbing.5.0.0.nupkg.sha512",
+    "/Users/cmm/.nuget/packages/microsoft.extensions.primitives/5.0.0/microsoft.extensions.primitives.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

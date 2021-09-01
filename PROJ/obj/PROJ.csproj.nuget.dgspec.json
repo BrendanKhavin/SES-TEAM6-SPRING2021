@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Brendan Khavin\\UTS\\SES-TEAM6-SPRING2021\\proj\\PROJ.csproj": {}
+    "/Users/cmm/Desktop/Semester 2/2A-VS BACKEND/PROJ/PROJ.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Brendan Khavin\\UTS\\SES-TEAM6-SPRING2021\\proj\\PROJ.csproj": {
+    "/Users/cmm/Desktop/Semester 2/2A-VS BACKEND/PROJ/PROJ.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Brendan Khavin\\UTS\\SES-TEAM6-SPRING2021\\proj\\PROJ.csproj",
+        "projectUniqueName": "/Users/cmm/Desktop/Semester 2/2A-VS BACKEND/PROJ/PROJ.csproj",
         "projectName": "PROJ",
-        "projectPath": "C:\\Users\\Brendan Khavin\\UTS\\SES-TEAM6-SPRING2021\\proj\\PROJ.csproj",
-        "packagesPath": "C:\\Users\\Brendan Khavin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Brendan Khavin\\UTS\\SES-TEAM6-SPRING2021\\proj\\obj\\",
+        "projectPath": "/Users/cmm/Desktop/Semester 2/2A-VS BACKEND/PROJ/PROJ.csproj",
+        "packagesPath": "/Users/cmm/.nuget/packages/",
+        "outputPath": "/Users/cmm/Desktop/Semester 2/2A-VS BACKEND/PROJ/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Brendan Khavin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/cmm/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -24,7 +24,6 @@
         },
         "frameworks": {
           "net5.0": {
-            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },
@@ -36,32 +35,13 @@
       },
       "frameworks": {
         "net5.0": {
-          "targetAlias": "net5.0",
           "dependencies": {
             "Microsoft.AspNetCore.SpaServices.Extensions": {
               "target": "Package",
-              "version": "[5.0.2, )"
+              "version": "[5.0.9, )"
             }
           },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
         }
       }
     }

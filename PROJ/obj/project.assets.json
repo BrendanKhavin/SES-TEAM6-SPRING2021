@@ -1,8 +1,8 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {
-      "Microsoft.AspNetCore.SpaServices.Extensions/5.0.2": {
+    ".NETCoreApp,Version=v5.0": {
+      "Microsoft.AspNetCore.SpaServices.Extensions/5.0.9": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.FileProviders.Physical": "5.0.0"
@@ -64,17 +64,17 @@
     }
   },
   "libraries": {
-    "Microsoft.AspNetCore.SpaServices.Extensions/5.0.2": {
-      "sha512": "86Vyfi5irZSvsTUzs8UkeMA6qGI5PNbZM7nR254p4EFG68hf/klYfh3rZApURkAuziqLyfNIcfQqcIv1s1wqYw==",
+    "Microsoft.AspNetCore.SpaServices.Extensions/5.0.9": {
+      "sha512": "86g0Epwms+0SpG5e2dO2GC/0ADoN/l+jU9jQ1xte3YYzstpKdwSin81/LIPuhqDMW4DAUSVxe0W6me2L0yFGjA==",
       "type": "package",
-      "path": "microsoft.aspnetcore.spaservices.extensions/5.0.2",
+      "path": "microsoft.aspnetcore.spaservices.extensions/5.0.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net5.0/Microsoft.AspNetCore.SpaServices.Extensions.dll",
-        "microsoft.aspnetcore.spaservices.extensions.5.0.2.nupkg.sha512",
+        "microsoft.aspnetcore.spaservices.extensions.5.0.9.nupkg.sha512",
         "microsoft.aspnetcore.spaservices.extensions.nuspec"
       ]
     },
@@ -162,24 +162,24 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net5.0": [
-      "Microsoft.AspNetCore.SpaServices.Extensions >= 5.0.2"
+    ".NETCoreApp,Version=v5.0": [
+      "Microsoft.AspNetCore.SpaServices.Extensions >= 5.0.9"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Brendan Khavin\\.nuget\\packages\\": {}
+    "/Users/cmm/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Brendan Khavin\\UTS\\SES-TEAM6-SPRING2021\\proj\\PROJ.csproj",
+      "projectUniqueName": "/Users/cmm/Desktop/Semester 2/2A-VS BACKEND/PROJ/PROJ.csproj",
       "projectName": "PROJ",
-      "projectPath": "C:\\Users\\Brendan Khavin\\UTS\\SES-TEAM6-SPRING2021\\proj\\PROJ.csproj",
-      "packagesPath": "C:\\Users\\Brendan Khavin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Brendan Khavin\\UTS\\SES-TEAM6-SPRING2021\\proj\\obj\\",
+      "projectPath": "/Users/cmm/Desktop/Semester 2/2A-VS BACKEND/PROJ/PROJ.csproj",
+      "packagesPath": "/Users/cmm/.nuget/packages/",
+      "outputPath": "/Users/cmm/Desktop/Semester 2/2A-VS BACKEND/PROJ/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Brendan Khavin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/cmm/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -189,7 +189,6 @@
       },
       "frameworks": {
         "net5.0": {
-          "targetAlias": "net5.0",
           "projectReferences": {}
         }
       },
@@ -201,32 +200,13 @@
     },
     "frameworks": {
       "net5.0": {
-        "targetAlias": "net5.0",
         "dependencies": {
           "Microsoft.AspNetCore.SpaServices.Extensions": {
             "target": "Package",
-            "version": "[5.0.2, )"
+            "version": "[5.0.9, )"
           }
         },
-        "imports": [
-          "net461",
-          "net462",
-          "net47",
-          "net471",
-          "net472",
-          "net48"
-        ],
-        "assetTargetFallback": true,
-        "warn": true,
-        "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
-          "Microsoft.NETCore.App": {
-            "privateAssets": "all"
-          }
-        },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
       }
     }
   }
