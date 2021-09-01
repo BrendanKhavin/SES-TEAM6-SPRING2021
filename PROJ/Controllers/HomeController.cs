@@ -7,6 +7,8 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
+//please note that on VS, you'll need to install the driver. It's in the package manager. 
+
 namespace PROJ.Controllers
 {
     public class HomeController : Controller
