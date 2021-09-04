@@ -1,14 +1,10 @@
 ﻿<Properties StartupConfiguration="{C764CC4C-D460-457A-8C47-4B3EA5CD70C5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Models/MyDatabaseSettings.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Models/newUser.cs">
     <Files>
-      <File FileName="Startup.cs" Line="31" Column="45" />
-      <File FileName="Services/Mongo_DocumentService.cs" Line="8" Column="35" />
-      <File FileName="mono_crash.11a67480d0.0.json" Line="1" Column="1" />
-      <File FileName="Program.cs" Line="20" Column="120" />
-      <File FileName="yarn.lock" Line="2" Column="19" />
-      <File FileName="appsettings.json" Line="5" Column="5" />
-      <File FileName="Models/MyDatabaseSettings.cs" Line="8" Column="28" />
-      <File FileName="Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="Startup.cs" Line="29" Column="77" />
+      <File FileName="Services/Mongo_DocumentService.cs" Line="12" Column="10" />
+      <File FileName="Program.cs" Line="21" Column="33" />
+      <File FileName="Models/newUser.cs" Line="7" Column="14" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,7 +13,7 @@
             <Node name="PROJ" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True">
-                <Node name="MyDatabaseSettings.cs" selected="True" />
+                <Node name="newUser.cs" selected="True" />
               </Node>
               <Node name="ProjApp" expanded="True">
                 <Node name="package.json" expanded="True" />
