@@ -1,23 +1,24 @@
 ﻿<Properties StartupConfiguration="{C764CC4C-D460-457A-8C47-4B3EA5CD70C5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/HomeController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Models/MyDatabaseSettings.cs">
     <Files>
-      <File FileName="Controllers/HomeController.cs" Line="18" Column="25" />
-      <File FileName="Models/ErrorViewModel.cs" />
-      <File FileName="ProjApp/package.json" />
-      <File FileName="appsettings.json" />
+      <File FileName="Startup.cs" Line="31" Column="45" />
+      <File FileName="Services/Mongo_DocumentService.cs" Line="8" Column="35" />
+      <File FileName="mono_crash.11a67480d0.0.json" Line="1" Column="1" />
+      <File FileName="Program.cs" Line="20" Column="120" />
+      <File FileName="yarn.lock" Line="2" Column="19" />
+      <File FileName="appsettings.json" Line="5" Column="5" />
+      <File FileName="Models/MyDatabaseSettings.cs" Line="8" Column="28" />
+      <File FileName="Controllers/HomeController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="PROJ" expanded="True">
             <Node name="PROJ" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="MyDatabaseSettings.cs" selected="True" />
               </Node>
-              <Node name="Controllers" expanded="True">
-                <Node name="HomeController.cs" selected="True" />
-              </Node>
-              <Node name="Models" expanded="True" />
               <Node name="ProjApp" expanded="True">
                 <Node name="package.json" expanded="True" />
               </Node>
@@ -27,7 +28,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.PROJ PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.PROJ PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
