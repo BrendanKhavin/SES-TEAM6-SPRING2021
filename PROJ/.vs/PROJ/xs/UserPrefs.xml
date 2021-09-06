@@ -1,8 +1,10 @@
 ﻿<Properties StartupConfiguration="{C764CC4C-D460-457A-8C47-4B3EA5CD70C5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Models/MyDatabaseSettings.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="appsettings.json">
     <Files>
       <File FileName="Program.cs" Line="21" Column="135" />
-      <File FileName="Models/MyDatabaseSettings.cs" Line="8" Column="49" />
+      <File FileName="Models/MyDatabaseSettings.cs" />
+      <File FileName="Startup.cs" />
+      <File FileName="appsettings.json" Line="5" Column="56" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,12 +12,11 @@
           <Node name="PROJ" expanded="True">
             <Node name="PROJ" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="MyDatabaseSettings.cs" selected="True" />
-              </Node>
+              <Node name="Models" expanded="True" />
               <Node name="ProjApp" expanded="True">
                 <Node name="package.json" expanded="True" />
               </Node>
+              <Node name="appsettings.json" selected="True" />
             </Node>
           </Node>
         </State>

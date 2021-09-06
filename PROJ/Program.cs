@@ -18,7 +18,7 @@ namespace PROJ
             CreateHostBuilder(args).Build().Run();
 
             //Do something here to get the subject data and show it on the data page. 
-            var settings = MongoClientSettings.FromConnectionString("mongodb+srv//13559048@student.uts.edu.au:<password>@ses2a.wla5p.mongodb.net/SES2AretryWrites=true&w=majority");
+            var settings = MongoClientSettings.FromConnectionString("mongodb+srv//13559048@student.uts.edu.au:<your_password_goes_here>@ses2a.wla5p.mongodb.net/SES2AretryWrites=true&w=majority");
             var client = new MongoClient(settings);
             var database = client.GetDatabase("SES2A");
         }
