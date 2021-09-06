@@ -1,10 +1,8 @@
 ﻿<Properties StartupConfiguration="{C764CC4C-D460-457A-8C47-4B3EA5CD70C5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Models/newUser.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Models/MyDatabaseSettings.cs">
     <Files>
-      <File FileName="Startup.cs" Line="29" Column="77" />
-      <File FileName="Services/Mongo_DocumentService.cs" Line="12" Column="10" />
-      <File FileName="Program.cs" Line="21" Column="33" />
-      <File FileName="Models/newUser.cs" Line="7" Column="14" />
+      <File FileName="Program.cs" Line="21" Column="135" />
+      <File FileName="Models/MyDatabaseSettings.cs" Line="8" Column="49" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,7 +11,7 @@
             <Node name="PROJ" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True">
-                <Node name="newUser.cs" selected="True" />
+                <Node name="MyDatabaseSettings.cs" selected="True" />
               </Node>
               <Node name="ProjApp" expanded="True">
                 <Node name="package.json" expanded="True" />
