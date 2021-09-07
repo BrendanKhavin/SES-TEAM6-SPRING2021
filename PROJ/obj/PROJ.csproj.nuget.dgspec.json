@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Brendan Khavin\\UTS\\SES-TEAM6-SPRING2021\\PROJ\\PROJ.csproj": {}
+    "C:\\Users\\Brendan Khavin\\UTS\\SES-TEAM6-SPRING2021\\proj\\PROJ.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Brendan Khavin\\UTS\\SES-TEAM6-SPRING2021\\PROJ\\PROJ.csproj": {
+    "C:\\Users\\Brendan Khavin\\UTS\\SES-TEAM6-SPRING2021\\proj\\PROJ.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Brendan Khavin\\UTS\\SES-TEAM6-SPRING2021\\PROJ\\PROJ.csproj",
+        "projectUniqueName": "C:\\Users\\Brendan Khavin\\UTS\\SES-TEAM6-SPRING2021\\proj\\PROJ.csproj",
         "projectName": "PROJ",
-        "projectPath": "C:\\Users\\Brendan Khavin\\UTS\\SES-TEAM6-SPRING2021\\PROJ\\PROJ.csproj",
+        "projectPath": "C:\\Users\\Brendan Khavin\\UTS\\SES-TEAM6-SPRING2021\\proj\\PROJ.csproj",
         "packagesPath": "C:\\Users\\Brendan Khavin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Brendan Khavin\\UTS\\SES-TEAM6-SPRING2021\\PROJ\\obj\\",
+        "outputPath": "C:\\Users\\Brendan Khavin\\UTS\\SES-TEAM6-SPRING2021\\proj\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Brendan Khavin\\AppData\\Roaming\\NuGet\\NuGet.Config"
