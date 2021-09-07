@@ -1,27 +1,62 @@
 <div>
-    <div class="filters">
-        <div id="filterHeader">
-            <h1>Filters</h1>
-        </div>
-        <div id="facultyFilter">
-            <h2>Faculties</h2>
-            <nz-select 
-                nzMode="multiple" 
-                nzPlaceHolder="Select faculties"
-                nzAllowClear='true'
-                [(ngModel)]="selectedFaculties">
-                <nz-option *ngFor="let faculty of faculties" [nzLabel]="faculty" [nzValue]="faculty"></nz-option>
-            </nz-select>
-        </div>
-        <div id="creditPointFilter">
-            <h2>Credit Points</h2>
-            <nz-select 
-                nzMode="multiple" 
-                nzPlaceHolder="Select credit points"
-                nzAllowClear='true'
-                [(ngModel)]="selectedFaculties">
-                <nz-option *ngFor="let creditPoint of creditPoints" [nzLabel]="creditPoint" [nzValue]="creditPoint"></nz-option>
-            </nz-select>
-        </div>
+  <div class="filters">
+    <div id="filterHeader">
+      <h1>Filters</h1>
     </div>
+    <div id="facultyFilter">
+      <h2>Faculties</h2>
+      <nz-select nzMode="multiple"
+                 nzPlaceHolder="Select faculties"
+                 nzAllowClear='true'
+                 [(ngModel)]="selectedFaculties">
+        <nz-option *ngFor="let faculty of faculties" [nzLabel]="faculty" [nzValue]="faculty"></nz-option>
+      </nz-select>
+    </div>
+    <div id="creditPointFilter">
+      <h2>Credit Points</h2>
+      <nz-select nzMode="multiple"
+                 nzPlaceHolder="Select credit points"
+                 nzAllowClear='true'
+                 [(ngModel)]="selectedFaculties">
+        <nz-option *ngFor="let creditPoint of creditPoints" [nzLabel]="creditPoint" [nzValue]="creditPoint"></nz-option>
+      </nz-select>
+    </div>
+  </div>
+  <div class="recommendations">
+    <div id="recommendationHeader">
+      <h1>Recommendations</h1>
+    </div>
+    <div id="searchRecommendations">
+      <nz-input-group [nzSuffix]="suffixIconSearch">
+        <input type="text" nz-input placeholder="input search text" />
+      </nz-input-group>
+      <ng-template #suffixIconSearch>
+        <i nz-icon nzType="search"></i>
+      </ng-template>
+    </div>
+    <div id="recommendationCards">
+      <div style="background: #ECECEC;padding:30px;">
+        <div nz-row [nzGutter]="8">
+          <div nz-col [nzSpan]="8">
+            <nz-card nzTitle="Card title" [nzExtra]="extraTemplate">
+              <p>Card content</p>
+            </nz-card>
+          </div>
+          <div nz-col [nzSpan]="8">
+            <nz-card nzTitle="Card title" [nzExtra]="extraTemplate">
+              <p>Card content</p>
+            </nz-card>
+          </div>
+          <div nz-col [nzSpan]="8">
+            <nz-card nzTitle="Card title" [nzExtra]="extraTemplate" [nzLoading]="loading">
+              <p>Card content</p>
+            </nz-card>
+          </div>
+        </div>
+        <ng-template #extraTemplate>
+          <a>More</a>
+        </ng-template>
+      </div>
+    </div>
+  </div>
 </div>

@@ -17,6 +17,9 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
 import { RecommendationComponent } from './recommendation/recommendation.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NzSelectModule } from 'ng-zorro-antd/select';
+import { NzInputModule } from 'ng-zorro-antd/input';
+import { NzCardModule } from 'ng-zorro-antd/card';
+import { NzGridModule } from 'ng-zorro-antd/grid';
 
 registerLocaleData(en);
 
@@ -36,7 +39,10 @@ registerLocaleData(en);
     NzLayoutModule,
     NzMenuModule,
     NzButtonModule,
-    NzSelectModule
+    NzSelectModule,
+    NzInputModule,
+    NzCardModule,
+    NzGridModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

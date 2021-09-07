@@ -10,6 +10,7 @@ export class RecommendationComponent implements OnInit {
   selectedFaculties = [];
   creditPoints = [3,6,9,12,18,24];
   selectedCreditPoints = [];
+  loading = true;
 
   constructor() { }
 
