@@ -4656,7 +4656,7 @@
       "outputPath": "/Users/cmm/Desktop/Semester 2/2A-VS BACKEND/PROJ/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/cmm/.nuget/NuGet/NuGet.Config"
+        "/Users/cmm/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"

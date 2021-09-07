@@ -1,14 +1,15 @@
 ﻿<Properties StartupConfiguration="{C764CC4C-D460-457A-8C47-4B3EA5CD70C5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="appsettings.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/rawSubjectsController.cs">
     <Files>
-      <File FileName="appsettings.json" />
+      <File FileName="appsettings.json" Line="3" Column="4" />
       <File FileName="Services/DatabaseServices.cs" />
       <File FileName="Controllers/HomeController.cs" />
       <File FileName="Startup.cs" />
-      <File FileName="Program.cs" />
+      <File FileName="Program.cs" Line="17" Column="15" />
       <File FileName="Models/MyDatabaseSettings.cs" />
       <File FileName="Models/newUser.cs" />
       <File FileName="appsettings.Development.json" />
+      <File FileName="Controllers/rawSubjectsController.cs" Line="14" Column="11" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,11 +17,11 @@
           <Node name="PROJ" expanded="True">
             <Node name="PROJ" expanded="True">
               <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True">
-                  <Node name="Microsoft.Build.Framework" selected="True" />
-                </Node>
+                <Node name="PackageDependencies" expanded="True" />
               </Node>
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="rawSubjectsController.cs" selected="True" />
+              </Node>
               <Node name="Models" expanded="True" />
               <Node name="Services" expanded="True" />
               <Node name="appsettings.json" expanded="True" />
