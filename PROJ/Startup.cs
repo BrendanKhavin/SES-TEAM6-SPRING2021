@@ -11,6 +11,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using PROJ.Models;
 using Microsoft.Extensions.Options;
+using PROJ.Services;
 
 namespace PROJ
 {
@@ -27,9 +28,14 @@ namespace PROJ
         public void ConfigureServices(IServiceCollection services)
         {
             //MongoDB Services. Need to figure out if these should be here. 
+            //Start of MongoDB Addition
             services.Configure<MyDatabaseSettings>(Configuration.GetSection(nameof(MyDatabaseSettings)));
             services.AddSingleton<MyDatabaseSettings>(sp =>
             sp.GetRequiredService<IOptions<MyDatabaseSettings>>().Value);
+
+            services.AddSingleton<DatabaseServices>();
+            services.AddControllers();
+            //End of MongoDB Additions
 
             //Controller 
             services.AddControllersWithViews();

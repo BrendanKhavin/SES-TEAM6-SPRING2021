@@ -1,8 +1,12 @@
 ﻿using System;
+using MongoDB.Bson;
+using MongoDB.Driver; 
 namespace PROJ.Models
+
 {
     public class newUser
     {
+        
         public String firstName { get; set; }
         public String lastName { get; set; }
         public String studentType { get; set; }

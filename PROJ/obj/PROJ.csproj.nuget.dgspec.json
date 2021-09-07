@@ -14,7 +14,7 @@
         "outputPath": "/Users/cmm/Desktop/Semester 2/2A-VS BACKEND/PROJ/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/cmm/.config/NuGet/NuGet.Config"
+          "/Users/cmm/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -45,6 +45,10 @@
             "Microsoft.AspNetCore.SpaServices.Extensions": {
               "target": "Package",
               "version": "[5.0.9, )"
+            },
+            "Microsoft.Build.Framework": {
+              "target": "Package",
+              "version": "[16.11.0, )"
             },
             "MongoDB.Driver": {
               "target": "Package",
