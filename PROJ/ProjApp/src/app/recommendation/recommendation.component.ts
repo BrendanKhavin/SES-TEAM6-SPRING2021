@@ -11,6 +11,12 @@ export class RecommendationComponent implements OnInit {
   creditPoints = [3,6,9,12,18,24];
   selectedCreditPoints = [];
   loading = true;
+  searchValue = '';
+  cards = [
+    {title: "Test 1", content:"Test Content"},
+    {title: "Test 2", content: "Test Content"},
+    {title: "Test 3", content: "Test Content"}
+  ]
 
   constructor() { }
 

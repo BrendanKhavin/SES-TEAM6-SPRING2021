@@ -20,6 +20,7 @@ import { NzSelectModule } from 'ng-zorro-antd/select';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzCardModule } from 'ng-zorro-antd/card';
 import { NzGridModule } from 'ng-zorro-antd/grid';
+import { FilterPipe } from './filter.pipe';
 
 registerLocaleData(en);
 
@@ -27,7 +28,8 @@ registerLocaleData(en);
   declarations: [
     AppComponent,
     RecommendationComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

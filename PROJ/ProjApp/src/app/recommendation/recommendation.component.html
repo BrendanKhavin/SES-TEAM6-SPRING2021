@@ -27,29 +27,19 @@
       <h1>Recommendations</h1>
     </div>
     <div id="searchRecommendations">
-      <nz-input-group [nzSuffix]="suffixIconSearch">
-        <input type="text" nz-input placeholder="input search text" />
+      <nz-input-group [nzSuffix]="suffixIconButton">
+        <input type="text" id="searchValue" [(ngModel)]="searchValue" nz-input placeholder="input search text" />
       </nz-input-group>
-      <ng-template #suffixIconSearch>
-        <i nz-icon nzType="search"></i>
+      <ng-template #suffixIconButton>
+        <button nz-button nzType="primary" nzSearch><i nz-icon nzType="search"></i></button>
       </ng-template>
     </div>
     <div id="recommendationCards">
       <div style="background: #ECECEC;padding:30px;">
         <div nz-row [nzGutter]="8">
-          <div nz-col [nzSpan]="8">
-            <nz-card nzTitle="Card title" [nzExtra]="extraTemplate">
-              <p>Card content</p>
-            </nz-card>
-          </div>
-          <div nz-col [nzSpan]="8">
-            <nz-card nzTitle="Card title" [nzExtra]="extraTemplate">
-              <p>Card content</p>
-            </nz-card>
-          </div>
-          <div nz-col [nzSpan]="8">
-            <nz-card nzTitle="Card title" [nzExtra]="extraTemplate" [nzLoading]="loading">
-              <p>Card content</p>
+          <div *ngFor="let c of cards | appFilter: searchValue" nz-col [nzSpan]="8">
+            <nz-card  [nzTitle]="c.title" [nzExtra]="extraTemplate">
+              <p>{{c.content}}</p>
             </nz-card>
           </div>
         </div>
