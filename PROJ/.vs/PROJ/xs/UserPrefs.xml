@@ -1,15 +1,19 @@
 ﻿<Properties StartupConfiguration="{C764CC4C-D460-457A-8C47-4B3EA5CD70C5}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/rawSubjectsController.cs">
     <Files>
-      <File FileName="appsettings.json" Line="3" Column="4" />
-      <File FileName="Services/DatabaseServices.cs" />
-      <File FileName="Controllers/HomeController.cs" />
-      <File FileName="Startup.cs" />
-      <File FileName="Program.cs" Line="17" Column="15" />
-      <File FileName="Models/MyDatabaseSettings.cs" />
-      <File FileName="Models/newUser.cs" />
-      <File FileName="appsettings.Development.json" />
-      <File FileName="Controllers/rawSubjectsController.cs" Line="14" Column="11" />
+      <File FileName="ProjApp/src/app/app.component.less" Line="21" Column="16" IsPinned="True" />
+      <File FileName="ProjApp/src/app/app.component.html" IsPinned="True" />
+      <File FileName="ProjApp/e2e/src/app.e2e-spec.ts" IsPinned="True" />
+      <File FileName="appsettings.Development.json" IsPinned="True" />
+      <File FileName="Program.cs" Line="1" Column="1" IsPinned="True" />
+      <File FileName="Startup.cs" Line="31" Column="40" IsPinned="True" />
+      <File FileName="appsettings.json" Line="17" Column="1" IsPinned="True" />
+      <File FileName="ProjApp/e2e/tsconfig.json" />
+      <File FileName="Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="Controllers/rawSubjectsController.cs" Line="24" Column="1" />
+      <File FileName="Models/MyDatabaseSettings.cs" Line="1" Column="1" />
+      <File FileName="Models/newUser.cs" Line="1" Column="1" />
+      <File FileName="Models/rawSubjects.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,8 +27,10 @@
                 <Node name="rawSubjectsController.cs" selected="True" />
               </Node>
               <Node name="Models" expanded="True" />
-              <Node name="Services" expanded="True" />
-              <Node name="appsettings.json" expanded="True" />
+              <Node name="ProjApp" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True" />
+              <Node name="wwwroot" expanded="True" />
             </Node>
           </Node>
         </State>
