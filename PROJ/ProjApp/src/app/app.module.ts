@@ -32,7 +32,7 @@ registerLocaleData(en);
     AppComponent,
     RecommendationComponent,
     PageNotFoundComponent,
-    FilterPipe
+    FilterPipe,
     PageNotFoundComponent,
     LoginComponent,
     RegisterComponent
@@ -49,7 +49,7 @@ registerLocaleData(en);
     NzButtonModule,
     NzSelectModule,
     NzFormModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
     NzSelectModule,
     NzInputModule,
     NzCardModule,
