@@ -10,6 +10,8 @@ using PROJ.Services;
 
 namespace PROJ.Controllers
 {
+    [Route("api/rawSubjects")]
+    [ApiController]
     public class rawSubjectsController : Controller
     {
 
@@ -21,14 +23,14 @@ namespace PROJ.Controllers
         }
 
         [HttpGet]
-
         public ActionResult<List<rawSubjects>> Get() =>
             _databaseService.Get();
 
-        [HttpGet]
-        public ActionResult<rawSubjects> Get(int SubjectCode) {
+        // route is: api/rawSubjects/{subjectCode}
+        [HttpGet("{subjectCode:length(5)}")]
+        public ActionResult<rawSubjects> Get(String subjectCode) {
 
-            var emp = _databaseService.Get(SubjectCode);
+            var emp = _databaseService.Get(subjectCode);
 
             if (emp == null) {
 

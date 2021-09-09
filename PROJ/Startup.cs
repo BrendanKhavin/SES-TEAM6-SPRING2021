@@ -30,7 +30,7 @@ namespace PROJ
             //MongoDB Services. Need to figure out if these should be here. 
             //Start of MongoDB Addition
             services.Configure<MyDatabaseSettings>(Configuration.GetSection(nameof(MyDatabaseSettings)));
-            services.AddSingleton<MyDatabaseSettings>(sp =>
+            services.AddSingleton<IMyDataBaseSettings>(sp =>
             sp.GetRequiredService<IOptions<MyDatabaseSettings>>().Value);
 
             services.AddSingleton<DatabaseServices>();

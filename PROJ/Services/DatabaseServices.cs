@@ -19,15 +19,11 @@ namespace PROJ.Services
         }
 
         //List where we pull the data. This is a TEST feature 
-        public List<rawSubjects> Get()
-        {
-            List<rawSubjects> rawSubjects;
-            rawSubjects = _rawSubjects.Find(emp => true).ToList();
-            return rawSubjects;
-        }
+        public List<rawSubjects> Get() =>
+            _rawSubjects.Find(rawSubject => true).ToList();
 
-        public rawSubjects Get(int SubjectCode) =>
-        _rawSubjects.Find<rawSubjects>(emp => emp.subjectCode == SubjectCode).FirstOrDefault();
+        public rawSubjects Get(string subjectCode) =>
+            _rawSubjects.Find<rawSubjects>(emp => emp.subjectCode.Equals(subjectCode)).FirstOrDefault();
        
 
 
