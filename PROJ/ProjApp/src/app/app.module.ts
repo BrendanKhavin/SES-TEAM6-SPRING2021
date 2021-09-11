@@ -17,6 +17,10 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
 import { RecommendationComponent } from './recommendation/recommendation.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NzSelectModule } from 'ng-zorro-antd/select';
+import { NzInputModule } from 'ng-zorro-antd/input';
+import { NzCardModule } from 'ng-zorro-antd/card';
+import { NzGridModule } from 'ng-zorro-antd/grid';
+import { FilterPipe } from './filter.pipe';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { NzFormModule } from 'ng-zorro-antd/form';
@@ -27,6 +31,8 @@ registerLocaleData(en);
   declarations: [
     AppComponent,
     RecommendationComponent,
+    PageNotFoundComponent,
+    FilterPipe,
     PageNotFoundComponent,
     LoginComponent,
     RegisterComponent
@@ -43,7 +49,11 @@ registerLocaleData(en);
     NzButtonModule,
     NzSelectModule,
     NzFormModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NzSelectModule,
+    NzInputModule,
+    NzCardModule,
+    NzGridModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
