@@ -9,6 +9,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using PROJ.Models;
+using Microsoft.Extensions.Options;
+using PROJ.Services;
 
 namespace PROJ
 {
@@ -24,6 +27,17 @@ namespace PROJ
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //MongoDB Services. Need to figure out if these should be here. 
+            //Start of MongoDB Addition
+            services.Configure<MyDatabaseSettings>(Configuration.GetSection(nameof(MyDatabaseSettings)));
+            services.AddSingleton<IMyDataBaseSettings>(sp =>
+            sp.GetRequiredService<IOptions<MyDatabaseSettings>>().Value);
+
+            services.AddSingleton<DatabaseServices>();
+            services.AddControllers();
+            //End of MongoDB Additions
+
+            //Controller 
             services.AddControllersWithViews();
             services.AddSpaStaticFiles(configuration =>
             {
