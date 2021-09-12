@@ -18,6 +18,7 @@ export class RegisterComponent implements OnInit {
       email: [null, [Validators.email, Validators.required]],
       password: [null, [Validators.required]],
       checkPassword: [null, [Validators.required, this.confirmationValidator]],
+      // Other fields here
     });
   }
 
@@ -36,6 +37,7 @@ export class RegisterComponent implements OnInit {
         this.validateForm.controls[i].markAsDirty();
         this.validateForm.controls[i].updateValueAndValidity();
         // Submit this through a service to the backend
+        // something like this.registerService.regiser(form).subscribe()
       }
     }
   }
