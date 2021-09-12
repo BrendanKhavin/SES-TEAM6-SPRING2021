@@ -24,6 +24,7 @@ import { FilterPipe } from './filter.pipe';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { NzFormModule } from 'ng-zorro-antd/form';
+import { LogoutComponent } from './logout/logout.component';
 
 registerLocaleData(en);
 
@@ -35,7 +36,8 @@ registerLocaleData(en);
     FilterPipe,
     PageNotFoundComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,
