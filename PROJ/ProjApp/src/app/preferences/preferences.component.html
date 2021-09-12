@@ -1,0 +1,44 @@
+<div>
+    <div class="preferences">
+        <div id="preferenceHeader">
+            <h1>Preferences</h1>
+        </div>
+        <div id="preferencesFilter">
+            <h2>Faculties</h2>
+            <nz-select 
+                nzMode="multiple" 
+                nzPlaceHolder="Select faculties"
+                nzAllowClear='true'
+                [(ngModel)]="selectedFaculties">
+                <nz-option *ngFor="let faculty of faculties" [nzLabel]="faculty" [nzValue]="faculty"></nz-option>
+            </nz-select>
+        </div>
+        <div id="preferencesFilter">
+            <h2>Credit Points</h2>
+            <nz-select 
+                nzMode="multiple" 
+                nzPlaceHolder="Select credit points"
+                nzAllowClear='true'
+                [(ngModel)]="selectedCreditPoints">
+                <nz-option *ngFor="let creditPoint of creditPoints" [nzLabel]="creditPoint" [nzValue]="creditPoint"></nz-option>
+            </nz-select>
+        </div>
+        <div id="preferencesFilter">
+            <h2>Completed Subjects</h2>
+            <nz-select 
+                nzMode="multiple" 
+                nzPlaceHolder="Select Completed Subjects"
+                nzAllowClear='true'
+                [(ngModel)]="selectedCompletedSubjects">
+                <nz-option *ngFor="let completedSubject of completedSubjects" [nzLabel]="completedSubject" [nzValue]="completedSubject"></nz-option>
+            </nz-select>
+        </div>
+        <div id="preferencesFilter">
+            <h2>Student Type</h2>
+            <nz-radio-group [(ngModel)]="radioValue">
+                <label nz-radio nzValue="A">Domestic Student</label>
+                <label nz-radio nzValue="B">International Student</label>
+            </nz-radio-group>
+        </div>
+    </div>
+</div>

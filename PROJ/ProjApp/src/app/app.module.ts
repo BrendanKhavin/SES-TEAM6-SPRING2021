@@ -20,6 +20,9 @@ import { NzSelectModule } from 'ng-zorro-antd/select';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { NzFormModule } from 'ng-zorro-antd/form';
+import { PreferencesComponent } from './preferences/preferences.component';
+import { NzRadioModule } from 'ng-zorro-antd/radio';
+
 
 registerLocaleData(en);
 
@@ -29,7 +32,8 @@ registerLocaleData(en);
     RecommendationComponent,
     PageNotFoundComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    PreferencesComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +47,8 @@ registerLocaleData(en);
     NzButtonModule,
     NzSelectModule,
     NzFormModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NzRadioModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
