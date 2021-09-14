@@ -6,7 +6,7 @@
             [(nzCollapsed)]="isCollapsed"
             [nzTrigger]="null">
     <div class="sidebar-logo">
-      <a routerLink="/welcome"> 
+      <a routerLink="/login"> 
         <i class="fas fa-university"></i>
         <h1>Subjects "R" Us</h1>
       </a>
@@ -15,10 +15,19 @@
       <li nz-submenu nzOpen nzTitle="Dashboard" nzIcon="dashboard">
         <ul>
           <li nz-menu-item nzMatchRouter>
-            <a routerLink="/welcome">Welcome</a>
+            <a routerLink="/login">Login</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/register">Register</a>
           </li>
           <li nz-menu-item nzMatchRouter>
             <a routerLink="/recommendation">Recommendations</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/preferences">Preferences</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/logout">Logout</a>
           </li>
         </ul>
       </li>
