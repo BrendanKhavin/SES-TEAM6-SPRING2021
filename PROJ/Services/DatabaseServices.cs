@@ -14,6 +14,7 @@ namespace PROJ.Services
 
             var client = new MongoClient(settings.ConnectionString);
             var database = client.GetDatabase(settings.DatabaseName);
+          //  var FilterDefinition = _rawSubjects.Find(filterDefinition).ToList(); 
 
             _rawSubjects = database.GetCollection<rawSubjects>(settings.CollectionName);
         }
@@ -24,7 +25,8 @@ namespace PROJ.Services
 
         public rawSubjects Get(string subjectCode) =>
             _rawSubjects.Find<rawSubjects>(emp => emp.subjectCode.Equals(subjectCode)).FirstOrDefault();
-       
+
+        
 
 
 

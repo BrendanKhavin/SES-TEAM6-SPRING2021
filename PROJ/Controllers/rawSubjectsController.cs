@@ -40,6 +40,8 @@ namespace PROJ.Controllers
             return emp;
         }
 
+     //   [HttpGet]("{courseArea:length(10)}")]
+      //      public ActionResult<rawSubjects> Get(string courseArea) { }
 
 
         // GET: /<controller>/

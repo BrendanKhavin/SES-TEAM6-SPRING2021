@@ -24,6 +24,10 @@ namespace PROJ.Models
         [BsonElement("Credit Points")]        
         public int creditPoints { get; set; }
 
+        [BsonElement("course area")]
+        public string courseArea { get; set; }
+
+
         public rawSubjects()
         {
         }
