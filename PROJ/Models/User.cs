@@ -9,14 +9,17 @@ namespace PROJ.Models
     public class User
     {
         [Required]
-        public string Name { get; set; }
+        public string firstName { get; set; }
+        [Required]
+        public string lastName { get; set; }
+        [Required]
+        public string studentId { get; set; }
 
         [Required]
-        [EmailAddress(ErrorMessage = "Invalid Email")]
-        public string Email { get; set; }
+        public string email { get; set; }
 
         [Required]
-        public string Password { get; set; }
+        public string password { get; set; }
 
     }
 }

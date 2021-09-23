@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PROJ.Models;
 using System;
@@ -8,6 +9,8 @@ using System.Threading.Tasks;
 
 namespace PROJ.Controllers
 {
+    [AllowAnonymous]
+    [Route("api/[controller]")]
     public class UserController : Controller
     {
         private UserManager<ApplicationUser> _userManager;
@@ -50,25 +53,30 @@ namespace PROJ.Controllers
             return View();
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Create(User user)
+        [HttpPost("create")]
+        public async Task<IActionResult> Create([FromBody] User user)
         {
             if (ModelState.IsValid)
             {
                 ApplicationUser appUser = new ApplicationUser
                 {
-                    UserName = user.Name,
-                    Email = user.Email
+                    firstName = user.firstName,
+                    lastName = user.lastName,
+                    email = user.email,
+                    studentId = user.studentId,
                 };
 
-                IdentityResult result = await _userManager.CreateAsync(appUser, user.Password);
+                appUser.UserName = appUser.studentId;
+
+                IdentityResult result = await _userManager.CreateAsync(appUser, user.password);
 
                 //Add Role
-                await _userManager.AddToRoleAsync(appUser, "Admin");
+                // await _userManager.AddToRoleAsync(appUser, "Admin");
 
                 if (result.Succeeded)
                 {
                     ViewBag.Message = "User Created Successfully";
+                    return Ok(true);
                 }
                 else
                 {
@@ -76,9 +84,10 @@ namespace PROJ.Controllers
                     {
                         ModelState.AddModelError("", error.Description);
                     }
+                    return Ok(false);
                 }
             }
-            return View(user);
+            return Ok(false);
         }
     }
 
