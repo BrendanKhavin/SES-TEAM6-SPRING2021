@@ -28,11 +28,13 @@ namespace PROJ.Controllers
 
         // route is: api/rawSubjects/{subjectCode}
         [HttpGet("{subjectCode:length(5)}")]
-        public ActionResult<rawSubjects> Get(String subjectCode) {
+        public ActionResult<rawSubjects> Get(String subjectCode)
+        {
 
             var emp = _databaseService.Get(subjectCode);
 
-            if (emp == null) {
+            if (emp == null)
+            {
 
                 return NotFound();
             }
@@ -40,8 +42,8 @@ namespace PROJ.Controllers
             return emp;
         }
 
-     //   [HttpGet]("{courseArea:length(10)}")]
-      //      public ActionResult<rawSubjects> Get(string courseArea) { }
+
+
 
 
         // GET: /<controller>/

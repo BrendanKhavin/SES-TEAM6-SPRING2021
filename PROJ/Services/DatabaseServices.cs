@@ -6,7 +6,9 @@ using System.Collections.Generic;
 
 namespace PROJ.Services
 {
-    public class DatabaseServices  
+    public class DatabaseServices
+
+        
     {
         private readonly IMongoCollection<rawSubjects> _rawSubjects;
         public DatabaseServices(IMyDataBaseSettings settings) {
@@ -14,7 +16,10 @@ namespace PROJ.Services
 
             var client = new MongoClient(settings.ConnectionString);
             var database = client.GetDatabase(settings.DatabaseName);
-          //  var FilterDefinition = _rawSubjects.Find(filterDefinition).ToList(); 
+            //filter for the rawSubjects
+
+            var filterDefinition = Builders<rawSubjects>.Filter.Empty;
+          var filtered_subjects = _rawSubjects.Find(filterDefinition).ToList(); 
 
             _rawSubjects = database.GetCollection<rawSubjects>(settings.CollectionName);
         }
@@ -26,8 +31,20 @@ namespace PROJ.Services
         public rawSubjects Get(string subjectCode) =>
             _rawSubjects.Find<rawSubjects>(emp => emp.subjectCode.Equals(subjectCode)).FirstOrDefault();
 
+        private void courseFilter() {
+
+            var courseFilter = new List<string> { "Engineering", "Law", "Health", "Medicine", "Science", "Architecture" };
+           String courseWord = "Engineering";
+
+           FilterDefinition facultyFilter = Builder<rawSubjects>.Filter.Eq(r.faculty = "Engineering");
         
 
+
+        //    if (courseWord == courseFilter[0]) {
+        //        var filteredDefinition = Builders<rawSubjects>.Filter.Eq("Engineering");
+       ///     }
+            
+        } 
 
 
         public DatabaseServices()
