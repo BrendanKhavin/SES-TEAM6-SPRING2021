@@ -3,6 +3,7 @@ using MongoDB.Driver;
 using System.Linq;
 using PROJ.Models;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace PROJ.Services
 {
@@ -18,8 +19,8 @@ namespace PROJ.Services
             var database = client.GetDatabase(settings.DatabaseName);
             //filter for the rawSubjects
 
-            var filterDefinition = Builders<rawSubjects>.Filter.Empty;
-          var filtered_subjects = _rawSubjects.Find(filterDefinition).ToList(); 
+       //     var filterDefinition = Builders<rawSubjects>.Filter.Empty;
+       //   var filtered_subjects = _rawSubjects.Find(filterDefinition).ToList(); 
 
             _rawSubjects = database.GetCollection<rawSubjects>(settings.CollectionName);
         }
@@ -31,21 +32,7 @@ namespace PROJ.Services
         public rawSubjects Get(string subjectCode) =>
             _rawSubjects.Find<rawSubjects>(emp => emp.subjectCode.Equals(subjectCode)).FirstOrDefault();
 
-        private void courseFilter() {
-
-            var courseFilter = new List<string> { "Engineering", "Law", "Health", "Medicine", "Science", "Architecture" };
-           String courseWord = "Engineering";
-
-           FilterDefinition facultyFilter = Builder<rawSubjects>.Filter.Eq(r.faculty = "Engineering");
-        
-
-
-        //    if (courseWord == courseFilter[0]) {
-        //        var filteredDefinition = Builders<rawSubjects>.Filter.Eq("Engineering");
-       ///     }
-            
-        } 
-
+        //Want to create a list where i can filter data by courseArea
 
         public DatabaseServices()
         {
