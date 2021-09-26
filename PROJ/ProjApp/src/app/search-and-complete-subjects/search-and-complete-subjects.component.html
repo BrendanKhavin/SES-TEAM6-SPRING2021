@@ -1,1 +1,29 @@
-<p>search-and-complete-subjects works!</p>
+
+
+<div id="main-container">
+  <div>
+    <label>Search Subjects</label>
+    <nz-input-group [nzSuffix]="searchIcon">
+      <input nz-input />
+    </nz-input-group>
+    <ng-template #searchIcon>
+      <i nz-icon nzType="search"></i>
+    </ng-template>
+  </div>
+  <div>
+    <!-- TODO: Use ngRepeat on the below template. -->
+    <!-- TODO: Use a grid to contain results. -->
+    <div class="search-result">
+      <p>41095 Software Engineering Studio 2A</p>
+      <app-rate-subject [sCode]="'41095'"
+                        [sName]="'Software Engineering Studio 2A'">
+      </app-rate-subject>
+    </div>
+    <div class="search-result">
+      <p>41096 Software Engineering Studio 2B</p>
+      <app-rate-subject [sCode]="'41096'"
+                        [sName]="'Software Engineering Studio 2B'">
+      </app-rate-subject>
+    </div>
+  </div>
+</div>
