@@ -26,6 +26,7 @@ import { RegisterComponent } from './register/register.component';
 import { NzFormModule } from 'ng-zorro-antd/form';
 import { LogoutComponent } from './logout/logout.component';
 import { SearchAndCompleteSubjectsComponent } from './search-and-complete-subjects/search-and-complete-subjects.component';
+import { RateSubjectComponent } from './rate-subject/rate-subject.component';
 
 registerLocaleData(en);
 
@@ -39,7 +40,8 @@ registerLocaleData(en);
     LoginComponent,
     RegisterComponent,
     LogoutComponent,
-    SearchAndCompleteSubjectsComponent
+    SearchAndCompleteSubjectsComponent,
+    RateSubjectComponent
   ],
   imports: [
     BrowserModule,
