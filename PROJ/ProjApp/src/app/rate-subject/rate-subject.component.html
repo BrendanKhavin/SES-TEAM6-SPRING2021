@@ -1,1 +1,17 @@
-<p>rate-subject works!</p>
+
+
+<div id="main-container">
+  <button nz-button (click)="showPopup()">
+    <span>+</span>
+  </button>
+  <nz-modal [(nzVisible)]="isPopupVisible" nzTitle="User Rating" [nzContent]="rateContent"
+            (nzOnCancel)="onPopupCancel()"
+            (nzOnOk)="onPopupOk()">
+    <ng-template #rateContent>
+      <p>
+        Please rate <b>{{sCode}} {{sName}}</b>.
+      </p>
+      <nz-rate [(ngModel)]="userRating" [nzAllowClear]="false"></nz-rate>
+    </ng-template>
+  </nz-modal>
+</div>

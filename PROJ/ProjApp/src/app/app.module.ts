@@ -14,6 +14,8 @@ import { IconsProviderModule } from './icons-provider.module';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzRateModule } from 'ng-zorro-antd/rate';
+import { NzModalModule } from 'ng-zorro-antd/modal';
 import { RecommendationComponent } from './recommendation/recommendation.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NzSelectModule } from 'ng-zorro-antd/select';
@@ -53,6 +55,8 @@ registerLocaleData(en);
     NzLayoutModule,
     NzMenuModule,
     NzButtonModule,
+    NzRateModule,
+    NzModalModule,
     NzSelectModule,
     NzFormModule,
     ReactiveFormsModule,
