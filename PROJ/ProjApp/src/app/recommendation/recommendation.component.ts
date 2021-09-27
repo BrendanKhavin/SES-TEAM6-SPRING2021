@@ -15,7 +15,8 @@ export class RecommendationComponent implements OnInit {
   cards = [
     {title: "Test 1", content:"Test Content"},
     {title: "Test 2", content: "Test Content"},
-    {title: "Test 3", content: "Test Content"}
+    { title: "Test 3", content: "Test Content" },
+    { title: "test 4", content: "t"}
   ]
 
   constructor() { }
