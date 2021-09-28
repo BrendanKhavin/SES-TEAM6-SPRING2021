@@ -12,6 +12,7 @@ namespace PROJ.Services
         
     {
         private readonly IMongoCollection<rawSubjects> _rawSubjects;
+
         public DatabaseServices(IMyDataBaseSettings settings) {
 
 
@@ -27,6 +28,12 @@ namespace PROJ.Services
 
         public rawSubjects Get(string subjectCode) =>
             _rawSubjects.Find<rawSubjects>(emp => emp.subjectCode.Equals(subjectCode)).FirstOrDefault();
+<<<<<<< HEAD
+=======
+
+
+  
+>>>>>>> e9e78dbf26b4f586e6bcf615d7c998cf0f49bd3d
 
 
         public List<rawSubjects> GetCourses(String courseArea)
