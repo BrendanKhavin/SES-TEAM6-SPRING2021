@@ -3,11 +3,9 @@ using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 namespace PROJ.Models
 {
-    // BsonIgnoreExtraElements is needed to ignore unmapped BSON feilds. e.g. 
-    // raw_subjects in MongoDB have Assessments, Descriptions etc, but these 
-    // are not represented in the class. Otherwise a FormatException is raised
     [BsonIgnoreExtraElements] 
-    public class rawSubjects
+    // [BsonDiscriminator("rawSubjects")]
+    public class Subject
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
@@ -24,7 +22,7 @@ namespace PROJ.Models
         [BsonElement("Credit Points")]        
         public int creditPoints { get; set; }
 
-        public rawSubjects()
+        public Subject()
         {
         }
     }
