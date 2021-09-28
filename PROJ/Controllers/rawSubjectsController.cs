@@ -43,8 +43,18 @@ namespace PROJ.Controllers
         }
 
 
+        [HttpGet("{courseArea:length(10)}")]
+        public ActionResult<rawSubjects> GetCourses(String courseArea) {
 
+            var emp = _databaseService.GetCourses(courseArea);
 
+            if (emp == null)
+            {
+                return NotFound();
+            }
+
+            return emp; 
+        }
 
         // GET: /<controller>/
         public IActionResult Index()

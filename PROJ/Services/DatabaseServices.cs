@@ -17,11 +17,7 @@ namespace PROJ.Services
 
             var client = new MongoClient(settings.ConnectionString);
             var database = client.GetDatabase(settings.DatabaseName);
-            //filter for the rawSubjects
-
-       //     var filterDefinition = Builders<rawSubjects>.Filter.Empty;
-       //   var filtered_subjects = _rawSubjects.Find(filterDefinition).ToList(); 
-
+            //filter for the rawSubject
             _rawSubjects = database.GetCollection<rawSubjects>(settings.CollectionName);
         }
 
@@ -32,7 +28,23 @@ namespace PROJ.Services
         public rawSubjects Get(string subjectCode) =>
             _rawSubjects.Find<rawSubjects>(emp => emp.subjectCode.Equals(subjectCode)).FirstOrDefault();
 
-        //Want to create a list where i can filter data by courseArea
+
+        public List<rawSubjects> GetCourses(String courseArea)
+        {
+            if (courseArea == "Engineering")
+                //put into a repository
+                //call the entire function
+                //reuse this function
+            {
+                var filterDefinition = Builders<rawSubjects>.Filter.Eq(a => a.courseArea, "Engineering");
+                var filtered_subjects = _rawSubjects.Find(filterDefinition).ToList();
+                return filtered_subjects;
+            }
+            return null;
+        }
+
+ 
+
 
         public DatabaseServices()
         {
