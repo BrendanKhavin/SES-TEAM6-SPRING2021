@@ -18,8 +18,8 @@ namespace PROJ.Services
 
             var client = new MongoClient(settings.ConnectionString);
             var database = client.GetDatabase(settings.DatabaseName);
-            //filter for the rawSubject
-       //     _rawSubjects = database.GetCollection<rawSubjects>(settings.CollectionName);
+
+            _rawSubjects = database.GetCollection<rawSubjects>(settings.CollectionName);
         }
 
         //List where we pull the data. This is a TEST feature 
