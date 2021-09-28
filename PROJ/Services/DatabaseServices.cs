@@ -11,7 +11,7 @@ namespace PROJ.Services
 
         
     {
-        private readonly IMongoCollection<rawSubjects> _rawSubjects;
+        private readonly IMongoCollection<Subject> _subjects;
 
         public DatabaseServices(IMyDataBaseSettings settings) {
 
@@ -19,15 +19,15 @@ namespace PROJ.Services
             var client = new MongoClient(settings.ConnectionString);
             var database = client.GetDatabase(settings.DatabaseName);
 
-            _rawSubjects = database.GetCollection<rawSubjects>(settings.CollectionName);
+            _subjects = database.GetCollection<Subject>(settings.CollectionName);
         }
 
         //List where we pull the data. This is a TEST feature 
-        public List<rawSubjects> Get() =>
-            _rawSubjects.Find(rawSubject => true).ToList();
+        public List<Subject> Get() =>
+            _subjects.Find(Subject => true).ToList();
 
-        public rawSubjects Get(string subjectCode) =>
-            _rawSubjects.Find<rawSubjects>(emp => emp.subjectCode.Equals(subjectCode)).FirstOrDefault();
+        public Subject Get(string subjectCode) =>
+            _subjects.Find<Subject>(emp => emp.subjectCode.Equals(subjectCode)).FirstOrDefault();
 
         public DatabaseServices()
         {
