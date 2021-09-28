@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 
 namespace PROJ.Controllers
 {
+    [AllowAnonymous]
+    [Route("api/[controller]")]
     public class AccountController : Controller
     {
         private UserManager<ApplicationUser> _userManager;
@@ -30,24 +32,26 @@ namespace PROJ.Controllers
             return View();
         }
 
-        [HttpPost]
-        [AllowAnonymous]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login([Required][EmailAddress] string email, [Required] string password, string returnurl) {
-            if (ModelState.IsValid)
-            {
-                ApplicationUser appUser = await _userManager.FindByEmailAsync(email);
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] User user) {
+                ApplicationUser appUser = await _userManager.FindByEmailAsync(user.email);
 
                 if (appUser != null) {
 
-                    Microsoft.AspNetCore.Identity.SignInResult result = await _signInManager.PasswordSignInAsync(appUser, password, false, false);
+                    Microsoft.AspNetCore.Identity.SignInResult result = await _signInManager.PasswordSignInAsync(appUser, user.password, false, false);
                     if (result.Succeeded) {
-                        return Redirect(returnurl ?? "/");
+                        User userToReturn = new User
+                        {
+                            firstName = appUser.firstName,
+                            lastName = appUser.lastName,
+                            email = appUser.email,
+                            studentId = appUser.studentId,
+                        };
+                        return Ok(userToReturn);
                     }
                 }
-                ModelState.AddModelError(nameof(email), "Login Failed: Invalid Email or Password");
-            }
-            return View();
+                ModelState.AddModelError(nameof(user), "Login Failed: Invalid Email or Password");
+            return Ok(false);
         }
 
         [Authorize]

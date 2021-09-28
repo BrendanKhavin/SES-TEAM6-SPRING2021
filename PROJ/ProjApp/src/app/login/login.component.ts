@@ -1,5 +1,7 @@
+import { AuthService } from './../../services/auth.service';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { NzNotificationService } from 'ng-zorro-antd/notification';
 
 @Component({
   selector: 'app-login',
@@ -9,13 +11,12 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class LoginComponent implements OnInit {
   validateForm!: FormGroup;
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder, private  authService: AuthService, private notification: NzNotificationService) { }
 
   ngOnInit(): void {
     this.validateForm = this.fb.group({
       email: [null, [Validators.required, Validators.email]],
-      password: [null, [Validators.required]],
-      remember: [true]
+      password: [null, [Validators.required]]
     });
   }
 
@@ -26,6 +27,11 @@ export class LoginComponent implements OnInit {
         this.validateForm.controls[i].updateValueAndValidity();
       }
     }
+    this.authService.login(this.validateForm).subscribe(
+      (ret) => {
+        console.log(ret);
+      }
+    )
   }
 
 }

@@ -63,10 +63,11 @@ namespace PROJ.Controllers
                     firstName = user.firstName,
                     lastName = user.lastName,
                     email = user.email,
+                    Email = user.email,
                     studentId = user.studentId,
+                    UserName = user.studentId,
                 };
 
-                appUser.UserName = appUser.studentId;
 
                 IdentityResult result = await _userManager.CreateAsync(appUser, user.password);
 

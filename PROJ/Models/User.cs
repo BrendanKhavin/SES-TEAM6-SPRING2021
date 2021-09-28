@@ -14,10 +14,8 @@ namespace PROJ.Models
         public string lastName { get; set; }
         [Required]
         public string studentId { get; set; }
-
         [Required]
         public string email { get; set; }
-
         [Required]
         public string password { get; set; }
 
