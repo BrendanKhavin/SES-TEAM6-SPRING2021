@@ -34,7 +34,7 @@ namespace PROJ.Repository
         public List<Subject> GetSubjectsByCourseArea(string courseArea) =>
             _subjects.Find<Subject>(subject => subject.courseArea.Equals(courseArea)).ToList();
 
-        public List<Subject> GetSubjectsByCreditPoint(int creditPoints) =>
+        public List<Subject> GetSubjectsByCreditPoints(int creditPoints) =>
             _subjects.Find<Subject>(subject => subject.creditPoints.Equals(creditPoints)).ToList();
 
         public List<Subject> GetSubjectsByCourseAndCredit(int creditPoints, string courseArea) =>
@@ -58,11 +58,10 @@ namespace PROJ.Repository
             throw new NotImplementedException();
         }
 
-        public List<Subject> GetSubjectsByCreditPoints(int creditPoints)
-        {
-            throw new NotImplementedException();
-        }
-
+       // public List<Subject> GetSubjectsByCreditPoints(int creditPoints)
+     //   {
+    //        throw new NotImplementedException();
+    //    }
         public List<Subject> GetSubjectsByCourseAndCredit(string courseArea, int creditPoints)
         {
             throw new NotImplementedException();
