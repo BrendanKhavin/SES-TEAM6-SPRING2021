@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using PROJ.Interface;
 using PROJ.Models;
 using PROJ.Repository;
+using PROJ.Services;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -17,6 +18,7 @@ namespace PROJ.Controllers
     {
 
         private ISubjectRepository  subjectRepository;
+        private RecommendService recommendService = new RecommendService();
 
         public SubjectsController(ISubjectRepository subjectRepository)
         {
@@ -28,8 +30,9 @@ namespace PROJ.Controllers
             subjectRepository.GetSubjects().ToList();
 
         // route is: api/subjects/{subjectCode}
-        [HttpGet("{subjectCode:length(5)}")]
+        [HttpGet("{code}")]
         public Subject GetSubjectByCode(string code) =>
+            // recommendService.GetRecommendations();
             subjectRepository.GetSubjectByCode(code);
 
     }
