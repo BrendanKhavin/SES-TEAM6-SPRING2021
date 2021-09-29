@@ -28,10 +28,9 @@ namespace PROJ.Controllers
             subjectRepository.GetSubjects().ToList();
 
         // route is: api/subjects/{subjectCode}
-        [HttpGet("{subjectCode:length(5)}")]
+        [HttpGet("{code}")]
         public Subject GetSubjectByCode(string code) =>
             subjectRepository.GetSubjectByCode(code);
-
     }
 
 
