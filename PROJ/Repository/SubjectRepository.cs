@@ -30,7 +30,13 @@ namespace PROJ.Repository
 
         public Subject GetSubjectByCode(string code) =>
             _subjects.Find(subject => subject.subjectCode.Equals(code)).FirstOrDefault();
-            
+
+        public List<Subject> GetSubjectsByCourseArea(string courseArea) =>
+            _subjects.Find<Subject>(subject => subject.courseArea.Equals(courseArea)).ToList();
+
+        public List<Subject> GetSubjectsByCreditPoint(int creditPoints) =>
+            _subjects.Find<Subject>(subject => subject.creditPoints.Equals(creditPoints)).ToList();
+
         public IEnumerable<Subject> GetSubjects() =>
             _subjects.Find<Subject>(new BsonDocument()).ToList();
 
@@ -45,6 +51,11 @@ namespace PROJ.Repository
         }
 
         public void UpdateSubject(Subject Subject)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Subject> GetSubjectsByCreditPoints(int creditPoints)
         {
             throw new NotImplementedException();
         }

@@ -32,5 +32,13 @@ namespace PROJ.Controllers
         public Subject GetSubjectByCode(string code) =>
             subjectRepository.GetSubjectByCode(code);
 
+        //testing the functionality.
+        // route is api/subjects/{courseArea}
+        [HttpGet("{courseArea:length(10)}")]
+        public List<Subject> GetSubjectsbyCourseArea(string courseArea) =>
+            subjectRepository.GetSubjectsByCourseArea(courseArea);
+
     }
+
+
 }
