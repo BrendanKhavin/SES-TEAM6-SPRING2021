@@ -1,0 +1,32 @@
+<div id="title">
+  <span id="head">Subjects "R" Us</span>
+</div>
+<nz-carousel nzAutoPlay>
+  <div nz-carousel-content *ngFor="let b of banner">
+    <div id="source">
+      <img id="img" src="{{b.content}}">
+    </div>
+
+  </div>
+</nz-carousel>
+<div id="sections" style="background: rgb(247, 241, 241);padding:30px;">
+  <nz-card nzTitle="Faculty">
+    <div nz-card-grid [ngStyle]="gridStyle">Science</div>
+    <div nz-card-grid [ngStyle]="gridStyle">Business</div>
+    <div nz-card-grid [ngStyle]="gridStyle">Law</div>
+    <div nz-card-grid [ngStyle]="gridStyle">Health</div>
+    <div nz-card-grid [ngStyle]="gridStyle">IT</div>
+    <div nz-card-grid [ngStyle]="gridStyle">Engineering</div>
+    <div nz-card-grid [ngStyle]="gridStyle">Building</div>
+    <div nz-card-grid [ngStyle]="gridStyle">Communication</div>
+  </nz-card>
+</div>
+
+<div class="buttonholder">
+  <a routerLink="/register">
+    <button id="register" href="">Register</button>
+  </a>
+  <a routerLink="/login">
+    <button id="login">Login</button>
+  </a>
+</div>

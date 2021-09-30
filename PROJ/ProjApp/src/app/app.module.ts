@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { NzCarouselModule } from 'ng-zorro-antd/carousel';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NZ_I18N } from 'ng-zorro-antd/i18n';
@@ -24,7 +24,7 @@ import { FilterPipe } from './filter.pipe';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { NzFormModule } from 'ng-zorro-antd/form';
-
+import { HomepageComponent } from './homepage/homepage.component';
 registerLocaleData(en);
 
 @NgModule({
@@ -35,7 +35,8 @@ registerLocaleData(en);
     FilterPipe,
     PageNotFoundComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +54,8 @@ registerLocaleData(en);
     NzSelectModule,
     NzInputModule,
     NzCardModule,
-    NzGridModule
+    NzGridModule,
+    NzCarouselModule,
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
