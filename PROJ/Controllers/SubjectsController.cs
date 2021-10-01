@@ -18,7 +18,7 @@ namespace PROJ.Controllers
     {
 
         private ISubjectRepository  subjectRepository;
-        private RecommendService recommendService = new RecommendService();
+        // private RecommendService recommendService = new RecommendService();
 
         public SubjectsController(ISubjectRepository subjectRepository)
         {
