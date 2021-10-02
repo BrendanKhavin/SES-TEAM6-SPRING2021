@@ -1,29 +1,27 @@
 
 
 <div id="main-container">
-  <div>
-    <label>Search Subjects</label>
-    <nz-input-group [nzSuffix]="searchIcon">
-      <input nz-input />
-    </nz-input-group>
-    <ng-template #searchIcon>
-      <i nz-icon nzType="search"></i>
-    </ng-template>
-  </div>
-  <div>
-    <!-- TODO: Use ngRepeat on the below template. -->
-    <!-- TODO: Use a grid to contain results. -->
-    <div class="search-result">
-      <p>41095 Software Engineering Studio 2A</p>
-      <app-rate-subject [sCode]="'41095'"
-                        [sName]="'Software Engineering Studio 2A'">
-      </app-rate-subject>
+  <div nz-row>
+    <div nz-col nzSpan="5"></div>
+    <div nz-col nzSpan="14">
+
+      <div>
+        <label>Search Subjects</label>
+        <nz-input-group nzSearch [nzSuffix]="searchIcon">
+          <input nz-input class="searchBar" [(ngModel)]="searchText" />
+        </nz-input-group>
+        <ng-template #searchIcon>
+          <button nz-button class="searchButton" (click)="searchSubjects()" nzSearch><i nz-icon nzType="search"></i></button>
+        </ng-template>
+      </div>
+      <div>
+        <div *ngFor="let x of searchController.results" class="search-result">
+          <p>{{x.code}} {{x.name}}</p>
+          <app-rate-subject sCode={{x.code}} sName={{x.name}}></app-rate-subject>
+        </div>
+      </div>
+
     </div>
-    <div class="search-result">
-      <p>41096 Software Engineering Studio 2B</p>
-      <app-rate-subject [sCode]="'41096'"
-                        [sName]="'Software Engineering Studio 2B'">
-      </app-rate-subject>
-    </div>
+    <div nz-col nzSpan="5"></div>
   </div>
 </div>
