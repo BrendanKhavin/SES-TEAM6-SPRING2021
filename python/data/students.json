@@ -1,0 +1,5012 @@
+[
+    {
+        "id": "10000000",
+        "name": "Stephanie Piner",
+        "degree": {
+            "code": "C09066",
+            "name": "Bachelor of Engineering (Honours)",
+            "major": "Civil Engineering"
+        },
+        "completed_subjects": [
+            {
+                "code": "41035",
+                "name": "Engineering Practice Preparation 1",
+                "credit_points": "3",
+                "rating": 8
+            },
+            {
+                "code": "48260",
+                "name": "Engineering Project Management",
+                "credit_points": "6",
+                "rating": 2
+            },
+            {
+                "code": "48240",
+                "name": "Design and Innovation Fundamentals",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "48250",
+                "name": "Engineering Economics and Finance",
+                "credit_points": "6",
+                "rating": 6
+            }
+        ],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 0,
+            "presentations": 0,
+            "exams": 1
+        },
+        "interests": [
+            "projects",
+            "power cycles",
+            "prototypes",
+            "factors",
+            "machines",
+            "linux",
+            "industrial",
+            "input output",
+            "public",
+            "data analytics"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000001",
+        "name": "David Davis",
+        "degree": {
+            "code": "C10229",
+            "name": "Bachelor of Science in Games Development",
+            "major": null
+        },
+        "completed_subjects": [
+            {
+                "code": "31266",
+                "name": "Introduction to Information Systems",
+                "credit_points": "6",
+                "rating": 9
+            },
+            {
+                "code": "31268",
+                "name": "Web Systems",
+                "credit_points": "6",
+                "rating": 9
+            },
+            {
+                "code": "31260",
+                "name": "Fundamentals of Interaction Design",
+                "credit_points": "6",
+                "rating": 5
+            },
+            {
+                "code": "31271",
+                "name": "Database Fundamentals",
+                "credit_points": "6",
+                "rating": 8
+            }
+        ],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 1,
+            "presentations": 1,
+            "exams": 1
+        },
+        "interests": [
+            "real time",
+            "system design",
+            "assembly",
+            "intelligence",
+            "wireless",
+            "security",
+            "controllers",
+            "classification",
+            "mining",
+            "networking"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000002",
+        "name": "Matthew Morel",
+        "degree": {
+            "code": "C09067",
+            "name": "Bachelor of Engineering (Honours) Diploma in Professional Engineering Practice",
+            "major": "Mechanical Engineering"
+        },
+        "completed_subjects": [
+            {
+                "code": "41038",
+                "name": "Engineering Practice Reflection 1",
+                "credit_points": "3",
+                "rating": 7
+            },
+            {
+                "code": "41036",
+                "name": "Engineering Professional Experience 1",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "41037",
+                "name": "Work Integrated Learning 1",
+                "credit_points": "12",
+                "rating": 8
+            },
+            {
+                "code": "41035",
+                "name": "Engineering Practice Preparation 1",
+                "credit_points": "3",
+                "rating": 7
+            }
+        ],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 0,
+            "presentations": 1,
+            "exams": 1
+        },
+        "interests": [
+            "writing reflections",
+            "data collection",
+            "intrusion detection",
+            "classification",
+            "science",
+            "requirements elicitation",
+            "network",
+            "filtering",
+            "enterprise",
+            "sfia"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000003",
+        "name": "Keith Tucker",
+        "degree": {
+            "code": "C09067",
+            "name": "Bachelor of Engineering (Honours) Diploma in Professional Engineering Practice",
+            "major": "Data Science Engineering"
+        },
+        "completed_subjects": [
+            {
+                "code": "48230",
+                "name": "Engineering Communication",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "48240",
+                "name": "Design and Innovation Fundamentals",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "41038",
+                "name": "Engineering Practice Reflection 1",
+                "credit_points": "3",
+                "rating": 5
+            },
+            {
+                "code": "41036",
+                "name": "Engineering Professional Experience 1",
+                "credit_points": "6",
+                "rating": 5
+            },
+            {
+                "code": "48250",
+                "name": "Engineering Economics and Finance",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "41035",
+                "name": "Engineering Practice Preparation 1",
+                "credit_points": "3",
+                "rating": 1
+            },
+            {
+                "code": "41037",
+                "name": "Work Integrated Learning 1",
+                "credit_points": "12",
+                "rating": 4
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 0,
+            "presentations": 0,
+            "exams": 0
+        },
+        "interests": [
+            "exploration",
+            "buildings",
+            "development agile",
+            "economics",
+            "network",
+            "version control",
+            "mobile",
+            "modeling",
+            "shaders",
+            "web"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000004",
+        "name": "Alice Lambert",
+        "degree": {
+            "code": "C10143",
+            "name": "Bachelor of Information Technology",
+            "major": null
+        },
+        "completed_subjects": [],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 0,
+            "presentations": 1,
+            "exams": 1
+        },
+        "interests": [
+            "trade",
+            "object oriented",
+            "game",
+            "public",
+            "energy",
+            "tcp ip",
+            "reflective practice",
+            "sensitivity",
+            "architecture",
+            "cloud computing"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000005",
+        "name": "Brian Groth",
+        "degree": {
+            "code": "C10345",
+            "name": "Bachelor of Science in Information Technology Diploma in Information Technology Professional Practice",
+            "major": "Business Information Systems Management"
+        },
+        "completed_subjects": [
+            {
+                "code": "31265",
+                "name": "Communication for IT Professionals",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "31016",
+                "name": "Career Management for IT Professionals",
+                "credit_points": "6",
+                "rating": 10
+            },
+            {
+                "code": "31269",
+                "name": "Business Requirements Modelling",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "31266",
+                "name": "Introduction to Information Systems",
+                "credit_points": "6",
+                "rating": 4
+            },
+            {
+                "code": "31268",
+                "name": "Web Systems",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "31271",
+                "name": "Database Fundamentals",
+                "credit_points": "6",
+                "rating": 10
+            },
+            {
+                "code": "41065",
+                "name": "IT Experience Reflection",
+                "credit_points": "6",
+                "rating": 10
+            },
+            {
+                "code": "41092",
+                "name": "Network Fundamentals",
+                "credit_points": "6",
+                "rating": 6
+            }
+        ],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 1,
+            "presentations": 1,
+            "exams": 0
+        },
+        "interests": [
+            "time systems",
+            "languages",
+            "maintenance",
+            "collaboration",
+            "linux",
+            "engineering",
+            "raster",
+            "loop",
+            "arrays",
+            "systems control"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000006",
+        "name": "Eric Highsmith",
+        "degree": {
+            "code": "C10066",
+            "name": "Bachelor of Engineering Science",
+            "major": "Mechatronic Engineering"
+        },
+        "completed_subjects": [
+            {
+                "code": "48001",
+                "name": "Project BEngSc",
+                "credit_points": "6",
+                "rating": 9
+            },
+            {
+                "code": "48240",
+                "name": "Design and Innovation Fundamentals",
+                "credit_points": "6",
+                "rating": 9
+            },
+            {
+                "code": "48250",
+                "name": "Engineering Economics and Finance",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "48260",
+                "name": "Engineering Project Management",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "48221",
+                "name": "Engineering Computations",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "48430",
+                "name": "Fundamentals of C Programming",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "48230",
+                "name": "Engineering Communication",
+                "credit_points": "6",
+                "rating": 7
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 0,
+            "presentations": 1,
+            "exams": 0
+        },
+        "interests": [
+            "future trends",
+            "sustainable",
+            "development testing",
+            "localization",
+            "market",
+            "swot analyses",
+            "environment",
+            "memory",
+            "vision",
+            "power cycles"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000007",
+        "name": "William Stevens",
+        "degree": {
+            "code": "C10143",
+            "name": "Bachelor of Information Technology",
+            "major": null
+        },
+        "completed_subjects": [
+            {
+                "code": "31265",
+                "name": "Communication for IT Professionals",
+                "credit_points": "6",
+                "rating": 9
+            },
+            {
+                "code": "31271",
+                "name": "Database Fundamentals",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "41115",
+                "name": "Professional IT Practice Preparation 1",
+                "credit_points": "3",
+                "rating": 6
+            },
+            {
+                "code": "41120",
+                "name": "Work Integrated Learning (BIT)",
+                "credit_points": "6",
+                "rating": 5
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 1,
+            "presentations": 1,
+            "exams": 1
+        },
+        "interests": [
+            "real life",
+            "loops",
+            "power cycles",
+            "business",
+            "interviewing",
+            "professional development",
+            "health",
+            "analytics",
+            "industrial",
+            "mass energy"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000008",
+        "name": "Andrew Vanaman",
+        "degree": {
+            "code": "C10345",
+            "name": "Bachelor of Science in Information Technology Diploma in Information Technology Professional Practice",
+            "major": "Interaction Design"
+        },
+        "completed_subjects": [
+            {
+                "code": "31271",
+                "name": "Database Fundamentals",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "31016",
+                "name": "Career Management for IT Professionals",
+                "credit_points": "6",
+                "rating": 7
+            }
+        ],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 0,
+            "presentations": 1,
+            "exams": 1
+        },
+        "interests": [
+            "reflective design",
+            "hardware",
+            "soil",
+            "iot",
+            "data collection",
+            "equations",
+            "mass",
+            "stabilisation",
+            "governance",
+            "translation"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000009",
+        "name": "Tiffany Emmi",
+        "degree": {
+            "code": "C09075",
+            "name": "Bachelor of Engineering (Honours) Bachelor of Medical Science Diploma in Professional Engineering Practice",
+            "major": "Flexible Engineering BE (Hons) BBus BSc BAIS"
+        },
+        "completed_subjects": [],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 0,
+            "presentations": 0,
+            "exams": 0
+        },
+        "interests": [
+            "entrepreneurship",
+            "software",
+            "relationships",
+            "heat",
+            "material access",
+            "environment",
+            "infrastructure",
+            "management",
+            "controllers",
+            "circuits"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000010",
+        "name": "Daniel Marino",
+        "degree": {
+            "code": "C09066",
+            "name": "Bachelor of Engineering (Honours)",
+            "major": "Electrical and Electronic Engineering"
+        },
+        "completed_subjects": [
+            {
+                "code": "48230",
+                "name": "Engineering Communication",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "48250",
+                "name": "Engineering Economics and Finance",
+                "credit_points": "6",
+                "rating": 3
+            }
+        ],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 1,
+            "presentations": 0,
+            "exams": 1
+        },
+        "interests": [
+            "filtering",
+            "systems following",
+            "contemporary",
+            "swot",
+            "loops",
+            "safety",
+            "iot",
+            "quality operations",
+            "stabilisation",
+            "metrics"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000011",
+        "name": "Helen Nemeth",
+        "degree": {
+            "code": "C09067",
+            "name": "Bachelor of Engineering (Honours) Diploma in Professional Engineering Practice",
+            "major": "Software Engineering"
+        },
+        "completed_subjects": [
+            {
+                "code": "48250",
+                "name": "Engineering Economics and Finance",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "48230",
+                "name": "Engineering Communication",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "41037",
+                "name": "Work Integrated Learning 1",
+                "credit_points": "12",
+                "rating": 4
+            },
+            {
+                "code": "41038",
+                "name": "Engineering Practice Reflection 1",
+                "credit_points": "3",
+                "rating": 6
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 0,
+            "presentations": 0,
+            "exams": 1
+        },
+        "interests": [
+            "wireless",
+            "virtualisation",
+            "statics",
+            "buildings",
+            "future trends",
+            "audio",
+            "public",
+            "manager",
+            "engineering environments",
+            "operators"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000012",
+        "name": "John Hollingsworth",
+        "degree": {
+            "code": "C10245",
+            "name": "Bachelor of Science in Information Technology Bachelor of Laws",
+            "major": "Legal Futures and Technology need to study"
+        },
+        "completed_subjects": [
+            {
+                "code": "41092",
+                "name": "Network Fundamentals",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "48023",
+                "name": "Programming Fundamentals",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "31268",
+                "name": "Web Systems",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "31266",
+                "name": "Introduction to Information Systems",
+                "credit_points": "6",
+                "rating": 7
+            }
+        ],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 1,
+            "presentations": 1,
+            "exams": 1
+        },
+        "interests": [
+            "future trends",
+            "ethics",
+            "frequency",
+            "network",
+            "software engineering",
+            "science",
+            "controllers",
+            "factors",
+            "biomedical",
+            "interviewing"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000013",
+        "name": "Jan Brooks",
+        "degree": {
+            "code": "C09067",
+            "name": "Bachelor of Engineering (Honours) Diploma in Professional Engineering Practice",
+            "major": "Software Engineering"
+        },
+        "completed_subjects": [
+            {
+                "code": "48250",
+                "name": "Engineering Economics and Finance",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "41037",
+                "name": "Work Integrated Learning 1",
+                "credit_points": "12",
+                "rating": 10
+            },
+            {
+                "code": "41035",
+                "name": "Engineering Practice Preparation 1",
+                "credit_points": "3",
+                "rating": 7
+            },
+            {
+                "code": "41036",
+                "name": "Engineering Professional Experience 1",
+                "credit_points": "6",
+                "rating": 9
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 0,
+            "presentations": 1,
+            "exams": 0
+        },
+        "interests": [
+            "inheritance polymorphism",
+            "structures",
+            "interface",
+            "assembly",
+            "risk management",
+            "regression",
+            "monitoring",
+            "unit",
+            "embedded",
+            "fabrication"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000014",
+        "name": "Roxie Cosme",
+        "degree": {
+            "code": "C10345",
+            "name": "Bachelor of Science in Information Technology Diploma in Information Technology Professional Practice",
+            "major": "Networking and Cybersecurity"
+        },
+        "completed_subjects": [
+            {
+                "code": "31269",
+                "name": "Business Requirements Modelling",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "31266",
+                "name": "Introduction to Information Systems",
+                "credit_points": "6",
+                "rating": 5
+            },
+            {
+                "code": "31268",
+                "name": "Web Systems",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "41065",
+                "name": "IT Experience Reflection",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "31271",
+                "name": "Database Fundamentals",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "48023",
+                "name": "Programming Fundamentals",
+                "credit_points": "6",
+                "rating": 9
+            },
+            {
+                "code": "41092",
+                "name": "Network Fundamentals",
+                "credit_points": "6",
+                "rating": 3
+            },
+            {
+                "code": "31265",
+                "name": "Communication for IT Professionals",
+                "credit_points": "6",
+                "rating": 6
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 0,
+            "presentations": 1,
+            "exams": 0
+        },
+        "interests": [
+            "switches",
+            "soils",
+            "deep learning",
+            "localization",
+            "stabilisation",
+            "vibration",
+            "communication ",
+            "games",
+            "design practice",
+            "management"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000015",
+        "name": "Yolanda House",
+        "degree": {
+            "code": "C09066",
+            "name": "Bachelor of Engineering (Honours)",
+            "major": "Civil and Environmental Engineering"
+        },
+        "completed_subjects": [
+            {
+                "code": "41028",
+                "name": "Engineering Work Experience",
+                "credit_points": "0",
+                "rating": 10
+            },
+            {
+                "code": "48260",
+                "name": "Engineering Project Management",
+                "credit_points": "6",
+                "rating": 10
+            },
+            {
+                "code": "48250",
+                "name": "Engineering Economics and Finance",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "48230",
+                "name": "Engineering Communication",
+                "credit_points": "6",
+                "rating": 10
+            },
+            {
+                "code": "41035",
+                "name": "Engineering Practice Preparation 1",
+                "credit_points": "3",
+                "rating": 6
+            },
+            {
+                "code": "48270",
+                "name": "Entrepreneurship and Commercialisation",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "48240",
+                "name": "Design and Innovation Fundamentals",
+                "credit_points": "6",
+                "rating": 6
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 0,
+            "presentations": 0,
+            "exams": 0
+        },
+        "interests": [
+            "documentation",
+            "real world",
+            "classification",
+            "reading",
+            "fabrication design",
+            "data visualization",
+            "operations management",
+            "efficiency",
+            "exploration",
+            "legal"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000016",
+        "name": "Corrine Scheid",
+        "degree": {
+            "code": "C10143",
+            "name": "Bachelor of Information Technology",
+            "major": null
+        },
+        "completed_subjects": [
+            {
+                "code": "41115",
+                "name": "Professional IT Practice Preparation 1",
+                "credit_points": "3",
+                "rating": 6
+            },
+            {
+                "code": "31271",
+                "name": "Database Fundamentals",
+                "credit_points": "6",
+                "rating": 6
+            }
+        ],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 0,
+            "presentations": 1,
+            "exams": 0
+        },
+        "interests": [
+            "chemical",
+            "mechanisms",
+            "memory",
+            "uncertainty",
+            "linux",
+            "energy conversion",
+            "linear regression",
+            "tcp ip",
+            "people",
+            "model building"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000017",
+        "name": "Joan Mitchell",
+        "degree": {
+            "code": "C09066",
+            "name": "Bachelor of Engineering (Honours)",
+            "major": "Civil Engineering"
+        },
+        "completed_subjects": [
+            {
+                "code": "48230",
+                "name": "Engineering Communication",
+                "credit_points": "6",
+                "rating": 5
+            },
+            {
+                "code": "48260",
+                "name": "Engineering Project Management",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "48250",
+                "name": "Engineering Economics and Finance",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "48270",
+                "name": "Entrepreneurship and Commercialisation",
+                "credit_points": "6",
+                "rating": 10
+            },
+            {
+                "code": "41035",
+                "name": "Engineering Practice Preparation 1",
+                "credit_points": "3",
+                "rating": 7
+            },
+            {
+                "code": "41028",
+                "name": "Engineering Work Experience",
+                "credit_points": "0",
+                "rating": 5
+            },
+            {
+                "code": "48240",
+                "name": "Design and Innovation Fundamentals",
+                "credit_points": "6",
+                "rating": 7
+            }
+        ],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 1,
+            "presentations": 1,
+            "exams": 0
+        },
+        "interests": [
+            "oral communication",
+            "expressions",
+            "real time",
+            "biomedical",
+            "qualitative",
+            "construction development",
+            "soil",
+            "professional career",
+            "mechanics",
+            "it"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000018",
+        "name": "Don Jones",
+        "degree": {
+            "code": "C10408",
+            "name": "Bachelor of Engineering Studies",
+            "major": "Flexible Engineering BEngSc"
+        },
+        "completed_subjects": [],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 0,
+            "presentations": 0,
+            "exams": 1
+        },
+        "interests": [
+            "agile",
+            "pricing",
+            "evolution",
+            "camera",
+            "circuits",
+            "inheritance polymorphism",
+            "manager",
+            "network",
+            "sfia framework",
+            "dynamics"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000019",
+        "name": "Violet James",
+        "degree": {
+            "code": "C10066",
+            "name": "Bachelor of Engineering Science",
+            "major": "Electrical Engineering"
+        },
+        "completed_subjects": [
+            {
+                "code": "48260",
+                "name": "Engineering Project Management",
+                "credit_points": "6",
+                "rating": 5
+            },
+            {
+                "code": "48430",
+                "name": "Fundamentals of C Programming",
+                "credit_points": "6",
+                "rating": 10
+            }
+        ],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 0,
+            "presentations": 0,
+            "exams": 1
+        },
+        "interests": [
+            "construction development",
+            "model building",
+            "time",
+            "sensors",
+            "limitations",
+            "quality operations",
+            "vibration",
+            "uncertainty",
+            "engineering environments",
+            "shear"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000020",
+        "name": "Ashley Baim",
+        "degree": {
+            "code": "C10148",
+            "name": "Bachelor of Science in Information Technology",
+            "major": "Enterprise Systems Development"
+        },
+        "completed_subjects": [
+            {
+                "code": "31271",
+                "name": "Database Fundamentals",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "31250",
+                "name": "Introduction to Data Analytics",
+                "credit_points": "6",
+                "rating": 9
+            },
+            {
+                "code": "31266",
+                "name": "Introduction to Information Systems",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "31243",
+                "name": "AI/Analytics Capstone Project B",
+                "credit_points": "6",
+                "rating": 5
+            }
+        ],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 0,
+            "presentations": 0,
+            "exams": 0
+        },
+        "interests": [
+            "ethical considerations",
+            "efficiency",
+            "trends",
+            "software development",
+            "audio",
+            "routing",
+            "energy conversion",
+            "manager",
+            "research",
+            "cyber security"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000021",
+        "name": "David Duncan",
+        "degree": {
+            "code": "C10143",
+            "name": "Bachelor of Information Technology",
+            "major": null
+        },
+        "completed_subjects": [
+            {
+                "code": "41120",
+                "name": "Work Integrated Learning (BIT)",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "31271",
+                "name": "Database Fundamentals",
+                "credit_points": "6",
+                "rating": 2
+            },
+            {
+                "code": "31265",
+                "name": "Communication for IT Professionals",
+                "credit_points": "6",
+                "rating": 4
+            },
+            {
+                "code": "41113",
+                "name": "Software Development Studio 1",
+                "credit_points": "6",
+                "rating": 5
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 1,
+            "presentations": 0,
+            "exams": 1
+        },
+        "interests": [
+            "policies",
+            "ios",
+            "filtering",
+            "process requirements",
+            "infrastructure",
+            "market",
+            "system design",
+            "systems control",
+            "network",
+            "memory"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000022",
+        "name": "Alvera Nelson",
+        "degree": {
+            "code": "C09119",
+            "name": "Bachelor of Computing Science (Honours)",
+            "major": "Networking and Cybersecurity"
+        },
+        "completed_subjects": [
+            {
+                "code": "31269",
+                "name": "Business Requirements Modelling",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "31271",
+                "name": "Database Fundamentals",
+                "credit_points": "6",
+                "rating": 5
+            },
+            {
+                "code": "41092",
+                "name": "Network Fundamentals",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "31266",
+                "name": "Introduction to Information Systems",
+                "credit_points": "6",
+                "rating": 7
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 1,
+            "presentations": 0,
+            "exams": 0
+        },
+        "interests": [
+            "systems complex",
+            "network",
+            "printing",
+            "sustainability",
+            "shaders",
+            "oral communication",
+            "kinematics",
+            "input output",
+            "law",
+            "products services"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000023",
+        "name": "Daphne Pineda",
+        "degree": {
+            "code": "C09119",
+            "name": "Bachelor of Computing Science (Honours)",
+            "major": "Interaction Design"
+        },
+        "completed_subjects": [
+            {
+                "code": "41039",
+                "name": "Programming 1",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "31269",
+                "name": "Business Requirements Modelling",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "31268",
+                "name": "Web Systems",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "41092",
+                "name": "Network Fundamentals",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "31271",
+                "name": "Database Fundamentals",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "31266",
+                "name": "Introduction to Information Systems",
+                "credit_points": "6",
+                "rating": 9
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 1,
+            "presentations": 1,
+            "exams": 1
+        },
+        "interests": [
+            "real time",
+            "vector",
+            "construction",
+            "energy conversion",
+            "supply",
+            "ethics",
+            "web",
+            "systems",
+            "data analytics",
+            "polymorphism"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000024",
+        "name": "Rudolf Anderson",
+        "degree": {
+            "code": "C09147",
+            "name": "Bachelor of Engineering (Honours) Bachelor of International Studies (Honours)",
+            "major": null
+        },
+        "completed_subjects": [],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 1,
+            "presentations": 1,
+            "exams": 1
+        },
+        "interests": [
+            "motion",
+            "sensors",
+            "it",
+            "vision",
+            "buildings",
+            "laws",
+            "science",
+            "ip",
+            "report writing",
+            "safety"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000025",
+        "name": "David Kessinger",
+        "degree": {
+            "code": "C09066",
+            "name": "Bachelor of Engineering (Honours)",
+            "major": "Biomedical Engineering"
+        },
+        "completed_subjects": [],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 0,
+            "presentations": 0,
+            "exams": 0
+        },
+        "interests": [
+            "internet",
+            "mechanisms",
+            "governance",
+            "professional career",
+            "project management",
+            "vibration",
+            "equations",
+            "data",
+            "real time",
+            "design operation"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000026",
+        "name": "Stephen Walker",
+        "degree": {
+            "code": "C10278",
+            "name": "Bachelor of Information Systems Bachelor of Business",
+            "major": "Finance"
+        },
+        "completed_subjects": [
+            {
+                "code": "48023",
+                "name": "Programming Fundamentals",
+                "credit_points": "6",
+                "rating": 9
+            },
+            {
+                "code": "31266",
+                "name": "Introduction to Information Systems",
+                "credit_points": "6",
+                "rating": 10
+            },
+            {
+                "code": "31265",
+                "name": "Communication for IT Professionals",
+                "credit_points": "6",
+                "rating": 7
+            }
+        ],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 0,
+            "presentations": 0,
+            "exams": 0
+        },
+        "interests": [
+            "interviewing",
+            "computational",
+            "productivity",
+            "memory",
+            "mechanisms",
+            "public",
+            "projects",
+            "financial",
+            "material access",
+            "mining"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000027",
+        "name": "Shirley Olsen",
+        "degree": {
+            "code": "C10066",
+            "name": "Bachelor of Engineering Science",
+            "major": "Mechatronic Engineering"
+        },
+        "completed_subjects": [
+            {
+                "code": "48260",
+                "name": "Engineering Project Management",
+                "credit_points": "6",
+                "rating": 10
+            },
+            {
+                "code": "48240",
+                "name": "Design and Innovation Fundamentals",
+                "credit_points": "6",
+                "rating": 6
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 1,
+            "presentations": 0,
+            "exams": 1
+        },
+        "interests": [
+            "logic",
+            "architecture",
+            "law",
+            "conversion",
+            "material access",
+            "nonlinear",
+            "engineers",
+            "ethics",
+            "mobile",
+            "buildings"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000028",
+        "name": "Genevieve Malchow",
+        "degree": {
+            "code": "C10345",
+            "name": "Bachelor of Science in Information Technology Diploma in Information Technology Professional Practice",
+            "major": "Enterprise Systems Development"
+        },
+        "completed_subjects": [
+            {
+                "code": "31016",
+                "name": "Career Management for IT Professionals",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "41092",
+                "name": "Network Fundamentals",
+                "credit_points": "6",
+                "rating": 8
+            }
+        ],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 0,
+            "presentations": 0,
+            "exams": 1
+        },
+        "interests": [
+            "plane",
+            "decision making",
+            "design thinking",
+            "localization",
+            "elicitation analysis",
+            "qualitative",
+            "planning management",
+            "uncertainty",
+            "safety",
+            "discrete"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000029",
+        "name": "Michelle Adams",
+        "degree": {
+            "code": "C20056",
+            "name": "Diploma in Information Technology Professional Practice",
+            "major": null
+        },
+        "completed_subjects": [
+            {
+                "code": "31016",
+                "name": "Career Management for IT Professionals",
+                "credit_points": "6",
+                "rating": 9
+            },
+            {
+                "code": "41065",
+                "name": "IT Experience Reflection",
+                "credit_points": "6",
+                "rating": 7
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 0,
+            "presentations": 0,
+            "exams": 1
+        },
+        "interests": [
+            "styles",
+            "process configuration",
+            "network",
+            "relationships",
+            "heat",
+            "conservation",
+            "time",
+            "momentum",
+            "controllers",
+            "leadership"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000030",
+        "name": "Patricia Waldron",
+        "degree": {
+            "code": "C10327",
+            "name": "Bachelor of Science in Information Technology Bachelor of Creative Intelligence and Innovation",
+            "major": "Networking and Cybersecurity"
+        },
+        "completed_subjects": [
+            {
+                "code": "31271",
+                "name": "Database Fundamentals",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "31268",
+                "name": "Web Systems",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "31266",
+                "name": "Introduction to Information Systems",
+                "credit_points": "6",
+                "rating": 5
+            },
+            {
+                "code": "41092",
+                "name": "Network Fundamentals",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "31265",
+                "name": "Communication for IT Professionals",
+                "credit_points": "6",
+                "rating": 10
+            },
+            {
+                "code": "31269",
+                "name": "Business Requirements Modelling",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "48023",
+                "name": "Programming Fundamentals",
+                "credit_points": "6",
+                "rating": 10
+            }
+        ],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 0,
+            "presentations": 1,
+            "exams": 0
+        },
+        "interests": [
+            "object oriented",
+            "estimation",
+            "heat transfer",
+            "writing reflections",
+            "switches",
+            "interviewing",
+            "visualisation",
+            "electronics",
+            "maintenance",
+            "professional development"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000031",
+        "name": "Flo Finke",
+        "degree": {
+            "code": "C09066",
+            "name": "Bachelor of Engineering (Honours)",
+            "major": "Mechanical Engineering"
+        },
+        "completed_subjects": [
+            {
+                "code": "41028",
+                "name": "Engineering Work Experience",
+                "credit_points": "0",
+                "rating": 6
+            },
+            {
+                "code": "48270",
+                "name": "Entrepreneurship and Commercialisation",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "48230",
+                "name": "Engineering Communication",
+                "credit_points": "6",
+                "rating": 2
+            },
+            {
+                "code": "48250",
+                "name": "Engineering Economics and Finance",
+                "credit_points": "6",
+                "rating": 10
+            },
+            {
+                "code": "48260",
+                "name": "Engineering Project Management",
+                "credit_points": "6",
+                "rating": 9
+            },
+            {
+                "code": "41035",
+                "name": "Engineering Practice Preparation 1",
+                "credit_points": "3",
+                "rating": 7
+            },
+            {
+                "code": "48240",
+                "name": "Design and Innovation Fundamentals",
+                "credit_points": "6",
+                "rating": 7
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 0,
+            "presentations": 0,
+            "exams": 1
+        },
+        "interests": [
+            "laws",
+            "professional career",
+            "solid",
+            "art",
+            "law",
+            "inheritance",
+            "design modelling",
+            "sensitivity",
+            "machine learning",
+            "management risk"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000032",
+        "name": "Myron Zeiler",
+        "degree": {
+            "code": "C10408",
+            "name": "Bachelor of Engineering Studies",
+            "major": "Flexible Engineering BEngSc"
+        },
+        "completed_subjects": [
+            {
+                "code": "48610",
+                "name": "Introduction to Mechanical and Mechatronic Engineering",
+                "credit_points": "6",
+                "rating": 9
+            },
+            {
+                "code": "41039",
+                "name": "Programming 1",
+                "credit_points": "6",
+                "rating": 10
+            },
+            {
+                "code": "48310",
+                "name": "Introduction to Civil and Environmental Engineering",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "48240",
+                "name": "Design and Innovation Fundamentals",
+                "credit_points": "6",
+                "rating": 9
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 0,
+            "presentations": 1,
+            "exams": 0
+        },
+        "interests": [
+            "biomedical",
+            "data collection",
+            "configuration management",
+            "networks",
+            "time systems",
+            "enterprise",
+            "optimisation",
+            "machines",
+            "printing",
+            "quality operations"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000033",
+        "name": "Carolyn Howard",
+        "degree": {
+            "code": "C10143",
+            "name": "Bachelor of Information Technology",
+            "major": null
+        },
+        "completed_subjects": [
+            {
+                "code": "41120",
+                "name": "Work Integrated Learning (BIT)",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "31266",
+                "name": "Introduction to Information Systems",
+                "credit_points": "6",
+                "rating": 10
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 0,
+            "presentations": 1,
+            "exams": 1
+        },
+        "interests": [
+            "report writing",
+            "construction development",
+            "international",
+            "enterprise",
+            "infrastructure",
+            "project management",
+            "vectors",
+            "solidworks",
+            "logic",
+            "camera"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000034",
+        "name": "Ricky Schumaker",
+        "degree": {
+            "code": "C09070",
+            "name": "Bachelor of Engineering (Honours) Bachelor of Business",
+            "major": "Biomedical Engineering"
+        },
+        "completed_subjects": [],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 1,
+            "presentations": 1,
+            "exams": 0
+        },
+        "interests": [
+            "maintenance",
+            "fabrication",
+            "metrics",
+            "report writing",
+            "hardware",
+            "algorithms",
+            "data acquisition",
+            "translation",
+            "neural networks",
+            "engineering environments"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000035",
+        "name": "Roy Morales",
+        "degree": {
+            "code": "C09128",
+            "name": "Bachelor of Engineering (Honours) Bachelor of Languages and Cultures Diploma in Professional Engineering Practice",
+            "major": "Data Science Engineering"
+        },
+        "completed_subjects": [
+            {
+                "code": "48550",
+                "name": "Renewable Energy Systems Studio B",
+                "credit_points": "6",
+                "rating": 2
+            },
+            {
+                "code": "48570",
+                "name": "Embedded Systems Studio B",
+                "credit_points": "6",
+                "rating": 1
+            }
+        ],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 1,
+            "presentations": 1,
+            "exams": 1
+        },
+        "interests": [
+            "kinematics",
+            "planning management",
+            "planning control",
+            "agile",
+            "machines",
+            "security",
+            "deep learning",
+            "investment",
+            "shear",
+            "coordinate systems"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000036",
+        "name": "Leslie Hoffman",
+        "degree": {
+            "code": "C10066",
+            "name": "Bachelor of Engineering Science",
+            "major": "Civil Engineering"
+        },
+        "completed_subjects": [
+            {
+                "code": "48260",
+                "name": "Engineering Project Management",
+                "credit_points": "6",
+                "rating": 5
+            },
+            {
+                "code": "48001",
+                "name": "Project BEngSc",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "48430",
+                "name": "Fundamentals of C Programming",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "48240",
+                "name": "Design and Innovation Fundamentals",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "48230",
+                "name": "Engineering Communication",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "48221",
+                "name": "Engineering Computations",
+                "credit_points": "6",
+                "rating": 4
+            },
+            {
+                "code": "48250",
+                "name": "Engineering Economics and Finance",
+                "credit_points": "6",
+                "rating": 8
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 0,
+            "presentations": 1,
+            "exams": 1
+        },
+        "interests": [
+            "international",
+            "risk management",
+            "computer",
+            "cyber security",
+            "data",
+            "system characteristics",
+            "computational",
+            "sfia",
+            "biomedical",
+            "graphics"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000037",
+        "name": "David Clark",
+        "degree": {
+            "code": "C10148",
+            "name": "Bachelor of Science in Information Technology",
+            "major": "Data Analytics"
+        },
+        "completed_subjects": [
+            {
+                "code": "48023",
+                "name": "Programming Fundamentals",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "31269",
+                "name": "Business Requirements Modelling",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "31266",
+                "name": "Introduction to Information Systems",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "31265",
+                "name": "Communication for IT Professionals",
+                "credit_points": "6",
+                "rating": 10
+            },
+            {
+                "code": "31250",
+                "name": "Introduction to Data Analytics",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "31271",
+                "name": "Database Fundamentals",
+                "credit_points": "6",
+                "rating": 3
+            },
+            {
+                "code": "31272",
+                "name": "Project Management and the Professional",
+                "credit_points": "6",
+                "rating": 10
+            },
+            {
+                "code": "31268",
+                "name": "Web Systems",
+                "credit_points": "6",
+                "rating": 6
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 0,
+            "presentations": 1,
+            "exams": 1
+        },
+        "interests": [
+            "nonlinear",
+            "research",
+            "wind",
+            "design modelling",
+            "systems",
+            "machines",
+            "sensitive material",
+            "translation",
+            "patterns",
+            "maintenance"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000038",
+        "name": "Helen Smith",
+        "degree": {
+            "code": "C10395",
+            "name": "Bachelor of Information Systems",
+            "major": null
+        },
+        "completed_subjects": [
+            {
+                "code": "31245",
+                "name": "Business Process and IT Strategy",
+                "credit_points": "6",
+                "rating": 9
+            },
+            {
+                "code": "31257",
+                "name": "Information System Development Methodologies",
+                "credit_points": "6",
+                "rating": 5
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 0,
+            "presentations": 1,
+            "exams": 1
+        },
+        "interests": [
+            "trends",
+            "engine",
+            "software engineering",
+            "raster",
+            "logic",
+            "research",
+            "shear",
+            "inheritance polymorphism",
+            "configuration management",
+            "mass energy"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000039",
+        "name": "Ann Walston",
+        "degree": {
+            "code": "C10229",
+            "name": "Bachelor of Science in Games Development",
+            "major": null
+        },
+        "completed_subjects": [
+            {
+                "code": "31268",
+                "name": "Web Systems",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "48023",
+                "name": "Programming Fundamentals",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "31271",
+                "name": "Database Fundamentals",
+                "credit_points": "6",
+                "rating": 1
+            },
+            {
+                "code": "48024",
+                "name": "Applications Programming",
+                "credit_points": "6",
+                "rating": 10
+            },
+            {
+                "code": "31265",
+                "name": "Communication for IT Professionals",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "31266",
+                "name": "Introduction to Information Systems",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "31263",
+                "name": "Introduction to Computer Game Development",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "31269",
+                "name": "Business Requirements Modelling",
+                "credit_points": "6",
+                "rating": 5
+            }
+        ],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 0,
+            "presentations": 0,
+            "exams": 0
+        },
+        "interests": [
+            "international",
+            "styles",
+            "reflective design",
+            "efficiency",
+            "network",
+            "systems thinking",
+            "reflective practice",
+            "sfia framework",
+            "ethical considerations",
+            "loop"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000040",
+        "name": "Mary Eanni",
+        "degree": {
+            "code": "C10066",
+            "name": "Bachelor of Engineering Science",
+            "major": "Flexible Engineering BEngSc"
+        },
+        "completed_subjects": [
+            {
+                "code": "48240",
+                "name": "Design and Innovation Fundamentals",
+                "credit_points": "6",
+                "rating": 5
+            },
+            {
+                "code": "48001",
+                "name": "Project BEngSc",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "48250",
+                "name": "Engineering Economics and Finance",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "48230",
+                "name": "Engineering Communication",
+                "credit_points": "6",
+                "rating": 10
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 0,
+            "presentations": 0,
+            "exams": 1
+        },
+        "interests": [
+            "collaboration",
+            "system design",
+            "design analysis",
+            "space",
+            "coordinate systems",
+            "investment",
+            "prototyping",
+            "computational",
+            "hardware",
+            "quality operations"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000041",
+        "name": "Martha Phillips",
+        "degree": {
+            "code": "C09119",
+            "name": "Bachelor of Computing Science (Honours)",
+            "major": "Networking and Cybersecurity"
+        },
+        "completed_subjects": [
+            {
+                "code": "31269",
+                "name": "Business Requirements Modelling",
+                "credit_points": "6",
+                "rating": 5
+            },
+            {
+                "code": "41039",
+                "name": "Programming 1",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "31268",
+                "name": "Web Systems",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "31271",
+                "name": "Database Fundamentals",
+                "credit_points": "6",
+                "rating": 8
+            }
+        ],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 0,
+            "presentations": 0,
+            "exams": 1
+        },
+        "interests": [
+            "data analytics",
+            "dynamics",
+            "laser",
+            "polymorphism",
+            "architecture",
+            "ios",
+            "error",
+            "soil",
+            "complex systems",
+            "documentation"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000042",
+        "name": "Beulah Livingston",
+        "degree": {
+            "code": "C10143",
+            "name": "Bachelor of Information Technology",
+            "major": null
+        },
+        "completed_subjects": [],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 1,
+            "presentations": 1,
+            "exams": 0
+        },
+        "interests": [
+            "loops",
+            "waste",
+            "constraints",
+            "intelligence",
+            "hardware",
+            "deep learning",
+            "technology",
+            "development agile",
+            "writing reflections",
+            "reflective observation"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000043",
+        "name": "John Dean",
+        "degree": {
+            "code": "C10066",
+            "name": "Bachelor of Engineering Science",
+            "major": "Electronic Engineering"
+        },
+        "completed_subjects": [
+            {
+                "code": "48260",
+                "name": "Engineering Project Management",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "48240",
+                "name": "Design and Innovation Fundamentals",
+                "credit_points": "6",
+                "rating": 6
+            }
+        ],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 1,
+            "presentations": 1,
+            "exams": 1
+        },
+        "interests": [
+            "animation",
+            "heat transfer",
+            "embedded",
+            "oral communication",
+            "constraints",
+            "networks",
+            "raster",
+            "matrix",
+            "estimation",
+            "memory"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000044",
+        "name": "Cecilia Minner",
+        "degree": {
+            "code": "C10395",
+            "name": "Bachelor of Information Systems",
+            "major": null
+        },
+        "completed_subjects": [
+            {
+                "code": "41187",
+                "name": "Analytics in Human-centred Complex Systems",
+                "credit_points": "6",
+                "rating": 10
+            },
+            {
+                "code": "31247",
+                "name": "Collaborative Business Processes",
+                "credit_points": "6",
+                "rating": 5
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 1,
+            "presentations": 1,
+            "exams": 1
+        },
+        "interests": [
+            "network",
+            "problem solving",
+            "circuits",
+            "law",
+            "estimation",
+            "financial",
+            "ethics",
+            "sustainable",
+            "history",
+            "leadership"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000045",
+        "name": "Jade Walters",
+        "degree": {
+            "code": "C09074",
+            "name": "Bachelor of Engineering (Honours) Bachelor of Medical Science",
+            "major": "Data Science Engineering"
+        },
+        "completed_subjects": [
+            {
+                "code": "48610",
+                "name": "Introduction to Mechanical and Mechatronic Engineering",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "48520",
+                "name": "Electronics and Circuits",
+                "credit_points": "6",
+                "rating": 7
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 1,
+            "presentations": 0,
+            "exams": 1
+        },
+        "interests": [
+            "controllers",
+            "optimisation",
+            "communication ",
+            "discrete",
+            "energy conversion",
+            "estimation",
+            "business",
+            "power",
+            "project management",
+            "sensors"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000046",
+        "name": "Jeannette Bunton",
+        "degree": {
+            "code": "C10345",
+            "name": "Bachelor of Science in Information Technology Diploma in Information Technology Professional Practice",
+            "major": "Interaction Design"
+        },
+        "completed_subjects": [
+            {
+                "code": "31266",
+                "name": "Introduction to Information Systems",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "48023",
+                "name": "Programming Fundamentals",
+                "credit_points": "6",
+                "rating": 5
+            },
+            {
+                "code": "31268",
+                "name": "Web Systems",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "41065",
+                "name": "IT Experience Reflection",
+                "credit_points": "6",
+                "rating": 4
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 0,
+            "presentations": 0,
+            "exams": 1
+        },
+        "interests": [
+            "metrics",
+            "documentation",
+            "manufacturing",
+            "sensitive material",
+            "dynamics",
+            "data comparing",
+            "code",
+            "solidworks",
+            "soil",
+            "networks"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000047",
+        "name": "Agnes Christensen",
+        "degree": {
+            "code": "C10148",
+            "name": "Bachelor of Science in Information Technology",
+            "major": "Business Information Systems Management"
+        },
+        "completed_subjects": [
+            {
+                "code": "31265",
+                "name": "Communication for IT Professionals",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "31268",
+                "name": "Web Systems",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "31266",
+                "name": "Introduction to Information Systems",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "31243",
+                "name": "AI/Analytics Capstone Project B",
+                "credit_points": "6",
+                "rating": 5
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 1,
+            "presentations": 0,
+            "exams": 1
+        },
+        "interests": [
+            "model building",
+            "project manager",
+            "complex systems",
+            "game",
+            "compression",
+            "linux",
+            "safety",
+            "tcp ip",
+            "object oriented",
+            "audio"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000048",
+        "name": "Arthur Suggs",
+        "degree": {
+            "code": "C10345",
+            "name": "Bachelor of Science in Information Technology Diploma in Information Technology Professional Practice",
+            "major": "Interaction Design"
+        },
+        "completed_subjects": [
+            {
+                "code": "31269",
+                "name": "Business Requirements Modelling",
+                "credit_points": "6",
+                "rating": 10
+            },
+            {
+                "code": "31016",
+                "name": "Career Management for IT Professionals",
+                "credit_points": "6",
+                "rating": 9
+            },
+            {
+                "code": "41092",
+                "name": "Network Fundamentals",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "31272",
+                "name": "Project Management and the Professional",
+                "credit_points": "6",
+                "rating": 6
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 0,
+            "presentations": 0,
+            "exams": 0
+        },
+        "interests": [
+            "frequency",
+            "technology",
+            "materials",
+            "power cycles",
+            "decisions",
+            "internet",
+            "reflective observation",
+            "python",
+            "coordinate systems",
+            "data acquisition"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000049",
+        "name": "Jimmy Mcneal",
+        "degree": {
+            "code": "C10408",
+            "name": "Bachelor of Engineering Studies",
+            "major": "Advanced Manufacturing"
+        },
+        "completed_subjects": [
+            {
+                "code": "48230",
+                "name": "Engineering Communication",
+                "credit_points": "6",
+                "rating": 5
+            },
+            {
+                "code": "41039",
+                "name": "Programming 1",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "48240",
+                "name": "Design and Innovation Fundamentals",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "48610",
+                "name": "Introduction to Mechanical and Mechatronic Engineering",
+                "credit_points": "6",
+                "rating": 7
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 0,
+            "presentations": 0,
+            "exams": 1
+        },
+        "interests": [
+            "momentum",
+            "visualisation",
+            "management risk",
+            "space",
+            "animation",
+            "ip",
+            "graphics",
+            "sensitivity",
+            "code",
+            "dc"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000050",
+        "name": "James Cummings",
+        "degree": {
+            "code": "C09066",
+            "name": "Bachelor of Engineering (Honours)",
+            "major": "Flexible Engineering BE (Hons)"
+        },
+        "completed_subjects": [
+            {
+                "code": "48260",
+                "name": "Engineering Project Management",
+                "credit_points": "6",
+                "rating": 9
+            },
+            {
+                "code": "41035",
+                "name": "Engineering Practice Preparation 1",
+                "credit_points": "3",
+                "rating": 3
+            },
+            {
+                "code": "48270",
+                "name": "Entrepreneurship and Commercialisation",
+                "credit_points": "6",
+                "rating": 5
+            },
+            {
+                "code": "48240",
+                "name": "Design and Innovation Fundamentals",
+                "credit_points": "6",
+                "rating": 10
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 1,
+            "presentations": 0,
+            "exams": 0
+        },
+        "interests": [
+            "wastewater",
+            "policy",
+            "deep learning",
+            "configuration management",
+            "buildings",
+            "water",
+            "inheritance polymorphism",
+            "agile",
+            "electrical"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000051",
+        "name": "Mark Corbitt",
+        "degree": {
+            "code": "C10408",
+            "name": "Bachelor of Engineering Studies",
+            "major": "Engineering and Technology Studies"
+        },
+        "completed_subjects": [
+            {
+                "code": "48310",
+                "name": "Introduction to Civil and Environmental Engineering",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "41039",
+                "name": "Programming 1",
+                "credit_points": "6",
+                "rating": 8
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 1,
+            "presentations": 0,
+            "exams": 0
+        },
+        "interests": [
+            "virtualisation",
+            "wireless",
+            "wind",
+            "systems thinking",
+            "plane",
+            "reading",
+            "inheritance polymorphism",
+            "translation",
+            "production"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000052",
+        "name": "Russell Herrick",
+        "degree": {
+            "code": "C10148",
+            "name": "Bachelor of Science in Information Technology",
+            "major": "Enterprise Systems Development"
+        },
+        "completed_subjects": [
+            {
+                "code": "31271",
+                "name": "Database Fundamentals",
+                "credit_points": "6",
+                "rating": 4
+            },
+            {
+                "code": "31272",
+                "name": "Project Management and the Professional",
+                "credit_points": "6",
+                "rating": 5
+            }
+        ],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 0,
+            "presentations": 0,
+            "exams": 1
+        },
+        "interests": [
+            "machines",
+            "shaders",
+            "water",
+            "object oriented",
+            "sustainability",
+            "compression",
+            "software engineering",
+            "analytics",
+            "engineers",
+            "switches"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000053",
+        "name": "Shayne Black",
+        "degree": {
+            "code": "C10143",
+            "name": "Bachelor of Information Technology",
+            "major": null
+        },
+        "completed_subjects": [
+            {
+                "code": "31265",
+                "name": "Communication for IT Professionals",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "41115",
+                "name": "Professional IT Practice Preparation 1",
+                "credit_points": "3",
+                "rating": 6
+            }
+        ],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 0,
+            "presentations": 1,
+            "exams": 1
+        },
+        "interests": [
+            "ip",
+            "translation",
+            "mass energy",
+            "limitations",
+            "relationships",
+            "sustainable",
+            "inheritance polymorphism",
+            "construction",
+            "mathematics",
+            "computer"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000054",
+        "name": "Robert Valdez",
+        "degree": {
+            "code": "C20056",
+            "name": "Diploma in Information Technology Professional Practice",
+            "major": null
+        },
+        "completed_subjects": [
+            {
+                "code": "41065",
+                "name": "IT Experience Reflection",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "31016",
+                "name": "Career Management for IT Professionals",
+                "credit_points": "6",
+                "rating": 7
+            }
+        ],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 0,
+            "presentations": 1,
+            "exams": 1
+        },
+        "interests": [
+            "products services",
+            "equations",
+            "data analytics",
+            "risk management",
+            "coordinate systems",
+            "problem solving",
+            "process requirements",
+            "vibration",
+            "lifecycle",
+            "biomedical"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000055",
+        "name": "Cora Erickson",
+        "degree": {
+            "code": "C09066",
+            "name": "Bachelor of Engineering (Honours)",
+            "major": "Software Engineering"
+        },
+        "completed_subjects": [],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 0,
+            "presentations": 1,
+            "exams": 0
+        },
+        "interests": [
+            "process configuration",
+            "nonlinear",
+            "society",
+            "compression",
+            "water",
+            "solid",
+            "management",
+            "relationships",
+            "space",
+            "metrics"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000056",
+        "name": "Sandy Higgins",
+        "degree": {
+            "code": "C09067",
+            "name": "Bachelor of Engineering (Honours) Diploma in Professional Engineering Practice",
+            "major": "Electronic Engineering"
+        },
+        "completed_subjects": [],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 1,
+            "presentations": 1,
+            "exams": 0
+        },
+        "interests": [
+            "complexity",
+            "analytics",
+            "investment",
+            "modeling",
+            "chemical",
+            "cloud computing",
+            "sustainability",
+            "system characteristics",
+            "loop",
+            "protocol"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000057",
+        "name": "Bernadette Brown",
+        "degree": {
+            "code": "C10395",
+            "name": "Bachelor of Information Systems",
+            "major": null
+        },
+        "completed_subjects": [
+            {
+                "code": "31268",
+                "name": "Web Systems",
+                "credit_points": "6",
+                "rating": 9
+            },
+            {
+                "code": "31280",
+                "name": "Strategic IT Project",
+                "credit_points": "6",
+                "rating": 8
+            }
+        ],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 1,
+            "presentations": 0,
+            "exams": 0
+        },
+        "interests": [
+            "camera",
+            "design modelling",
+            "model building",
+            "vectors",
+            "time",
+            "leadership",
+            "political",
+            "logic",
+            "visualisation",
+            "animation"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000058",
+        "name": "James Putman",
+        "degree": {
+            "code": "C09147",
+            "name": "Bachelor of Engineering (Honours) Bachelor of International Studies (Honours)",
+            "major": null
+        },
+        "completed_subjects": [],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 1,
+            "presentations": 0,
+            "exams": 1
+        },
+        "interests": [
+            "logic",
+            "animation",
+            "ios",
+            "networks",
+            "statistical",
+            "heat transfer",
+            "design analysis",
+            "ethical considerations",
+            "it",
+            "policy"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000059",
+        "name": "Joshua Manley",
+        "degree": {
+            "code": "C10229",
+            "name": "Bachelor of Science in Games Development",
+            "major": null
+        },
+        "completed_subjects": [
+            {
+                "code": "31264",
+                "name": "Introduction to Computer Graphics",
+                "credit_points": "6",
+                "rating": 9
+            },
+            {
+                "code": "48024",
+                "name": "Applications Programming",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "48023",
+                "name": "Programming Fundamentals",
+                "credit_points": "6",
+                "rating": 10
+            },
+            {
+                "code": "31269",
+                "name": "Business Requirements Modelling",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "31266",
+                "name": "Introduction to Information Systems",
+                "credit_points": "6",
+                "rating": 5
+            },
+            {
+                "code": "31260",
+                "name": "Fundamentals of Interaction Design",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "31271",
+                "name": "Database Fundamentals",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "31268",
+                "name": "Web Systems",
+                "credit_points": "6",
+                "rating": 7
+            }
+        ],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 0,
+            "presentations": 0,
+            "exams": 1
+        },
+        "interests": [
+            "unit",
+            "research",
+            "translation",
+            "quantum",
+            "assembly",
+            "professional development",
+            "reliability",
+            "design analysis",
+            "linear regression",
+            "health"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000060",
+        "name": "Gail Nugent",
+        "degree": {
+            "code": "C20056",
+            "name": "Diploma in Information Technology Professional Practice",
+            "major": null
+        },
+        "completed_subjects": [
+            {
+                "code": "31016",
+                "name": "Career Management for IT Professionals",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "41065",
+                "name": "IT Experience Reflection",
+                "credit_points": "6",
+                "rating": 5
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 0,
+            "presentations": 1,
+            "exams": 1
+        },
+        "interests": [
+            "products services",
+            "contemporary",
+            "statistical",
+            "vibration",
+            "oral communication",
+            "professional career",
+            "systems thinking",
+            "political",
+            "system design",
+            "linux"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000061",
+        "name": "Lecia Olsen",
+        "degree": {
+            "code": "C10143",
+            "name": "Bachelor of Information Technology",
+            "major": null
+        },
+        "completed_subjects": [
+            {
+                "code": "31265",
+                "name": "Communication for IT Professionals",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "41113",
+                "name": "Software Development Studio 1",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "41092",
+                "name": "Network Fundamentals",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "48023",
+                "name": "Programming Fundamentals",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "31271",
+                "name": "Database Fundamentals",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "41120",
+                "name": "Work Integrated Learning (BIT)",
+                "credit_points": "6",
+                "rating": 2
+            },
+            {
+                "code": "41115",
+                "name": "Professional IT Practice Preparation 1",
+                "credit_points": "3",
+                "rating": 5
+            },
+            {
+                "code": "31266",
+                "name": "Introduction to Information Systems",
+                "credit_points": "6",
+                "rating": 6
+            }
+        ],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 1,
+            "presentations": 1,
+            "exams": 0
+        },
+        "interests": [
+            "technology",
+            "prototyping",
+            "time",
+            "virtualisation",
+            "network",
+            "database",
+            "linux",
+            "memory",
+            "mobile",
+            "controllers"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000062",
+        "name": "Bernadine Rossano",
+        "degree": {
+            "code": "C20056",
+            "name": "Diploma in Information Technology Professional Practice",
+            "major": null
+        },
+        "completed_subjects": [
+            {
+                "code": "41065",
+                "name": "IT Experience Reflection",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "31016",
+                "name": "Career Management for IT Professionals",
+                "credit_points": "6",
+                "rating": 9
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 0,
+            "presentations": 1,
+            "exams": 0
+        },
+        "interests": [
+            "design operation",
+            "optimisation",
+            "soils",
+            "coding",
+            "science",
+            "filtering",
+            "deep learning",
+            "management systems",
+            "mass",
+            "design thinking"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000063",
+        "name": "Laurie Gantz",
+        "degree": {
+            "code": "C10229",
+            "name": "Bachelor of Science in Games Development",
+            "major": null
+        },
+        "completed_subjects": [
+            {
+                "code": "31260",
+                "name": "Fundamentals of Interaction Design",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "48023",
+                "name": "Programming Fundamentals",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "31263",
+                "name": "Introduction to Computer Game Development",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "31271",
+                "name": "Database Fundamentals",
+                "credit_points": "6",
+                "rating": 5
+            },
+            {
+                "code": "31269",
+                "name": "Business Requirements Modelling",
+                "credit_points": "6",
+                "rating": 9
+            },
+            {
+                "code": "31266",
+                "name": "Introduction to Information Systems",
+                "credit_points": "6",
+                "rating": 9
+            },
+            {
+                "code": "31268",
+                "name": "Web Systems",
+                "credit_points": "6",
+                "rating": 9
+            },
+            {
+                "code": "31264",
+                "name": "Introduction to Computer Graphics",
+                "credit_points": "6",
+                "rating": 5
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 0,
+            "presentations": 1,
+            "exams": 0
+        },
+        "interests": [
+            "information systems",
+            "data collection",
+            "law",
+            "wind",
+            "settlement",
+            "mathematics",
+            "modeling",
+            "matlab",
+            "environment",
+            "decisions"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000064",
+        "name": "Donna Cabrera",
+        "degree": {
+            "code": "C10066",
+            "name": "Bachelor of Engineering Science",
+            "major": "Flexible Engineering BEngSc"
+        },
+        "completed_subjects": [
+            {
+                "code": "48221",
+                "name": "Engineering Computations",
+                "credit_points": "6",
+                "rating": 9
+            },
+            {
+                "code": "48260",
+                "name": "Engineering Project Management",
+                "credit_points": "6",
+                "rating": 5
+            },
+            {
+                "code": "48230",
+                "name": "Engineering Communication",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "48240",
+                "name": "Design and Innovation Fundamentals",
+                "credit_points": "6",
+                "rating": 8
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 0,
+            "presentations": 1,
+            "exams": 1
+        },
+        "interests": [
+            "teamwork",
+            "visualisation",
+            "power",
+            "water",
+            "stakeholders",
+            "raster",
+            "risk management",
+            "games",
+            "tcp ip",
+            "soils"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000065",
+        "name": "Anne Thomas",
+        "degree": {
+            "code": "C10229",
+            "name": "Bachelor of Science in Games Development",
+            "major": null
+        },
+        "completed_subjects": [],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 1,
+            "presentations": 1,
+            "exams": 0
+        },
+        "interests": [
+            "metrics",
+            "dc",
+            "mathematics",
+            "trends",
+            "printing",
+            "systems",
+            "economics",
+            "ios",
+            "vectors",
+            "intrusion detection"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000066",
+        "name": "Bill Willis",
+        "degree": {
+            "code": "C10066",
+            "name": "Bachelor of Engineering Science",
+            "major": "Civil Engineering"
+        },
+        "completed_subjects": [],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 1,
+            "presentations": 0,
+            "exams": 1
+        },
+        "interests": [
+            "sfia",
+            "real life",
+            "art",
+            "innovation process",
+            "limitations",
+            "wireless",
+            "games",
+            "financial",
+            "camera",
+            "pricing"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000067",
+        "name": "Berry Bates",
+        "degree": {
+            "code": "C10148",
+            "name": "Bachelor of Science in Information Technology",
+            "major": "Business Information Systems Management"
+        },
+        "completed_subjects": [
+            {
+                "code": "31271",
+                "name": "Database Fundamentals",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "31272",
+                "name": "Project Management and the Professional",
+                "credit_points": "6",
+                "rating": 5
+            },
+            {
+                "code": "31269",
+                "name": "Business Requirements Modelling",
+                "credit_points": "6",
+                "rating": 9
+            },
+            {
+                "code": "31266",
+                "name": "Introduction to Information Systems",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "31268",
+                "name": "Web Systems",
+                "credit_points": "6",
+                "rating": 10
+            },
+            {
+                "code": "41092",
+                "name": "Network Fundamentals",
+                "credit_points": "6",
+                "rating": 5
+            },
+            {
+                "code": "48023",
+                "name": "Programming Fundamentals",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "31265",
+                "name": "Communication for IT Professionals",
+                "credit_points": "6",
+                "rating": 4
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 0,
+            "presentations": 0,
+            "exams": 1
+        },
+        "interests": [
+            "power cycles",
+            "sensitive material",
+            "operators",
+            "modeling",
+            "reflective design",
+            "supply",
+            "pollution",
+            "research",
+            "oral communication",
+            "arrays"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000068",
+        "name": "Melinda Stover",
+        "degree": {
+            "code": "C10143",
+            "name": "Bachelor of Information Technology",
+            "major": null
+        },
+        "completed_subjects": [
+            {
+                "code": "41120",
+                "name": "Work Integrated Learning (BIT)",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "31271",
+                "name": "Database Fundamentals",
+                "credit_points": "6",
+                "rating": 2
+            },
+            {
+                "code": "41113",
+                "name": "Software Development Studio 1",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "31266",
+                "name": "Introduction to Information Systems",
+                "credit_points": "6",
+                "rating": 9
+            },
+            {
+                "code": "41049",
+                "name": "Industry Experience 1 (BIT)",
+                "credit_points": "9",
+                "rating": 10
+            },
+            {
+                "code": "31265",
+                "name": "Communication for IT Professionals",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "48023",
+                "name": "Programming Fundamentals",
+                "credit_points": "6",
+                "rating": 9
+            },
+            {
+                "code": "31268",
+                "name": "Web Systems",
+                "credit_points": "6",
+                "rating": 10
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 1,
+            "presentations": 0,
+            "exams": 0
+        },
+        "interests": [
+            "security",
+            "space",
+            "compression",
+            "data collection",
+            "prototyping",
+            "networks",
+            "enterprise",
+            "teamwork",
+            "camera",
+            "swot"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000069",
+        "name": "Mark Orick",
+        "degree": {
+            "code": "C10345",
+            "name": "Bachelor of Science in Information Technology Diploma in Information Technology Professional Practice",
+            "major": "Enterprise Systems Development"
+        },
+        "completed_subjects": [
+            {
+                "code": "48023",
+                "name": "Programming Fundamentals",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "31265",
+                "name": "Communication for IT Professionals",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "31268",
+                "name": "Web Systems",
+                "credit_points": "6",
+                "rating": 5
+            },
+            {
+                "code": "31271",
+                "name": "Database Fundamentals",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "31272",
+                "name": "Project Management and the Professional",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "31016",
+                "name": "Career Management for IT Professionals",
+                "credit_points": "6",
+                "rating": 5
+            },
+            {
+                "code": "41092",
+                "name": "Network Fundamentals",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "41065",
+                "name": "IT Experience Reflection",
+                "credit_points": "6",
+                "rating": 5
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 1,
+            "presentations": 0,
+            "exams": 0
+        },
+        "interests": [
+            "requirements elicitation",
+            "linux",
+            "wind",
+            "evolution",
+            "project manager",
+            "factors",
+            "time systems",
+            "systems thinking",
+            "stakeholders",
+            "safety"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000070",
+        "name": "Thomas Vanbebber",
+        "degree": {
+            "code": "C10327",
+            "name": "Bachelor of Science in Information Technology Bachelor of Creative Intelligence and Innovation",
+            "major": "Business Information Systems Management"
+        },
+        "completed_subjects": [
+            {
+                "code": "48023",
+                "name": "Programming Fundamentals",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "41092",
+                "name": "Network Fundamentals",
+                "credit_points": "6",
+                "rating": 5
+            },
+            {
+                "code": "31265",
+                "name": "Communication for IT Professionals",
+                "credit_points": "6",
+                "rating": 5
+            },
+            {
+                "code": "31266",
+                "name": "Introduction to Information Systems",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "31268",
+                "name": "Web Systems",
+                "credit_points": "6",
+                "rating": 2
+            },
+            {
+                "code": "31269",
+                "name": "Business Requirements Modelling",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "31271",
+                "name": "Database Fundamentals",
+                "credit_points": "6",
+                "rating": 7
+            }
+        ],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 1,
+            "presentations": 1,
+            "exams": 0
+        },
+        "interests": [
+            "styles",
+            "data acquisition",
+            "design analysis",
+            "heat transfer",
+            "swot analyses",
+            "leadership",
+            "efficiency",
+            "stabilisation",
+            "heat",
+            "fabrication design"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000071",
+        "name": "Josephine Howell",
+        "degree": {
+            "code": "C10143",
+            "name": "Bachelor of Information Technology",
+            "major": null
+        },
+        "completed_subjects": [
+            {
+                "code": "31268",
+                "name": "Web Systems",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "31266",
+                "name": "Introduction to Information Systems",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "41120",
+                "name": "Work Integrated Learning (BIT)",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "31271",
+                "name": "Database Fundamentals",
+                "credit_points": "6",
+                "rating": 7
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 0,
+            "presentations": 1,
+            "exams": 1
+        },
+        "interests": [
+            "styles",
+            "assembly",
+            "programming",
+            "electronics",
+            "printing",
+            "projects",
+            "voltage",
+            "vector",
+            "statics",
+            "sustainable"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000072",
+        "name": "Katie Beasley",
+        "degree": {
+            "code": "C10066",
+            "name": "Bachelor of Engineering Science",
+            "major": "Electrical Engineering"
+        },
+        "completed_subjects": [
+            {
+                "code": "48260",
+                "name": "Engineering Project Management",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "48221",
+                "name": "Engineering Computations",
+                "credit_points": "6",
+                "rating": 7
+            }
+        ],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 0,
+            "presentations": 1,
+            "exams": 0
+        },
+        "interests": [
+            "leadership",
+            "cyberspace",
+            "configuration management",
+            "trends",
+            "exploration",
+            "economics",
+            "controllers",
+            "design operation",
+            "languages",
+            "institutional"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000073",
+        "name": "Michelle Zieba",
+        "degree": {
+            "code": "C09066",
+            "name": "Bachelor of Engineering (Honours)",
+            "major": "Software Engineering"
+        },
+        "completed_subjects": [],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 1,
+            "presentations": 0,
+            "exams": 0
+        },
+        "interests": [
+            "reflective practice",
+            "concrete",
+            "project manager",
+            "planning control",
+            "web",
+            "economics",
+            "matrix",
+            "code",
+            "language",
+            "graphics"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000074",
+        "name": "Christopher Enos",
+        "degree": {
+            "code": "C10143",
+            "name": "Bachelor of Information Technology",
+            "major": null
+        },
+        "completed_subjects": [
+            {
+                "code": "31266",
+                "name": "Introduction to Information Systems",
+                "credit_points": "6",
+                "rating": 5
+            },
+            {
+                "code": "41115",
+                "name": "Professional IT Practice Preparation 1",
+                "credit_points": "3",
+                "rating": 6
+            },
+            {
+                "code": "48023",
+                "name": "Programming Fundamentals",
+                "credit_points": "6",
+                "rating": 5
+            },
+            {
+                "code": "41049",
+                "name": "Industry Experience 1 (BIT)",
+                "credit_points": "9",
+                "rating": 8
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 0,
+            "presentations": 0,
+            "exams": 0
+        },
+        "interests": [
+            "writing reflections",
+            "computing",
+            "innovation process",
+            "statistical",
+            "data acquisition",
+            "political",
+            "estimation",
+            "laser",
+            "failure",
+            "supply"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000075",
+        "name": "Harvey Cardwell",
+        "degree": {
+            "code": "C10066",
+            "name": "Bachelor of Engineering Science",
+            "major": "Mechatronic Engineering"
+        },
+        "completed_subjects": [
+            {
+                "code": "48430",
+                "name": "Fundamentals of C Programming",
+                "credit_points": "6",
+                "rating": 5
+            },
+            {
+                "code": "48001",
+                "name": "Project BEngSc",
+                "credit_points": "6",
+                "rating": 9
+            }
+        ],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 0,
+            "presentations": 1,
+            "exams": 1
+        },
+        "interests": [
+            "concrete",
+            "management risk",
+            "circuits",
+            "patterns",
+            "decision making",
+            "requirements elicitation",
+            "embedded",
+            "legal",
+            "mobile",
+            "industries"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000076",
+        "name": "Phillip Ruiz",
+        "degree": {
+            "code": "C10229",
+            "name": "Bachelor of Science in Games Development",
+            "major": null
+        },
+        "completed_subjects": [
+            {
+                "code": "31264",
+                "name": "Introduction to Computer Graphics",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "48023",
+                "name": "Programming Fundamentals",
+                "credit_points": "6",
+                "rating": 5
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 1,
+            "presentations": 0,
+            "exams": 0
+        },
+        "interests": [
+            "complexity",
+            "languages",
+            "monitoring",
+            "international",
+            "power",
+            "operators",
+            "expressions",
+            "institutional",
+            "infrastructure",
+            "mathematics"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000077",
+        "name": "Anita Rivera",
+        "degree": {
+            "code": "C20056",
+            "name": "Diploma in Information Technology Professional Practice",
+            "major": null
+        },
+        "completed_subjects": [],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 0,
+            "presentations": 1,
+            "exams": 0
+        },
+        "interests": [
+            "laser",
+            "limitations",
+            "ip",
+            "development testing",
+            "software engineering",
+            "embedded",
+            "documentation",
+            "products services",
+            "tcp",
+            "modeling"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000078",
+        "name": "James Sellers",
+        "degree": {
+            "code": "C10148",
+            "name": "Bachelor of Science in Information Technology",
+            "major": "Networking and Cybersecurity"
+        },
+        "completed_subjects": [
+            {
+                "code": "31269",
+                "name": "Business Requirements Modelling",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "48023",
+                "name": "Programming Fundamentals",
+                "credit_points": "6",
+                "rating": 7
+            }
+        ],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 1,
+            "presentations": 1,
+            "exams": 1
+        },
+        "interests": [
+            "industrial",
+            "elements",
+            "power",
+            "sustainability",
+            "economics",
+            "projects",
+            "dynamics",
+            "data",
+            "pricing",
+            "maintenance"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000079",
+        "name": "Marjorie Kilcrease",
+        "degree": {
+            "code": "C09067",
+            "name": "Bachelor of Engineering (Honours) Diploma in Professional Engineering Practice",
+            "major": "Mechanical and Mechatronic Engineering"
+        },
+        "completed_subjects": [
+            {
+                "code": "48240",
+                "name": "Design and Innovation Fundamentals",
+                "credit_points": "6",
+                "rating": 9
+            },
+            {
+                "code": "41037",
+                "name": "Work Integrated Learning 1",
+                "credit_points": "12",
+                "rating": 1
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 0,
+            "presentations": 1,
+            "exams": 1
+        },
+        "interests": [
+            "environment",
+            "products services",
+            "society",
+            "solidworks",
+            "audio",
+            "design skills",
+            "ethical considerations",
+            "mobile",
+            "computing",
+            "agile"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000080",
+        "name": "Thomas Mcdonald",
+        "degree": {
+            "code": "C09119",
+            "name": "Bachelor of Computing Science (Honours)",
+            "major": "Interaction Design"
+        },
+        "completed_subjects": [
+            {
+                "code": "41092",
+                "name": "Network Fundamentals",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "31271",
+                "name": "Database Fundamentals",
+                "credit_points": "6",
+                "rating": 6
+            }
+        ],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 0,
+            "presentations": 1,
+            "exams": 0
+        },
+        "interests": [
+            "engineering environments",
+            "ethics",
+            "conservation",
+            "wind",
+            "reading",
+            "mathematics",
+            "institutional",
+            "routing",
+            "architecture",
+            "wastewater"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000081",
+        "name": "Brenda William",
+        "degree": {
+            "code": "C10148",
+            "name": "Bachelor of Science in Information Technology",
+            "major": "Data Analytics"
+        },
+        "completed_subjects": [
+            {
+                "code": "41092",
+                "name": "Network Fundamentals",
+                "credit_points": "6",
+                "rating": 5
+            },
+            {
+                "code": "31250",
+                "name": "Introduction to Data Analytics",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "31272",
+                "name": "Project Management and the Professional",
+                "credit_points": "6",
+                "rating": 10
+            },
+            {
+                "code": "31266",
+                "name": "Introduction to Information Systems",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "31269",
+                "name": "Business Requirements Modelling",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "31271",
+                "name": "Database Fundamentals",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "31243",
+                "name": "AI/Analytics Capstone Project B",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "31265",
+                "name": "Communication for IT Professionals",
+                "credit_points": "6",
+                "rating": 8
+            }
+        ],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 1,
+            "presentations": 1,
+            "exams": 0
+        },
+        "interests": [
+            "architecture",
+            "thermodynamics",
+            "language",
+            "settlement",
+            "matrix",
+            "quantum",
+            "logic",
+            "software",
+            "computational",
+            "data collection"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000082",
+        "name": "Lorraine Nystrom",
+        "degree": {
+            "code": "C10408",
+            "name": "Bachelor of Engineering Studies",
+            "major": "Flexible Engineering BEngSc"
+        },
+        "completed_subjects": [
+            {
+                "code": "48310",
+                "name": "Introduction to Civil and Environmental Engineering",
+                "credit_points": "6",
+                "rating": 10
+            },
+            {
+                "code": "48240",
+                "name": "Design and Innovation Fundamentals",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "48610",
+                "name": "Introduction to Mechanical and Mechatronic Engineering",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "41039",
+                "name": "Programming 1",
+                "credit_points": "6",
+                "rating": 5
+            },
+            {
+                "code": "48230",
+                "name": "Engineering Communication",
+                "credit_points": "6",
+                "rating": 7
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 1,
+            "presentations": 1,
+            "exams": 0
+        },
+        "interests": [
+            "robotics",
+            "energy",
+            "factors",
+            "statistical",
+            "political",
+            "policies",
+            "fabrication design",
+            "time",
+            "collaboration",
+            "configuration management"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000083",
+        "name": "Teresa Collier",
+        "degree": {
+            "code": "C10229",
+            "name": "Bachelor of Science in Games Development",
+            "major": null
+        },
+        "completed_subjects": [],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 0,
+            "presentations": 1,
+            "exams": 0
+        },
+        "interests": [
+            "research",
+            "process requirements",
+            "buildings",
+            "systems following",
+            "policy",
+            "polymorphism",
+            "decisions",
+            "mechanics",
+            "lifecycle",
+            "policies"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000084",
+        "name": "Sally Allen",
+        "degree": {
+            "code": "C10066",
+            "name": "Bachelor of Engineering Science",
+            "major": "Software Engineering"
+        },
+        "completed_subjects": [
+            {
+                "code": "48001",
+                "name": "Project BEngSc",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "48250",
+                "name": "Engineering Economics and Finance",
+                "credit_points": "6",
+                "rating": 8
+            }
+        ],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 1,
+            "presentations": 1,
+            "exams": 1
+        },
+        "interests": [
+            "model building",
+            "settlement",
+            "language",
+            "health",
+            "operators",
+            "trends",
+            "vector",
+            "electrical",
+            "material access",
+            "legal"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000085",
+        "name": "Sophia Owen",
+        "degree": {
+            "code": "C10143",
+            "name": "Bachelor of Information Technology",
+            "major": null
+        },
+        "completed_subjects": [
+            {
+                "code": "31265",
+                "name": "Communication for IT Professionals",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "41115",
+                "name": "Professional IT Practice Preparation 1",
+                "credit_points": "3",
+                "rating": 9
+            },
+            {
+                "code": "41049",
+                "name": "Industry Experience 1 (BIT)",
+                "credit_points": "9",
+                "rating": 10
+            },
+            {
+                "code": "31266",
+                "name": "Introduction to Information Systems",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "41113",
+                "name": "Software Development Studio 1",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "41120",
+                "name": "Work Integrated Learning (BIT)",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "48023",
+                "name": "Programming Fundamentals",
+                "credit_points": "6",
+                "rating": 5
+            },
+            {
+                "code": "31268",
+                "name": "Web Systems",
+                "credit_points": "6",
+                "rating": 7
+            }
+        ],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 0,
+            "presentations": 1,
+            "exams": 0
+        },
+        "interests": [
+            "buildings",
+            "camera",
+            "tcp",
+            "infrastructure",
+            "limitations",
+            "data analytics",
+            "object oriented",
+            "fluid",
+            "contemporary",
+            "management"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000086",
+        "name": "Krista Woodford",
+        "degree": {
+            "code": "C10143",
+            "name": "Bachelor of Information Technology",
+            "major": null
+        },
+        "completed_subjects": [],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 0,
+            "presentations": 0,
+            "exams": 0
+        },
+        "interests": [
+            "coding",
+            "uncertainty",
+            "collaboration",
+            "networks",
+            "interface",
+            "productivity",
+            "real world",
+            "language",
+            "unit",
+            "entrepreneurship"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000087",
+        "name": "Bertha Parks",
+        "degree": {
+            "code": "C10148",
+            "name": "Bachelor of Science in Information Technology",
+            "major": "Data Analytics"
+        },
+        "completed_subjects": [
+            {
+                "code": "31265",
+                "name": "Communication for IT Professionals",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "31271",
+                "name": "Database Fundamentals",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "31269",
+                "name": "Business Requirements Modelling",
+                "credit_points": "6",
+                "rating": 9
+            },
+            {
+                "code": "48023",
+                "name": "Programming Fundamentals",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "31250",
+                "name": "Introduction to Data Analytics",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "31266",
+                "name": "Introduction to Information Systems",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "41092",
+                "name": "Network Fundamentals",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "31272",
+                "name": "Project Management and the Professional",
+                "credit_points": "6",
+                "rating": 7
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 0,
+            "presentations": 1,
+            "exams": 1
+        },
+        "interests": [
+            "risk management",
+            "polymorphism",
+            "matlab",
+            "reflective practice",
+            "voltage",
+            "management source",
+            "statistical",
+            "linear regression",
+            "mobile",
+            "language"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000088",
+        "name": "Robert Fearn",
+        "degree": {
+            "code": "C09066",
+            "name": "Bachelor of Engineering (Honours)",
+            "major": "Mechanical Engineering"
+        },
+        "completed_subjects": [],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 0,
+            "presentations": 1,
+            "exams": 0
+        },
+        "interests": [
+            "model building",
+            "thermodynamics",
+            "design skills",
+            "animation",
+            "relationships",
+            "requirements elicitation",
+            "sensitivity",
+            "loops",
+            "filtering",
+            "momentum"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000089",
+        "name": "Crystal Kline",
+        "degree": {
+            "code": "C10395",
+            "name": "Bachelor of Information Systems",
+            "major": null
+        },
+        "completed_subjects": [
+            {
+                "code": "31247",
+                "name": "Collaborative Business Processes",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "31245",
+                "name": "Business Process and IT Strategy",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "31268",
+                "name": "Web Systems",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "31280",
+                "name": "Strategic IT Project",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "31276",
+                "name": "Networked Enterprise Architecture",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "31257",
+                "name": "Information System Development Methodologies",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "31269",
+                "name": "Business Requirements Modelling",
+                "credit_points": "6",
+                "rating": 10
+            },
+            {
+                "code": "41187",
+                "name": "Analytics in Human-centred Complex Systems",
+                "credit_points": "6",
+                "rating": 8
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 0,
+            "presentations": 1,
+            "exams": 1
+        },
+        "interests": [
+            "systems following",
+            "relationships",
+            "algorithms",
+            "limitations",
+            "electronics",
+            "environment",
+            "history",
+            "uncertainty",
+            "energy",
+            "market"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000090",
+        "name": "Joan Wehrley",
+        "degree": {
+            "code": "C20056",
+            "name": "Diploma in Information Technology Professional Practice",
+            "major": null
+        },
+        "completed_subjects": [],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 1,
+            "presentations": 1,
+            "exams": 0
+        },
+        "interests": [
+            "future trends",
+            "art",
+            "machine learning",
+            "interviewing",
+            "soil",
+            "uncertainty",
+            "real world",
+            "vibration",
+            "loops",
+            "complexity"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000091",
+        "name": "Kimberly Mente",
+        "degree": {
+            "code": "C10148",
+            "name": "Bachelor of Science in Information Technology",
+            "major": "Data Analytics"
+        },
+        "completed_subjects": [
+            {
+                "code": "31250",
+                "name": "Introduction to Data Analytics",
+                "credit_points": "6",
+                "rating": 4
+            },
+            {
+                "code": "31268",
+                "name": "Web Systems",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "31269",
+                "name": "Business Requirements Modelling",
+                "credit_points": "6",
+                "rating": 5
+            },
+            {
+                "code": "31243",
+                "name": "AI/Analytics Capstone Project B",
+                "credit_points": "6",
+                "rating": 9
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 1,
+            "presentations": 0,
+            "exams": 1
+        },
+        "interests": [
+            "laws",
+            "engineering",
+            "report writing",
+            "polymorphism",
+            "risk management",
+            "coordinate systems",
+            "professional career",
+            "kinematics",
+            "privacy",
+            "professional development"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000092",
+        "name": "Racquel Miller",
+        "degree": {
+            "code": "C09148",
+            "name": "Bachelor of Engineering (Honours) Bachelor of International Studies (Honours) Diploma in Professional Engineering Practice",
+            "major": null
+        },
+        "completed_subjects": [],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 1,
+            "presentations": 0,
+            "exams": 0
+        },
+        "interests": [
+            "sensitive material",
+            "shear",
+            "environment",
+            "intelligence",
+            "motion",
+            "quality operations",
+            "interviewing",
+            "manager",
+            "complex systems",
+            "mass energy"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000093",
+        "name": "Teri Cusumano",
+        "degree": {
+            "code": "C10395",
+            "name": "Bachelor of Information Systems",
+            "major": null
+        },
+        "completed_subjects": [],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 0,
+            "presentations": 0,
+            "exams": 1
+        },
+        "interests": [
+            "sfia",
+            "vectors",
+            "management risk",
+            "institutional",
+            "innovation",
+            "algorithms",
+            "design skills",
+            "engineering environments",
+            "networks",
+            "routing"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000094",
+        "name": "Marie Klingenberg",
+        "degree": {
+            "code": "C09066",
+            "name": "Bachelor of Engineering (Honours)",
+            "major": "Civil and Environmental Engineering"
+        },
+        "completed_subjects": [
+            {
+                "code": "41028",
+                "name": "Engineering Work Experience",
+                "credit_points": "0",
+                "rating": 6
+            },
+            {
+                "code": "48230",
+                "name": "Engineering Communication",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "48270",
+                "name": "Entrepreneurship and Commercialisation",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "48260",
+                "name": "Engineering Project Management",
+                "credit_points": "6",
+                "rating": 3
+            },
+            {
+                "code": "48250",
+                "name": "Engineering Economics and Finance",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "48240",
+                "name": "Design and Innovation Fundamentals",
+                "credit_points": "6",
+                "rating": 5
+            },
+            {
+                "code": "41035",
+                "name": "Engineering Practice Preparation 1",
+                "credit_points": "3",
+                "rating": 1
+            }
+        ],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 0,
+            "presentations": 0,
+            "exams": 1
+        },
+        "interests": [
+            "linux",
+            "security",
+            "building",
+            "transport",
+            "languages",
+            "frequency",
+            "software engineering",
+            "matrix",
+            "buildings",
+            "innovation"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000095",
+        "name": "Jonathan Rhea",
+        "degree": {
+            "code": "C20056",
+            "name": "Diploma in Information Technology Professional Practice",
+            "major": null
+        },
+        "completed_subjects": [
+            {
+                "code": "41065",
+                "name": "IT Experience Reflection",
+                "credit_points": "6",
+                "rating": 6
+            },
+            {
+                "code": "31016",
+                "name": "Career Management for IT Professionals",
+                "credit_points": "6",
+                "rating": 7
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 0,
+            "presentations": 1,
+            "exams": 1
+        },
+        "interests": [
+            "information systems",
+            "collaboration",
+            "constraints",
+            "sensors",
+            "reflective observation",
+            "legal",
+            "entrepreneurship",
+            "mining",
+            "momentum",
+            "conversion"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000096",
+        "name": "Teresa Miller",
+        "degree": {
+            "code": "C09119",
+            "name": "Bachelor of Computing Science (Honours)",
+            "major": "Interaction Design"
+        },
+        "completed_subjects": [],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 0,
+            "presentations": 0,
+            "exams": 1
+        },
+        "interests": [
+            "conservation",
+            "decision making",
+            "architecture",
+            "international",
+            "printing",
+            "power",
+            "arrays",
+            "documentation",
+            "model building",
+            "production"
+        ],
+        "international_student": 0
+    },
+    {
+        "id": "10000097",
+        "name": "Barry Baker",
+        "degree": {
+            "code": "C10408",
+            "name": "Bachelor of Engineering Studies",
+            "major": "Advanced Manufacturing"
+        },
+        "completed_subjects": [
+            {
+                "code": "48230",
+                "name": "Engineering Communication",
+                "credit_points": "6",
+                "rating": 8
+            },
+            {
+                "code": "48240",
+                "name": "Design and Innovation Fundamentals",
+                "credit_points": "6",
+                "rating": 10
+            }
+        ],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 1,
+            "presentations": 0,
+            "exams": 1
+        },
+        "interests": [
+            "design practice",
+            "trends",
+            "protocol",
+            "graphics",
+            "decision making",
+            "logic",
+            "legal",
+            "camera",
+            "matrix",
+            "animation"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000098",
+        "name": "David Rork",
+        "degree": {
+            "code": "C10229",
+            "name": "Bachelor of Science in Games Development",
+            "major": null
+        },
+        "completed_subjects": [
+            {
+                "code": "31268",
+                "name": "Web Systems",
+                "credit_points": "6",
+                "rating": 5
+            },
+            {
+                "code": "31263",
+                "name": "Introduction to Computer Game Development",
+                "credit_points": "6",
+                "rating": 10
+            },
+            {
+                "code": "48023",
+                "name": "Programming Fundamentals",
+                "credit_points": "6",
+                "rating": 7
+            },
+            {
+                "code": "48024",
+                "name": "Applications Programming",
+                "credit_points": "6",
+                "rating": 5
+            }
+        ],
+        "preferences": {
+            "groupwork": 1,
+            "essays": 1,
+            "presentations": 0,
+            "exams": 0
+        },
+        "interests": [
+            "plane",
+            "uncertainty",
+            "systems control",
+            "building",
+            "project manager",
+            "process requirements",
+            "industrial",
+            "soil",
+            "computing",
+            "solid"
+        ],
+        "international_student": 1
+    },
+    {
+        "id": "10000099",
+        "name": "Tonya Dawson",
+        "degree": {
+            "code": "C10143",
+            "name": "Bachelor of Information Technology",
+            "major": null
+        },
+        "completed_subjects": [],
+        "preferences": {
+            "groupwork": 0,
+            "essays": 1,
+            "presentations": 0,
+            "exams": 0
+        },
+        "interests": [
+            "systems complex",
+            "policy",
+            "inheritance",
+            "laws",
+            "systems thinking",
+            "python",
+            "computer",
+            "water",
+            "intrusion detection",
+            "tcp"
+        ],
+        "international_student": 0
+    }
+]
