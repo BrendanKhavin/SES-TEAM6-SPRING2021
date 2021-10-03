@@ -15,7 +15,7 @@
             </nz-input-group>
           </nz-form-control>
         </nz-form-item>
-        <button nz-button class="login-form-button login-form-margin" [nzType]="'primary'">Log in</button>
+        <button (onClick)="submitForm()" nz-button class="login-form-button login-form-margin" [nzType]="'primary'">Log in</button>
         <a routerLink="/register">Register now!</a>
       </form>
 </div>

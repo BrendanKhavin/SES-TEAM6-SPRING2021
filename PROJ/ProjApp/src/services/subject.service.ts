@@ -8,7 +8,7 @@ export class SubjectService {
   constructor() { 
 
     // GET allSubjects()
-    // GET recommendations(userID)
+    // GET recommendations(subjectID)
 
   }
 }
