@@ -7,7 +7,7 @@ namespace PROJ.Models
 {
     public interface IStudentPreferences
     {
-        List<StudentPreferences> GetAll();
+        List<StudentPreferences> GetPreferences();
 
         StudentPreferences GetbyID(int id);
 

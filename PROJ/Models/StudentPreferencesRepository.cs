@@ -27,7 +27,7 @@ namespace PROJ.Models
             return preference;
         }
 
-        public List<StudentPreferences> GetAll()
+        public List<StudentPreferences> GetPreferences()
         {
             return _studentPreferencesList;
         }
@@ -52,5 +52,6 @@ namespace PROJ.Models
             }
             return preference;
         }
+
     }
 }
