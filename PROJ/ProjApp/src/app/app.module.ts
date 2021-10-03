@@ -22,6 +22,7 @@ import { RegisterComponent } from './register/register.component';
 import { NzFormModule } from 'ng-zorro-antd/form';
 import { PreferencesComponent } from './preferences/preferences.component';
 import { NzRadioModule } from 'ng-zorro-antd/radio';
+import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
 
 
 registerLocaleData(en);
@@ -48,7 +49,8 @@ registerLocaleData(en);
     NzSelectModule,
     NzFormModule,
     ReactiveFormsModule,
-    NzRadioModule
+    NzRadioModule,
+    NzCheckboxModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

@@ -14,10 +14,20 @@ export class PreferencesComponent implements OnInit {
   'Software Engineering Studio 1A', 'Software Engineering Studio 1B', 
   'Software Engineering Studio 2A','Applications Programming'];
   selectedCompletedSubjects = [];
-  radioValue = "A";
+  studentType = "domestic";
+  groupworkValue = "individual";
+  assessmentPreference = [
+    { label: 'Exams', value: 'Exams', checked: true },
+    { label: 'Assignments', value: 'Assignments', checked: true },
+    { label: 'Presentations', value: 'Presentations', checked: true },
+    { label: 'Essays', value: 'Essays', checked: true }
+  ];
   experienceLevel = null;
   listOfOption: Array<{ label: string; value: string }> = [];
   listOfTagOptions = [];
+  log(value: object[]): void {
+    console.log(value);
+  }
 
   constructor() { }
 

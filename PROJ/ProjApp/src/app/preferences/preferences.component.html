@@ -44,13 +44,6 @@
             </div>
             <div nz-col [nzSpan]="12" id="gridCol">
                 <div id="preferencesFilter">
-                    <h2>Student Type</h2>
-                    <nz-radio-group [(ngModel)]="radioValue">
-                        <label nz-radio nzValue="A">Domestic Student</label>
-                        <label nz-radio nzValue="B">International Student</label>
-                    </nz-radio-group>
-                </div>
-                <div id="preferencesFilter">
                     <h2>Education Level</h2>
                     <nz-select nzShowSearch nzAllowClear nzPlaceHolder="Experience level" [(ngModel)]="experienceLevel">
                         <nz-option nzLabel="Bachelor" nzValue="Bachelor"></nz-option>
@@ -58,6 +51,25 @@
                         <nz-option nzLabel="Masters" nzValue="Masters"></nz-option>
                         <nz-option nzLabel="PHD" nzValue="PHD"></nz-option>
                     </nz-select>
+                </div>
+                <div id="preferencesFilter">
+                    <h2>Student Type</h2>
+                    <nz-radio-group [(ngModel)]="studentType">
+                        <label nz-radio nzValue="domestic">Domestic Student</label>
+                        <label nz-radio nzValue="international">International Student</label>
+                    </nz-radio-group>
+                </div>
+                <div id="preferencesFilter">
+                    <h2>Groupwork</h2>
+                    <nz-radio-group [(ngModel)]="groupworkValue">
+                        <label nz-radio nzValue="individual">Individual</label>
+                        <label nz-radio nzValue="group">Group</label>
+                        <label nz-radio nzValue="either">Either</label>
+                    </nz-radio-group>
+                </div>
+                <div id="preferencesFilter">
+                    <h2>Assessment Preferences</h2>
+                    <nz-checkbox-group [(ngModel)]="assessmentPreference" (ngModelChange)="log(assessmentPreference)"></nz-checkbox-group>
                 </div>
             </div>
           </div>
