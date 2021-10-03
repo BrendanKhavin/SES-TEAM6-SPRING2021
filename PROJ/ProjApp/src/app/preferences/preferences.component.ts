@@ -15,10 +15,23 @@ export class PreferencesComponent implements OnInit {
   'Software Engineering Studio 2A','Applications Programming'];
   selectedCompletedSubjects = [];
   radioValue = "A";
+  experienceLevel = null;
+  listOfOption: Array<{ label: string; value: string }> = [];
+  listOfTagOptions = [];
 
   constructor() { }
 
   ngOnInit(): void {
+    const children: Array<{ label: string; value: string }> = [
+      {label: 'art', value: 'art'},
+      {label: 'code', value: 'code'},
+      {label: 'design', value: 'design'},
+      {label: 'economics', value: 'economics'},
+      {label: 'finance', value: 'finance'},
+      {label: 'innovation', value: 'innovation'},
+      {label: 'python', value: 'python'}
+    ];
+    this.listOfOption = children;
   }
 
 }

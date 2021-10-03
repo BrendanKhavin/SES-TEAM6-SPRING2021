@@ -3,42 +3,65 @@
         <div id="preferenceHeader">
             <h1>Preferences</h1>
         </div>
-        <div id="preferencesFilter">
-            <h2>Faculties</h2>
-            <nz-select 
-                nzMode="multiple" 
-                nzPlaceHolder="Select faculties"
-                nzAllowClear='true'
-                [(ngModel)]="selectedFaculties">
-                <nz-option *ngFor="let faculty of faculties" [nzLabel]="faculty" [nzValue]="faculty"></nz-option>
-            </nz-select>
-        </div>
-        <div id="preferencesFilter">
-            <h2>Credit Points</h2>
-            <nz-select 
-                nzMode="multiple" 
-                nzPlaceHolder="Select credit points"
-                nzAllowClear='true'
-                [(ngModel)]="selectedCreditPoints">
-                <nz-option *ngFor="let creditPoint of creditPoints" [nzLabel]="creditPoint" [nzValue]="creditPoint"></nz-option>
-            </nz-select>
-        </div>
-        <div id="preferencesFilter">
-            <h2>Completed Subjects</h2>
-            <nz-select 
-                nzMode="multiple" 
-                nzPlaceHolder="Select Completed Subjects"
-                nzAllowClear='true'
-                [(ngModel)]="selectedCompletedSubjects">
-                <nz-option *ngFor="let completedSubject of completedSubjects" [nzLabel]="completedSubject" [nzValue]="completedSubject"></nz-option>
-            </nz-select>
-        </div>
-        <div id="preferencesFilter">
-            <h2>Student Type</h2>
-            <nz-radio-group [(ngModel)]="radioValue">
-                <label nz-radio nzValue="A">Domestic Student</label>
-                <label nz-radio nzValue="B">International Student</label>
-            </nz-radio-group>
-        </div>
+        <div nz-row>
+            <div nz-col [nzSpan]="12" id="gridCol">
+                <div id="preferencesFilter">
+                    <h2>Faculties</h2>
+                    <nz-select 
+                        nzMode="multiple" 
+                        nzPlaceHolder="Select faculties"
+                        nzAllowClear='true'
+                        [(ngModel)]="selectedFaculties">
+                        <nz-option *ngFor="let faculty of faculties" [nzLabel]="faculty" [nzValue]="faculty"></nz-option>
+                    </nz-select>
+                </div>
+                <div id="preferencesFilter">
+                    <h2>Credit Points</h2>
+                    <nz-select 
+                        nzMode="multiple" 
+                        nzPlaceHolder="Select credit points"
+                        nzAllowClear='true'
+                        [(ngModel)]="selectedCreditPoints">
+                        <nz-option *ngFor="let creditPoint of creditPoints" [nzLabel]="creditPoint" [nzValue]="creditPoint"></nz-option>
+                    </nz-select>
+                </div>
+                <div id="preferencesFilter">
+                    <h2>Completed Subjects</h2>
+                    <nz-select 
+                        nzMode="multiple" 
+                        nzPlaceHolder="Select Completed Subjects"
+                        nzAllowClear='true'
+                        [(ngModel)]="selectedCompletedSubjects">
+                        <nz-option *ngFor="let completedSubject of completedSubjects" [nzLabel]="completedSubject" [nzValue]="completedSubject"></nz-option>
+                    </nz-select>
+                </div>
+                <div id="preferencesFilter">
+                    <h2>Topics of Interest</h2>
+                    <nz-select nzMode="tags" nzPlaceHolder="Type a keyword and press enter" [(ngModel)]="listOfTagOptions">
+                        <nz-option *ngFor="let option of listOfOption" [nzLabel]="option.label" [nzValue]="option.value"></nz-option>
+                    </nz-select>
+                </div>
+            </div>
+            <div nz-col [nzSpan]="12" id="gridCol">
+                <div id="preferencesFilter">
+                    <h2>Student Type</h2>
+                    <nz-radio-group [(ngModel)]="radioValue">
+                        <label nz-radio nzValue="A">Domestic Student</label>
+                        <label nz-radio nzValue="B">International Student</label>
+                    </nz-radio-group>
+                </div>
+                <div id="preferencesFilter">
+                    <h2>Education Level</h2>
+                    <nz-select nzShowSearch nzAllowClear nzPlaceHolder="Experience level" [(ngModel)]="experienceLevel">
+                        <nz-option nzLabel="Bachelor" nzValue="Bachelor"></nz-option>
+                        <nz-option nzLabel="Honours" nzValue="Honours"></nz-option>
+                        <nz-option nzLabel="Masters" nzValue="Masters"></nz-option>
+                        <nz-option nzLabel="PHD" nzValue="PHD"></nz-option>
+                    </nz-select>
+                </div>
+            </div>
+          </div>
+        
+        
     </div>
 </div>
