@@ -40,5 +40,5 @@ export class RecommendationComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
+
