@@ -56,8 +56,8 @@ registerLocaleData(en);
     NzInputModule,
     NzCardModule,
     NzGridModule,
-    NzModalModule
-    NzCarouselModule,
+    NzModalModule,
+    NzCarouselModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
