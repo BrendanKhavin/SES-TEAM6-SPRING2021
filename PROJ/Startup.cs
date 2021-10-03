@@ -46,7 +46,7 @@ namespace PROJ
             services.AddSingleton<ICompletedSubjectsRepository, CompletedSubjectsRepository>();
             services.AddSingleton<ISubjectRepository, SubjectRepository>();
             services.AddSingleton<IDegreeRepository, DegreeRepository>();
-            services.AddSingleton<IStudentPreferences, StudentPreferencesRepository>();
+            services.AddSingleton<IPreferences, PreferencesRepository>();
             services.AddControllers();
             //End of MongoDB Additions
 

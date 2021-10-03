@@ -11,29 +11,29 @@ using PROJ.Repository;
 
 namespace PROJ.Controllers
 {
-    public class StudentPreferencesController : Controller
+    public class PreferencesController : Controller
     {
         [Route("api/studentPreferences")]
         [ApiController]
         public class SubjectsController : Controller
         {
 
-            private IStudentPreferences studentPreferencesRepository;
+            private IPreferences preferencesRepository;
 
-            public SubjectsController(IStudentPreferences studentRepository)
+            public SubjectsController(IPreferences studentRepository)
             {
-                this.studentPreferencesRepository = studentRepository;
+                this.preferencesRepository = studentRepository;
             }
 
             [HttpGet]
-            public List<StudentPreferences> GetStudentPreferences() =>
-                studentPreferencesRepository.GetPreferences();
+            public List<Preferences> GetStudentPreferences() =>
+                preferencesRepository.GetPreferences();
 
 
             // NOT SURE
             [HttpGet("{subjectCode:length(5)}")]
-            public StudentPreferences GetSubjectByCode(int id) =>
-                studentPreferencesRepository.GetbyID(id);
+            public Preferences GetSubjectByCode(int id) =>
+                preferencesRepository.GetbyID(id);
         }
     }
 }

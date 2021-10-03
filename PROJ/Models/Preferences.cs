@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace PROJ.Models
 {
-    public class StudentPreferences
+    public class Preferences
     {
         public int ID { get; set; }
 
