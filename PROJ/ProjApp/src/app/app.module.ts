@@ -24,6 +24,7 @@ import { FilterPipe } from './filter.pipe';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { NzFormModule } from 'ng-zorro-antd/form';
+import { NzModalModule } from 'ng-zorro-antd/modal';
 import { HomepageComponent } from './homepage/homepage.component';
 registerLocaleData(en);
 
@@ -55,6 +56,7 @@ registerLocaleData(en);
     NzInputModule,
     NzCardModule,
     NzGridModule,
+    NzModalModule
     NzCarouselModule,
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
