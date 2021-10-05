@@ -28,13 +28,11 @@ namespace PROJ.Controllers
             subjectRepository.GetSubjects().ToList();
 
         // route is: api/subjects/{subjectCode}
-     // [HttpGet("{courseArea}")]
+     [HttpGet("{code}")]
             public Subject GetSubjectByCode(string code) =>
-           subjectRepository.GetSubjectByCode(code);
+            // recommendService.GetRecommendations();
+            subjectRepository.GetSubjectByCode(code);
 
-     [HttpGet("{creditPoints}/{courseArea}")]
-        public List<Subject> GetSubjectsByCPCA(string creditPoints, string courseArea) =>
-           subjectRepository.GetSubjectsByCourseAndCredit(creditPoints, courseArea).ToList();
     }
 
 
