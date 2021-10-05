@@ -10,8 +10,8 @@ namespace PROJ.Interface
         Subject GetSubjectById(string Id);
         Subject GetSubjectByCode(string code);
         List<Subject> GetSubjectsByCourseArea(string courseArea);
-        List<Subject> GetSubjectsByCreditPoints(int creditPoints);
-        List<Subject> GetSubjectsByCourseAndCredit(string courseArea, int creditPoints);
+        List<Subject> GetSubjectsByCreditPoints(string creditPoints);
+        List<Subject> GetSubjectsByCourseAndCredit(string courseArea, string creditPoints);
         void InsertSubject(Subject Subject);
         void DeleteSubject(string SubjectID);
         void UpdateSubject(Subject Subject);

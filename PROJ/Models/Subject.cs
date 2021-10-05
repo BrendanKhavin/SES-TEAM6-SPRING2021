@@ -22,7 +22,7 @@ namespace PROJ.Models
         public string subjectName { get; set; }
         
         [BsonElement("Credit Points")]        
-        public int creditPoints { get; set; }
+        public string creditPoints { get; set; }
 
         [BsonElement("Description")]        
         public string description { get; set; }
