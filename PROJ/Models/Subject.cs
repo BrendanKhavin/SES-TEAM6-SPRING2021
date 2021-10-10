@@ -20,9 +20,10 @@ namespace PROJ.Models
 
         [BsonElement("name")]        
         public string subjectName { get; set; }
-        
+
+        //changed return type to string as it needed to match the mongoDB documents 
         [BsonElement("Credit Points")]        
-        public int creditPoints { get; set; }
+        public string creditPoints { get; set; }
 
         [BsonElement("Description")]        
         public string description { get; set; }

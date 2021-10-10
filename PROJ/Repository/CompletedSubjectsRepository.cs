@@ -27,6 +27,7 @@ namespace PROJ.Repository
             _completedSubjects.Find<CompletedSubjects>(emp => emp.UserId.Equals(userID)).ToList();
 
 
+
         public void InsertCompletedSubject(CompletedSubjects completedSubjects)
         {
             _completedSubjects.InsertOneAsync(completedSubjects);

@@ -32,8 +32,17 @@ namespace PROJ.Controllers
         // route is: api/subjects/{subjectCode}
         [HttpGet("{code}")]
         public Subject GetSubjectByCode(string code) =>
-            // recommendService.GetRecommendations();
+        // recommendService.GetRecommendations();
             subjectRepository.GetSubjectByCode(code);
 
+    //    [HttpGet("{creditPoints}")]
+     //   public List<Subject> GetSubjectsbyCreditPoints(string creditPoints) =>
+       //     subjectRepository.GetSubjectsByCreditPoints(creditPoints);
+
+            
+
+
     }
+
+
 }

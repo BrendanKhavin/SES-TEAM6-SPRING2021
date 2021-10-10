@@ -3,10 +3,13 @@ using MongoDB.Driver;
 using System.Linq;
 using PROJ.Models;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace PROJ.Services
 {
-    public class DatabaseServices  
+    public class DatabaseServices
+
+        
     {
         private readonly IMongoCollection<Subject> _subjects;
 
@@ -25,11 +28,6 @@ namespace PROJ.Services
 
         public Subject Get(string subjectCode) =>
             _subjects.Find<Subject>(emp => emp.subjectCode.Equals(subjectCode)).FirstOrDefault();
-
-
-  
-
-
 
         public DatabaseServices()
         {
