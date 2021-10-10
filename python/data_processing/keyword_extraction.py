@@ -103,7 +103,7 @@ if __name__ == "__main__":
 
     nlp = spacy.load('en_core_web_lg')
 
-    df = pd.read_json("subjects-FEIT.json", orient="index")
+    df = pd.read_json("data/subjects-FEIT.json", orient="index")
     subjects = get_subject_list(df)
     codes = [subject.code for subject in subjects]
     # Extract topics into documents for nlp 
@@ -120,7 +120,7 @@ if __name__ == "__main__":
     top_words = get_top_words(topic_keyword_df, 1000)
     with open("top1000_topic_keywords.csv", "w") as f:
         for word, __ in top_words:
-            f.write(word + "\n")
+            f.write(word)
 
     topic_keyword_df.to_pickle("topic_keyword_scores.pkl")
 
@@ -137,4 +137,10 @@ if __name__ == "__main__":
 
     description_keyword_df.to_pickle("description_scores.pkl")
 
+keywords = []
+with open('data/selected_topic_keywords.csv', 'r') as f: 
+    keywords = [ line.strip('\n').strip() for line in f.readlines()]
 
+keyword_scores = pd.read_pickle('topic_keyword_scores.pkl')
+keyword_scores = keyword_scores[[word for word in keywords]]
+keyword_scores.to_pickle("selected_topic_keyword_scores.pkl")

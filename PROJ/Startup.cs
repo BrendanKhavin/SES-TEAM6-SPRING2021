@@ -44,6 +44,7 @@ namespace PROJ
             services.AddSingleton<DatabaseServices>();
             services.AddSingleton<ICompletedSubjectsRepository, CompletedSubjectsRepository>();
             services.AddSingleton<ISubjectRepository, SubjectRepository>();
+            services.AddSingleton<IDegreeRepository, DegreeRepository>();
             services.AddControllers();
             //End of MongoDB Additions
 
@@ -53,12 +54,13 @@ namespace PROJ
             services.AddIdentity<ApplicationUser, ApplicationRole>()
                 .AddMongoDbStores<ApplicationUser, ApplicationRole, Guid>(mongoDbSettings.ConnectionString, mongoDbSettings.DatabaseName);
 
-            //Controller 
+            // Controller 
             services.AddControllersWithViews();
             services.AddSpaStaticFiles(configuration =>
             {
                 configuration.RootPath = "ProjApp/dist";
             });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
