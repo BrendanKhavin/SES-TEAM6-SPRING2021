@@ -16,7 +16,7 @@ namespace PROJ.Controllers
     public class SubjectsController : Controller
     {
 
-        private ISubjectRepository  subjectRepository;
+        private ISubjectRepository subjectRepository;
 
         public SubjectsController(ISubjectRepository subjectRepository)
         {
@@ -28,10 +28,18 @@ namespace PROJ.Controllers
             subjectRepository.GetSubjects().ToList();
 
         // route is: api/subjects/{subjectCode}
-     [HttpGet("{code}")]
-            public Subject GetSubjectByCode(string code) =>
-            // recommendService.GetRecommendations();
-            subjectRepository.GetSubjectByCode(code);
+        [HttpGet("{code}")]
+        public Subject GetSubjectByCode(string code) =>
+               // recommendService.GetRecommendations();
+               subjectRepository.GetSubjectByCode(code);
+
+    //    [HttpGet("{creditPoints}")]
+     //   public List<Subject> GetSubjectsbyCreditPoints(string creditPoints) =>
+       //     subjectRepository.GetSubjectsByCreditPoints(creditPoints);
+
+        [HttpGet("{creditPoints1}/{creditPoints2}")]
+        public List<Subject> GetSubjectsbyCreditPoints(string creditPoints1, string creditPoints2) =>
+            subjectRepository.GetSubjectbyDiffCreditPoints(creditPoints1, creditPoints2);
 
     }
 

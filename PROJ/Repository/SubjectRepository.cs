@@ -40,6 +40,9 @@ namespace PROJ.Repository
         public List<Subject> GetSubjectsByCourseAndCredit(string creditPoints, string courseArea) =>
             _subjects.Find<Subject>(subject => subject.courseArea.Equals(courseArea) && subject.creditPoints.Equals(creditPoints)).ToList();
 
+        public List <Subject> GetSubjectbyDiffCreditPoints(string creditPoints1, string creditPoints2) =>
+            _subjects.Find<Subject>(subject => subject.courseArea.Equals(creditPoints1) && subject.creditPoints.Equals(creditPoints2)).ToList();
+
         public IEnumerable<Subject> GetSubjects() =>
             _subjects.Find<Subject>(new BsonDocument()).ToList();
 
@@ -57,15 +60,6 @@ namespace PROJ.Repository
         {
             throw new NotImplementedException();
         }
-
-       // public List<Subject> GetSubjectsByCreditPoints(int creditPoints)
-     //   {
-    //        throw new NotImplementedException();
-    //    }
-       // public List<Subject> GetSubjectsByCourseAndCredit(string courseArea, int creditPoints)
-    //    {
-     //       throw new NotImplementedException();
-    //    }
 
         // To  be added
         // public Subject GetSubjectByID(string SubjectId) =>
