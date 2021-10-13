@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { NzCarouselModule } from 'ng-zorro-antd/carousel';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NZ_I18N } from 'ng-zorro-antd/i18n';
@@ -14,8 +14,6 @@ import { IconsProviderModule } from './icons-provider.module';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NzButtonModule } from 'ng-zorro-antd/button';
-import { NzRateModule } from 'ng-zorro-antd/rate';
-import { NzModalModule } from 'ng-zorro-antd/modal';
 import { RecommendationComponent } from './recommendation/recommendation.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NzSelectModule } from 'ng-zorro-antd/select';
@@ -26,10 +24,8 @@ import { FilterPipe } from './filter.pipe';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { NzFormModule } from 'ng-zorro-antd/form';
-import { LogoutComponent } from './logout/logout.component';
-import { SearchAndCompleteSubjectsComponent } from './search-and-complete-subjects/search-and-complete-subjects.component';
-import { RateSubjectComponent } from './rate-subject/rate-subject.component';
-
+import { NzModalModule } from 'ng-zorro-antd/modal';
+import { HomepageComponent } from './homepage/homepage.component';
 registerLocaleData(en);
 
 @NgModule({
@@ -41,9 +37,7 @@ registerLocaleData(en);
     PageNotFoundComponent,
     LoginComponent,
     RegisterComponent,
-    LogoutComponent,
-    SearchAndCompleteSubjectsComponent,
-    RateSubjectComponent
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
@@ -55,15 +49,15 @@ registerLocaleData(en);
     NzLayoutModule,
     NzMenuModule,
     NzButtonModule,
-    NzRateModule,
-    NzModalModule,
     NzSelectModule,
     NzFormModule,
     ReactiveFormsModule,
     NzSelectModule,
     NzInputModule,
     NzCardModule,
-    NzGridModule
+    NzGridModule,
+    NzModalModule,
+    NzCarouselModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
