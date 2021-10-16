@@ -11,5 +11,7 @@ namespace PROJ.Interface
         void InsertCompletedSubject(CompletedSubjects completedSubjects); // userID
 
         List<CompletedSubjects> GetCompletedSubjects(string userID);
+
+        void DeleteCompletedSubject(string userID, CompletedSubjects completedSubject);
     }
 }

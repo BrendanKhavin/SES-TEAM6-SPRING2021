@@ -23,6 +23,12 @@ namespace PROJ.Repository
             _completedSubjects = database.GetCollection<CompletedSubjects>("CompletedSubjects");
         }
 
+        public void DeleteCompletedSubject(string userID, CompletedSubjects completedSubject)
+        {
+            _completedSubjects.FindOneAndDelete<CompletedSubjects>(emp => emp.UserId.Equals(userID));
+
+        }
+
         public List<CompletedSubjects> GetCompletedSubjects(string userID) =>
             _completedSubjects.Find<CompletedSubjects>(emp => emp.UserId.Equals(userID)).ToList();
 

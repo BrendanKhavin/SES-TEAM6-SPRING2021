@@ -41,5 +41,11 @@ namespace PROJ.Controllers
             return completedSubjectsRepository.GetCompletedSubjects(userId);
         }
 
+        [HttpPost("deletecompletedsubject")]
+        public void DeleteCompletedSubject(string userId, CompletedSubjects completedSubject)
+        {
+            completedSubjectsRepository.DeleteCompletedSubject(userId, completedSubject);
+        }
+
     }
 }
