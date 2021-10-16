@@ -1,8 +1,8 @@
 export interface ISubject {
     courseArea: string
-    code: string
-    name: string
-    creditPoint: number
+    subjectCode: string
+    subjectName: string
+    creditPoints: number
     resultTypes: string[]
     requisites: ISubject[]
     description: string
@@ -11,6 +11,7 @@ export interface ISubject {
     courseIntendedLearningOutcome: string[]
     assessmentTasks: IAssessmentTask[]
     availability: string[]
+    isVisible: boolean
 }
 
 export interface IAssessmentTask {
