@@ -41,7 +41,7 @@
         <div nz-row [nzGutter]="8">
           <div *ngFor="let card of cards | appFilter: searchValue" nz-col [nzSpan]="8">
             <nz-card [nzTitle]="card.subjectName">
-              <p>{{card.description.substring(0, 100)}}...</p>
+              <p>{{ !(!card.description) ? card.description.substring(0, 100) + "..." : "No description"}}</p>
               <ng-container [ngTemplateOutlet]="extraTemplate" [ngTemplateOutletContext]="{card:card}"></ng-container>
             </nz-card>
           </div>
@@ -51,11 +51,11 @@
           <nz-modal [(nzVisible)]="card.isVisible" nzTitle="{{card.subjectCode}} - {{card.subjectName}}" (nzOnCancel)="handleCancel(card)" (nzOnOk)="handleOk(card)">
             <ng-container *nzModalContent>
               <b>Description:</b>
-              <p>{{card.description}}</p>
+              <p>{{ !(!card.description) ? card.description : "No description"}}</p>
               <div nz-row>
                 <div nz-col nzSpan="12">
                   <b>Credit Points</b>
-                  <p>{{card.creditPoints}}</p>
+                  <p>{{card.creditPoints.toString()}}</p>
                 </div>
                 <div nz-col nzSpan="12">
                   <b>Course Area</b>
