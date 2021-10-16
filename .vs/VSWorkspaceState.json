@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\PROJ",
+    "\\PROJ\\Controllers",
+    "\\PROJ\\Interface",
+    "\\PROJ\\Repository"
   ],
-  "SelectedNode": "\\PROJ.sln",
+  "SelectedNode": "\\SES-TEAM6-SPRING2021.sln",
   "PreviewInSolutionExplorer": false
 }
