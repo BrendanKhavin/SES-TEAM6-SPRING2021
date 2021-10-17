@@ -7,6 +7,6 @@ export interface IStudent {
 }
 
 export interface IStudentPreference {
-    name: string // should be in the format of is{PreferenceName} i.e. isAutumnSession
+    name: string // should be in the format of is{PreferenceName} i.e.isAutumnSession
     value: boolean
 }
