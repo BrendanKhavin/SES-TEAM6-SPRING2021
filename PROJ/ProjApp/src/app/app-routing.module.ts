@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/homepage' },
   { path: 'login', component: LoginComponent},
   { path: 'register', component: RegisterComponent},
-  { path: 'preferences', component: PreferencesComponent},
+  { path: 'preferences', component: PreferencesComponent, canActivate: [AuthGuard]},
   { path: 'homepage', component: HomepageComponent},
   { path: 'recommendation', component: RecommendationComponent, canActivate: [AuthGuard] },
   { path: '**', component: PageNotFoundComponent },
