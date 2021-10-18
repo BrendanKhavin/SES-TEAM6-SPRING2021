@@ -1,3 +1,4 @@
+import { AuthGuard } from './auth-guard.guard';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -8,10 +9,10 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/homepage' },
-  { path: 'homepage', component: HomepageComponent},
-  { path: 'recommendation', component: RecommendationComponent },
   { path: 'login', component: LoginComponent},
   { path: 'register', component: RegisterComponent},
+  { path: 'homepage', component: HomepageComponent},
+  { path: 'recommendation', component: RecommendationComponent, canActivate: [AuthGuard] },
   { path: '**', component: PageNotFoundComponent },
 ];
 

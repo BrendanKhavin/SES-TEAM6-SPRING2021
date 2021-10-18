@@ -2,6 +2,7 @@ import { AuthService } from './../../services/auth.service';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { NzNotificationService } from 'ng-zorro-antd/notification';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +12,7 @@ import { NzNotificationService } from 'ng-zorro-antd/notification';
 export class LoginComponent implements OnInit {
   validateForm!: FormGroup;
 
-  constructor(private fb: FormBuilder, private  authService: AuthService, private notification: NzNotificationService) { }
+  constructor(private fb: FormBuilder, private  authService: AuthService, private notification: NzNotificationService, private router: Router) { }
 
   ngOnInit(): void {
     this.validateForm = this.fb.group({
@@ -29,7 +30,19 @@ export class LoginComponent implements OnInit {
     }
     this.authService.login(this.validateForm).subscribe(
       (ret) => {
-        console.log(ret);
+       if (ret) {
+         this.notification.create(
+          'success',
+          'Login Successful!',
+          'Thank you for using Subjects "R" Us')
+        this.router.navigate(['recommendation']);
+       } else {
+         this.notification.create(
+          'error',
+          'Login Failed',
+          'Please check your details.'
+         )
+       }
       }
     )
   }

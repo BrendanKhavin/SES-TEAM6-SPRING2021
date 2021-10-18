@@ -26,6 +26,7 @@ import { RegisterComponent } from './register/register.component';
 import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzModalModule } from 'ng-zorro-antd/modal';
 import { HomepageComponent } from './homepage/homepage.component';
+import { NzNotificationModule } from 'ng-zorro-antd/notification';
 registerLocaleData(en);
 
 @NgModule({
@@ -57,7 +58,8 @@ registerLocaleData(en);
     NzCardModule,
     NzGridModule,
     NzModalModule,
-    NzCarouselModule
+    NzCarouselModule,
+    NzNotificationModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

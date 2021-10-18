@@ -2,6 +2,7 @@ import { RegisterService } from './../../services/register.service';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
 import { NzNotificationService } from 'ng-zorro-antd/notification';
+import { AuthService } from 'src/services/auth.service';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
