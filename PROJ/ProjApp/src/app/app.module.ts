@@ -24,8 +24,12 @@ import { FilterPipe } from './filter.pipe';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { NzFormModule } from 'ng-zorro-antd/form';
+import { PreferencesComponent } from './preferences/preferences.component';
+import { NzRadioModule } from 'ng-zorro-antd/radio';
+import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
 import { NzModalModule } from 'ng-zorro-antd/modal';
 import { HomepageComponent } from './homepage/homepage.component';
+import { NzNotificationModule } from 'ng-zorro-antd/notification';
 registerLocaleData(en);
 
 @NgModule({
@@ -37,6 +41,7 @@ registerLocaleData(en);
     PageNotFoundComponent,
     LoginComponent,
     RegisterComponent,
+    PreferencesComponent,
     HomepageComponent
   ],
   imports: [
@@ -52,12 +57,15 @@ registerLocaleData(en);
     NzSelectModule,
     NzFormModule,
     ReactiveFormsModule,
+    NzRadioModule,
+    NzCheckboxModule,
     NzSelectModule,
     NzInputModule,
     NzCardModule,
     NzGridModule,
     NzModalModule,
-    NzCarouselModule
+    NzCarouselModule,
+    NzNotificationModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

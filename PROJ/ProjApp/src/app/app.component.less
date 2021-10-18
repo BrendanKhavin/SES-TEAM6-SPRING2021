@@ -60,13 +60,15 @@ nz-header {
   padding: 0;
   width: 100%;
   z-index: 2;
+  display: grid;
+  background: #fff;
+  grid-template-columns: repeat(3,1fr);
 }
 
 .app-header {
   position: relative;
   height: 64px;
   padding: 0;
-  background: #fff;
   box-shadow: 0 1px 4px rgba(0,21,41,.08);
 }
 
@@ -78,4 +80,14 @@ nz-content {
   padding: 24px;
   background: #fff;
   height: 100%;
+}
+
+#greeting {
+  font-size: large;
+  place-self: center;
+}
+
+#logoutButton {
+  place-self: end;
+  padding-right: 3em;
 }
