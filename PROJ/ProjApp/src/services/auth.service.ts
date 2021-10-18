@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { BehaviorSubject,Observable } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { IStudent } from 'src/models/student.model';
 import { Router } from '@angular/router';
 import { map } from 'rxjs/operators';
@@ -14,10 +14,8 @@ const httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/js
 export class AuthService {
   private userSubject: BehaviorSubject<IStudent>;
   public user: Observable<IStudent>;
-  public currentUser: IStudent | undefined;
+  public isUserLoggedIn: BehaviorSubject<boolean>  = new BehaviorSubject<boolean>(false);
 
-
-  
   constructor(private router: Router, private http: HttpClient) {
     this.userSubject = new BehaviorSubject<IStudent>(JSON.parse(localStorage.getItem('user')!));
     this.user = this.userSubject.asObservable();
@@ -34,33 +32,27 @@ export class AuthService {
     }
     return this.sendLogin(body);
   }
-  
-  private sendLogin(body:any) {
-    return this.http.post<IStudent>('/api/account/login',JSON.stringify(body),httpOptions)
+
+  private sendLogin(body: any) {
+    return this.http.post<IStudent>('/api/account/login', JSON.stringify(body), httpOptions)
       .pipe(map(user => {
-        this.setCurrentUser(user);
         localStorage.setItem('user', JSON.stringify(user));
         this.userSubject.next(user);
+        this.isUserLoggedIn.next(true);
         return user;
       }))
   }
 
-  setCurrentUser(user: IStudent) {
-    this.currentUser = user;
-  }
-  
-  isLoggedIn(){
+  isLoggedIn() {
     return !!localStorage.getItem('user');
   }
-  
+
   getCurrentUser() {
     return this.user;
   }
 
   logout() {
-    // remove user from local storage and set current user to null
     localStorage.removeItem('user');
     this.userSubject.next(null!);
-    // TODO: NAVIGATE TO HOMEPAGE
-}
+  }
 }

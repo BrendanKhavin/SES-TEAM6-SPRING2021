@@ -11,16 +11,14 @@
       <li nz-menu-item nzMatchRouter>
         <a routerLink="/homepage">Homepage</a>
       </li>
-      <li nz-submenu nzOpen nzTitle="Dashboard" nzIcon="dashboard">
+      <li *ngIf='isLoggedIn' nzOpen nzTitle="Dashboard" nzIcon="dashboard">
         <ul>
-          <div *ngIf='isLoggedIn'>
             <li nz-menu-item nzMatchRouter>
               <a routerLink="/recommendation">Recommendations</a>
             </li>
             <li nz-menu-item nzMatchRouter>
               <a routerLink="/preferences">Preferences</a>
             </li>
-          </div>
         </ul>
       </li>
     </ul>
@@ -31,13 +29,16 @@
         <span class="header-trigger" (click)="isCollapsed = !isCollapsed">
           <i class="trigger" nz-icon [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"></i>
         </span>
-        <span id="greeting" *ngIf='isLoggedIn'>
-          <a routerLink="/preferences">
-            <span>
-              Hello, {{currentUser.firstName}}, glad to see you back!
-            </span>
-          </a>
-        </span>
+      </div>
+      <span id="greeting" *ngIf='isLoggedIn'>
+        <a routerLink="/preferences">
+          <span>
+            Hello, {{currentUser.firstName}}, glad to see you back!
+          </span>
+        </a>
+      </span>
+      <div id="logoutButton" *ngIf='isLoggedIn'>
+        <button (click)="logout()" nz-button nzType="primary">Logout</button>
       </div>
     </nz-header>
     <nz-content>
