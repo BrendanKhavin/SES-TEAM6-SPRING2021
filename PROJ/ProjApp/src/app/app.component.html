@@ -1,22 +1,26 @@
 <nz-layout class="app-layout">
-  <nz-sider class="menu-sidebar"
-            nzCollapsible
-            nzWidth="256px"
-            nzBreakpoint="md"
-            [(nzCollapsed)]="isCollapsed"
-            [nzTrigger]="null">
+  <nz-sider class="menu-sidebar" nzCollapsible nzWidth="256px" nzBreakpoint="md" [(nzCollapsed)]="isCollapsed"
+    [nzTrigger]="null">
     <div class="sidebar-logo">
-      <a routerLink="/homepage"> 
+      <a routerLink="/homepage">
         <i class="fas fa-university"></i>
         <h1>Subjects "R" Us</h1>
       </a>
     </div>
     <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
+      <li nz-menu-item nzMatchRouter>
+        <a routerLink="/homepage">Homepage</a>
+      </li>
       <li nz-submenu nzOpen nzTitle="Dashboard" nzIcon="dashboard">
         <ul>
-          <li nz-menu-item nzMatchRouter>
-            <a routerLink="/recommendation">Recommendations</a>
-          </li>
+          <div *ngIf='isLoggedIn'>
+            <li nz-menu-item nzMatchRouter>
+              <a routerLink="/recommendation">Recommendations</a>
+            </li>
+            <li nz-menu-item nzMatchRouter>
+              <a routerLink="/preferences">Preferences</a>
+            </li>
+          </div>
         </ul>
       </li>
     </ul>
@@ -25,13 +29,14 @@
     <nz-header>
       <div class="app-header">
         <span class="header-trigger" (click)="isCollapsed = !isCollapsed">
-            <i class="trigger"
-               nz-icon
-               [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
-            ></i>
+          <i class="trigger" nz-icon [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"></i>
         </span>
         <span id="greeting" *ngIf='isLoggedIn'>
-          Hello, {{currentUser.firstName}}, glad to see you back!
+          <a routerLink="/preferences">
+            <span>
+              Hello, {{currentUser.firstName}}, glad to see you back!
+            </span>
+          </a>
         </span>
       </div>
     </nz-header>

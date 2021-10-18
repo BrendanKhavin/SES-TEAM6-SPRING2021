@@ -6,11 +6,13 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { RecommendationComponent } from './recommendation/recommendation.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { PreferencesComponent } from './preferences/preferences.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/homepage' },
   { path: 'login', component: LoginComponent},
   { path: 'register', component: RegisterComponent},
+  { path: 'preferences', component: PreferencesComponent, canActivate: [AuthGuard]},
   { path: 'homepage', component: HomepageComponent},
   { path: 'recommendation', component: RecommendationComponent, canActivate: [AuthGuard] },
   { path: '**', component: PageNotFoundComponent },
