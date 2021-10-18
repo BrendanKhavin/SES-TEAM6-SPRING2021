@@ -18,11 +18,12 @@ namespace PROJ.Controllers
     {
 
         private ISubjectRepository  subjectRepository;
-        // private RecommendService recommendService = new RecommendService();
+        private RecommendService recommendService;
 
         public SubjectsController(ISubjectRepository subjectRepository)
         {
             this.subjectRepository = subjectRepository;
+            this.recommendService = new RecommendService();
         }
 
         [HttpGet]
@@ -32,16 +33,20 @@ namespace PROJ.Controllers
         // route is: api/subjects/{subjectCode}
         [HttpGet("{code}")]
         public Subject GetSubjectByCode(string code) =>
-        // recommendService.GetRecommendations();
             subjectRepository.GetSubjectByCode(code);
 
-    //    [HttpGet("{creditPoints}")]
-     //   public List<Subject> GetSubjectsbyCreditPoints(string creditPoints) =>
-       //     subjectRepository.GetSubjectsByCreditPoints(creditPoints);
+        [HttpGet("recommend/{userId}")]
+        public List<Subject> GetRecommendations(string userId) 
+        {
+          string[] recommendedSubjectCodes = recommendService.GetRecommendation(userId); 
+          List<Subject> recommendedSubjects = new List<Subject>();
+          foreach (string subjectCode in recommendedSubjectCodes) {
+            Subject s = subjectRepository.GetSubjectByCode(subjectCode);
+            recommendedSubjects.Add(s);
+          }
 
-            
-
-
+          return recommendedSubjects;
+        }
     }
 
 
