@@ -14,6 +14,7 @@ import { IconsProviderModule } from './icons-provider.module';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzRateModule } from 'ng-zorro-antd/rate';
 import { RecommendationComponent } from './recommendation/recommendation.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NzSelectModule } from 'ng-zorro-antd/select';
@@ -23,6 +24,8 @@ import { NzGridModule } from 'ng-zorro-antd/grid';
 import { FilterPipe } from './filter.pipe';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { SearchAndCompleteSubjectsComponent } from './search-and-complete-subjects/search-and-complete-subjects.component';
+import { RateSubjectComponent } from './rate-subject/rate-subject.component';
 import { NzFormModule } from 'ng-zorro-antd/form';
 import { PreferencesComponent } from './preferences/preferences.component';
 import { NzRadioModule } from 'ng-zorro-antd/radio';
@@ -42,7 +45,9 @@ registerLocaleData(en);
     LoginComponent,
     RegisterComponent,
     PreferencesComponent,
-    HomepageComponent
+    HomepageComponent,
+    SearchAndCompleteSubjectsComponent,
+    RateSubjectComponent
   ],
   imports: [
     BrowserModule,
@@ -54,6 +59,7 @@ registerLocaleData(en);
     NzLayoutModule,
     NzMenuModule,
     NzButtonModule,
+    NzRateModule,
     NzSelectModule,
     NzFormModule,
     ReactiveFormsModule,
