@@ -5,6 +5,7 @@ import { BehaviorSubject,Observable } from 'rxjs';
 import { IStudent } from 'src/models/student.model';
 import { Router } from '@angular/router';
 import { map } from 'rxjs/operators';
+import { TouchSequence } from 'selenium-webdriver';
 
 const httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/json' }) };
 @Injectable({
@@ -13,6 +14,8 @@ const httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/js
 export class AuthService {
   private userSubject: BehaviorSubject<IStudent>;
   public user: Observable<IStudent>;
+  public currentUser: IStudent | undefined;
+
 
   
   constructor(private router: Router, private http: HttpClient) {
@@ -35,13 +38,24 @@ export class AuthService {
   private sendLogin(body:any) {
     return this.http.post<IStudent>('/api/account/login',JSON.stringify(body),httpOptions)
       .pipe(map(user => {
+        this.setCurrentUser(user);
         localStorage.setItem('user', JSON.stringify(user));
         this.userSubject.next(user);
-        console.log(user);
         return user;
       }))
   }
+
+  setCurrentUser(user: IStudent) {
+    this.currentUser = user;
+  }
   
+  isLoggedIn(){
+    return !!localStorage.getItem('user');
+  }
+  
+  getCurrentUser() {
+    return this.user;
+  }
 
   logout() {
     // remove user from local storage and set current user to null

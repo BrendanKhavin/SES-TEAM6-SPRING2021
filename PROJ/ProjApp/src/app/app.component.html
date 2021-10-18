@@ -30,6 +30,9 @@
                [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
             ></i>
         </span>
+        <span id="greeting" *ngIf='isLoggedIn'>
+          Hello, {{currentUser.firstName}}, glad to see you back!
+        </span>
       </div>
     </nz-header>
     <nz-content>

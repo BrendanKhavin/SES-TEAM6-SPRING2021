@@ -14,6 +14,7 @@ export class RegisterService {
   studentId: string | undefined;
   email: string | undefined;
   password: string | undefined;
+  loginSuccessful = false;
 
   constructor(private http: HttpClient) { }
 
