@@ -6,7 +6,7 @@
             [(nzCollapsed)]="isCollapsed"
             [nzTrigger]="null">
     <div class="sidebar-logo">
-      <a routerLink="/welcome"> 
+      <a routerLink="/homepage"> 
         <i class="fas fa-university"></i>
         <h1>Subjects "R" Us</h1>
       </a>
@@ -14,9 +14,6 @@
     <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
       <li nz-submenu nzOpen nzTitle="Dashboard" nzIcon="dashboard">
         <ul>
-          <li nz-menu-item nzMatchRouter>
-            <a routerLink="/welcome">Welcome</a>
-          </li>
           <li nz-menu-item nzMatchRouter>
             <a routerLink="/recommendation">Recommendations</a>
           </li>
@@ -35,6 +32,9 @@
                nz-icon
                [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
             ></i>
+        </span>
+        <span id="greeting" *ngIf='isLoggedIn'>
+          Hello, {{currentUser.firstName}}, glad to see you back!
         </span>
       </div>
     </nz-header>

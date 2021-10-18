@@ -1,0 +1,37 @@
+
+<body>
+  <nz-carousel nzAutoPlay [nzAutoPlaySpeed]="1500" [nzEffect]="'fade'">
+    <div class="sidebar-logo">
+      <a routerLink="/homepage"> 
+        <i class="fas fa-university"></i>
+        <h1>Subjects "R" Us</h1>
+      </a>
+    </div>
+  <div nz-carousel-content *ngFor="let b of banner">
+    <span id="title">{{b.title}}:</span>
+    <span id="content">{{b.content}}</span>
+
+  </div>
+  </nz-carousel>
+
+  <div id="buttonholder">
+  <a routerLink="/register">
+    <button id="register">Register</button>
+  </a>
+  <a routerLink="/login">
+    <button id="login">Login</button>
+  </a>
+  </div>
+  <div id="sections" style="padding:30px; ">
+  <nz-card nzTitle="" style="text-align: center; font-size: 20px; font-weight: bold;">
+    <div nz-card-grid [ngStyle]="gridStyle">Science</div>
+    <div nz-card-grid [ngStyle]="gridStyle">Business</div>
+    <div nz-card-grid [ngStyle]="gridStyle">Law</div>
+    <div nz-card-grid [ngStyle]="gridStyle">Health</div>
+    <div nz-card-grid [ngStyle]="gridStyle">IT</div>
+    <div nz-card-grid [ngStyle]="gridStyle">Engineering</div>
+    <div nz-card-grid [ngStyle]="gridStyle">Building</div>
+    <div nz-card-grid [ngStyle]="gridStyle">Communication</div>
+  </nz-card>
+  </div>
+</body>

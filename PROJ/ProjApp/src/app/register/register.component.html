@@ -28,7 +28,12 @@
         </nz-form-item>
         <nz-form-item>
             <nz-form-label [nzSm]="6" [nzXs]="24" nzFor="password" nzRequired>Password</nz-form-label>
-            <nz-form-control [nzSm]="14" [nzXs]="24" nzErrorTip="Please input your password!">
+            <nz-form-control [nzSm]="14" [nzXs]="24" nzErrorTip="Password must contain:  
+            at least eight (8) characters 
+            at least one uppercase letter  
+            at least one lowercase leter  
+            at least one number  
+            at least one special character">
                 <input nz-input type="password" id="password" formControlName="password" />
             </nz-form-control>
         </nz-form-item>
@@ -46,8 +51,9 @@
         </nz-form-item>
         <nz-form-item nz-row class="register-area">
             <nz-form-control [nzSpan]="14" [nzOffset]="6">
-                <button nz-button nzType="primary">Register</button>
+                <button nz-button nzType="primary" (onClick)="submitForm()">Register</button>
             </nz-form-control>
         </nz-form-item>
     </form>
+
 </div>

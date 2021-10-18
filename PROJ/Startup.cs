@@ -9,6 +9,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using PROJ.Models;
+using PROJ.Interface;
+using PROJ.Repository;
+
+using Microsoft.Extensions.Options;
+using PROJ.Services;
+using Microsoft.AspNetCore.Identity;
 
 namespace PROJ
 {
@@ -24,11 +31,36 @@ namespace PROJ
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+
+            //MongoDB Services. Need to figure out if these should be here. 
+            //Start of MongoDB Addition
+            services.Configure<MyDatabaseSettings>(Configuration.GetSection(nameof(MyDatabaseSettings)));
+            services.AddSingleton<IMyDataBaseSettings>(sp =>
+            sp.GetRequiredService<IOptions<MyDatabaseSettings>>().Value);
+
+            
+
+            services.AddSingleton<DatabaseServices>();
+            services.AddSingleton<ICompletedSubjectsRepository, CompletedSubjectsRepository>();
+            services.AddSingleton<ISubjectRepository, SubjectRepository>();
+            services.AddSingleton<IDegreeRepository, DegreeRepository>();
+            services.AddControllers();
+            //End of MongoDB Additions
+
+            //Identity
+            // var MongoDBSettings = new MyDatabaseSettings();
+            var mongoDbSettings = Configuration.GetSection(nameof(MyDatabaseSettings)).Get<MyDatabaseSettings>();
+            services.AddIdentity<ApplicationUser, ApplicationRole>()
+                .AddMongoDbStores<ApplicationUser, ApplicationRole, Guid>(mongoDbSettings.ConnectionString, mongoDbSettings.DatabaseName);
+
+            // Controller 
             services.AddControllersWithViews();
             services.AddSpaStaticFiles(configuration =>
             {
                 configuration.RootPath = "ProjApp/dist";
             });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -52,7 +84,13 @@ namespace PROJ
                 app.UseSpaStaticFiles();
             }
 
+           
+
             app.UseRouting();
+
+            //Authentication
+            app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

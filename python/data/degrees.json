@@ -1,0 +1,863 @@
+{
+    "C09119": {
+        "code": "C09119",
+        "area": "Information Technology",
+        "combined_degree": "0",
+        "name": "Bachelor of Computing Science (Honours)",
+        "majors": [
+            " Artificial Intelligence and Data Analytics",
+            " Business Information Systems Management",
+            " Cybersecurity and Privacy",
+            " Enterprise Systems Development",
+            " Interaction Design",
+            " Mathematical Analysis",
+            " Networking and Cybersecurity",
+            " Operations Research",
+            " Quantum Information Science",
+            " Statistics"
+        ],
+        "subjects": [
+            "37131",
+            "37151",
+            "31266",
+            "41039",
+            "37132",
+            "37181",
+            "31269",
+            "31271",
+            "41092",
+            "31268"
+        ]
+    },
+    "C10143": {
+        "code": "C10143",
+        "area": "Information Technology",
+        "combined_degree": "0",
+        "name": "Bachelor of Information Technology",
+        "majors": [],
+        "subjects": [
+            "31265",
+            "31266",
+            "48023",
+            "31268",
+            "41115",
+            "41120",
+            "41049",
+            "31271",
+            "41113",
+            "41092"
+        ]
+    },
+    "C10148": {
+        "code": "C10148",
+        "area": "Information Technology",
+        "combined_degree": "0",
+        "name": "Bachelor of Science in Information Technology",
+        "majors": [
+            "Data Analytics",
+            "Enterprise Systems Development",
+            "Business Information Systems Management",
+            "Interaction Design",
+            "Networking and Cybersecurity"
+        ],
+        "subjects": [
+            "31265",
+            "31266",
+            "48023",
+            "31268",
+            "31269",
+            "41092",
+            "31271",
+            "31272",
+            "31243",
+            "31250"
+        ]
+    },
+    "C10229": {
+        "code": "C10229",
+        "area": "Information Technology",
+        "combined_degree": "0",
+        "name": "Bachelor of Science in Games Development",
+        "majors": [],
+        "subjects": [
+            "31268",
+            "31265",
+            "31266",
+            "48023",
+            "31269",
+            "48024",
+            "31260",
+            "31263",
+            "31264",
+            "31271"
+        ]
+    },
+    "C10345": {
+        "code": "C10345",
+        "area": "Information Technology",
+        "combined_degree": "0",
+        "name": "Bachelor of Science in Information Technology Diploma in Information Technology Professional Practice",
+        "majors": [
+            "Data Analytics",
+            "Enterprise Systems Development",
+            "Business Information Systems Management",
+            "Interaction Design",
+            "Networking and Cybersecurity"
+        ],
+        "subjects": [
+            "31016",
+            "41065",
+            "31265",
+            "31266",
+            "48023",
+            "31268",
+            "31269",
+            "41092",
+            "31271",
+            "31272"
+        ]
+    },
+    "C10395": {
+        "code": "C10395",
+        "area": "Information Technology",
+        "combined_degree": "0",
+        "name": "Bachelor of Information Systems",
+        "majors": [],
+        "subjects": [
+            "31268",
+            "31269",
+            "31257",
+            "31247",
+            "31258",
+            "31276",
+            "31280",
+            "31245",
+            "31250",
+            "41187"
+        ]
+    },
+    "C20056": {
+        "code": "C20056",
+        "area": "Information Technology",
+        "combined_degree": "0",
+        "name": "Diploma in Information Technology Professional Practice",
+        "majors": [],
+        "subjects": [
+            "31016",
+            "41065"
+        ]
+    },
+    "C09019": {
+        "code": "C09019",
+        "area": "Information Technology",
+        "combined_degree": "0",
+        "name": "Bachelor of Science (Honours) in Information Technology",
+        "majors": [],
+        "subjects": [
+            "32931",
+            "31482",
+            "32144"
+        ]
+    },
+    "C09088": {
+        "code": "C09088",
+        "area": "Information Technology",
+        "combined_degree": "1",
+        "name": "Bachelor of Science in Information Technology Bachelor of Laws (Honours)",
+        "majors": [
+            " Legal Futures and Technology need to study "
+        ],
+        "subjects": [
+            "76090",
+            "76040",
+            "76106",
+            "76107",
+            "31265",
+            "31268",
+            "70102",
+            "70103",
+            "31266",
+            "48023"
+        ]
+    },
+    "C09162": {
+        "code": "C09162",
+        "area": "Information Technology",
+        "combined_degree": "1",
+        "name": "Bachelor of Science in Information Technology Bachelor of International Studies (Honours)",
+        "majors": [
+            "Data Analytics",
+            "Enterprise Systems Development",
+            "Business Information Systems Management",
+            "Interaction Design",
+            "Networking and Cybersecurity"
+        ],
+        "subjects": []
+    },
+    "C10219": {
+        "code": "C10219",
+        "area": "Information Technology",
+        "combined_degree": "1",
+        "name": "Bachelor of Business Bachelor of Science in Information Technology",
+        "majors": [
+            " Accounting",
+            " Management",
+            " Finance",
+            " Marketing",
+            " International Business",
+            " Human Resource Management",
+            " Economics",
+            " Advertising and Marketing Communications"
+        ],
+        "subjects": [
+            "31265",
+            "31266",
+            "22107",
+            "48023",
+            "31268",
+            "23115",
+            "26134",
+            "31269",
+            "41092",
+            "22207"
+        ]
+    },
+    "C10239": {
+        "code": "C10239",
+        "area": "Information Technology",
+        "combined_degree": "1",
+        "name": "Bachelor of Science in Information Technology Bachelor of International Studies",
+        "majors": [
+            "Data Analytics",
+            "Enterprise Systems Development",
+            "Business Information Systems Management",
+            "Interaction Design",
+            "Networking and Cybersecurity"
+        ],
+        "subjects": [
+            "31265",
+            "31266",
+            "48023",
+            "31268",
+            "31269",
+            "41092",
+            "31271",
+            "97201",
+            "976001",
+            "97202"
+        ]
+    },
+    "C10245": {
+        "code": "C10245",
+        "area": "Information Technology",
+        "combined_degree": "1",
+        "name": "Bachelor of Science in Information Technology Bachelor of Laws",
+        "majors": [
+            " Legal Futures and Technology need to study "
+        ],
+        "subjects": [
+            "76106",
+            "76107",
+            "31265",
+            "31268",
+            "70102",
+            "70103",
+            "31266",
+            "48023",
+            "41092",
+            "70311"
+        ]
+    },
+    "C10278": {
+        "code": "C10278",
+        "area": "Information Technology",
+        "combined_degree": "1",
+        "name": "Bachelor of Information Systems Bachelor of Business",
+        "majors": [
+            " Accounting",
+            " Management",
+            " Finance",
+            " Marketing",
+            " International Business",
+            " Human Resource Management",
+            " Economics",
+            " Advertising and Marketing Communications"
+        ],
+        "subjects": [
+            "25602",
+            "25620",
+            "25574",
+            "25579",
+            "25575",
+            "25999",
+            "31265",
+            "31266",
+            "22107",
+            "48023"
+        ]
+    },
+    "C10327": {
+        "code": "C10327",
+        "area": "Information Technology",
+        "combined_degree": "1",
+        "name": "Bachelor of Science in Information Technology Bachelor of Creative Intelligence and Innovation",
+        "majors": [
+            "Data Analytics",
+            "Enterprise Systems Development",
+            "Business Information Systems Management",
+            "Interaction Design",
+            "Networking and Cybersecurity"
+        ],
+        "subjects": [
+            "31265",
+            "31266",
+            "48023",
+            "31268",
+            "81511",
+            "31269",
+            "41092",
+            "81512",
+            "31271",
+            "81513"
+        ]
+    },
+    "C10421": {
+        "code": "C10421",
+        "area": "Information Technology",
+        "combined_degree": "1",
+        "name": "Bachelor of Science in Information Technology Bachelor of Languages and Cultures",
+        "majors": [
+            "Data Analytics",
+            "Enterprise Systems Development",
+            "Business Information Systems Management",
+            "Interaction Design",
+            "Networking and Cybersecurity"
+        ],
+        "subjects": [
+            "31265",
+            "31266",
+            "48023",
+            "31268",
+            "31269",
+            "41092",
+            "31271",
+            "97201",
+            "976001",
+            "97202"
+        ]
+    },
+    "C09066": {
+        "code": "C09066",
+        "area": "Engineering",
+        "combined_degree": "0",
+        "name": "Bachelor of Engineering (Honours)",
+        "majors": [
+            " Biomedical Engineering",
+            " Civil Engineering",
+            " Civil and Environmental Engineering",
+            " Electrical Engineering",
+            " Electronic Engineering",
+            " Mechanical Engineering",
+            " Mechanical and Mechatronic Engineering",
+            " Mechatronic Engineering",
+            " Software Engineering",
+            " Electrical and Electronic Engineering",
+            " Flexible Engineering BE (Hons)"
+        ],
+        "subjects": [
+            "41028",
+            "33130",
+            "48230",
+            "68037",
+            "33230",
+            "48240",
+            "41035",
+            "48250",
+            "48260",
+            "48270"
+        ]
+    },
+    "C09067": {
+        "code": "C09067",
+        "area": "Engineering",
+        "combined_degree": "0",
+        "name": "Bachelor of Engineering (Honours) Diploma in Professional Engineering Practice",
+        "majors": [
+            " Biomedical Engineering",
+            " Civil Engineering",
+            " Civil and Environmental Engineering",
+            " Data Science Engineering",
+            " Electrical Engineering",
+            " Mechanical Engineering",
+            " Mechanical and Mechatronic Engineering",
+            " Mechatronic Engineering",
+            " Software Engineering",
+            " Flexible Engineering BE (Hons)",
+            " Electronic Engineering",
+            " Electrical and Electronic Engineering"
+        ],
+        "subjects": [
+            "33130",
+            "48230",
+            "68037",
+            "33230",
+            "48240",
+            "41035",
+            "41036",
+            "41037",
+            "48250",
+            "41038"
+        ]
+    },
+    "C10066": {
+        "code": "C10066",
+        "area": "Engineering",
+        "combined_degree": "0",
+        "name": "Bachelor of Engineering Science",
+        "majors": [
+            " Civil Engineering",
+            " Data Science Engineering",
+            " Electrical Engineering",
+            " Electronic Engineering",
+            " Mechanical Engineering",
+            " Mechatronic Engineering",
+            " Software Engineering",
+            " Flexible Engineering BEngSc"
+        ],
+        "subjects": [
+            "48001",
+            "48230",
+            "33130",
+            "68037",
+            "33230",
+            "48240",
+            "48260",
+            "48221",
+            "48250",
+            "48430"
+        ]
+    },
+    "C10408": {
+        "code": "C10408",
+        "area": "Engineering",
+        "combined_degree": "0",
+        "name": "Bachelor of Engineering Studies",
+        "majors": [
+            "Advanced Manufacturing",
+            "Engineering and Technology Studies",
+            "Flexible Engineering BEngSc"
+        ],
+        "subjects": [
+            "33130",
+            "68037",
+            "33230",
+            "48610",
+            "41039",
+            "48230",
+            "48310",
+            "60101",
+            "48240",
+            "37132"
+        ]
+    },
+    "C09070": {
+        "code": "C09070",
+        "area": "Engineering",
+        "combined_degree": "1",
+        "name": "Bachelor of Engineering (Honours) Bachelor of Business",
+        "majors": [
+            "Biomedical Engineering",
+            "Data Science Engineering",
+            "Electrical Engineering",
+            "Electronic Engineering",
+            "Flexible Engineering BE (Hons) BBus BSc BAIS",
+            "Software Engineering",
+            "Civil Engineering",
+            "Mechanical Engineering",
+            "Mechatronic Engineering"
+        ],
+        "subjects": []
+    },
+    "C09071": {
+        "code": "C09071",
+        "area": "Engineering",
+        "combined_degree": "1",
+        "name": "Bachelor of Engineering (Honours) Bachelor of Business Diploma in Professional Engineering Practice",
+        "majors": [
+            " Biomedical Engineering",
+            " Civil Engineering",
+            " Data Science Engineering",
+            " Electrical Engineering",
+            " Mechanical Engineering",
+            " Mechatronic Engineering",
+            " Software Engineering",
+            " Flexible Engineering BE (Hons) BBus BSc BAIS",
+            " Electronic Engineering"
+        ],
+        "subjects": [
+            "48570",
+            "48451",
+            "48571",
+            "48572",
+            "48560",
+            "48580",
+            "48434",
+            "48561",
+            "48582",
+            "48450"
+        ]
+    },
+    "C09072": {
+        "code": "C09072",
+        "area": "Engineering",
+        "combined_degree": "1",
+        "name": "Bachelor of Engineering (Honours) Bachelor of Science",
+        "majors": [
+            " Chemistry",
+            " Applied Physics",
+            " Nanotechnology",
+            " Biomedical Science",
+            " Medical Science",
+            " Biotechnology",
+            " Environmental Science",
+            " Mathematics",
+            " Civil Engineering",
+            " Data Science Engineering",
+            " Electrical Engineering",
+            " Mechanical Engineering",
+            " Mechatronic Engineering",
+            " Software Engineering",
+            " Flexible Engineering BE (Hons) BBus BSc BAIS",
+            " Electronic Engineering"
+        ],
+        "subjects": [
+            "48560",
+            "48570",
+            "48451",
+            "48571",
+            "48572",
+            "48580",
+            "48434",
+            "48561",
+            "48582",
+            "48450"
+        ]
+    },
+    "C09073": {
+        "code": "C09073",
+        "area": "Engineering",
+        "combined_degree": "1",
+        "name": "Bachelor of Engineering (Honours) Bachelor of Science Diploma in Professional Engineering Practice",
+        "majors": [
+            "Data Science Engineering",
+            "Electrical Engineering",
+            "Electronic Engineering",
+            "Flexible Engineering BE (Hons) BBus BSc BAIS",
+            "Software Engineering",
+            "Civil Engineering",
+            "Mechanical Engineering",
+            "Mechatronic Engineering"
+        ],
+        "subjects": []
+    },
+    "C09074": {
+        "code": "C09074",
+        "area": "Engineering",
+        "combined_degree": "1",
+        "name": "Bachelor of Engineering (Honours) Bachelor of Medical Science",
+        "majors": [
+            " Civil Engineering",
+            " Data Science Engineering",
+            " Electrical Engineering",
+            " Electronic Engineering",
+            " Mechanical Engineering",
+            " Mechatronic Engineering",
+            " Software Engineering",
+            " Flexible Engineering BE (Hons) BBus BSc BAIS"
+        ],
+        "subjects": [
+            "33130",
+            "48610",
+            "68037",
+            "65111",
+            "33230",
+            "48510",
+            "48230",
+            "65212",
+            "41035",
+            "48520"
+        ]
+    },
+    "C09075": {
+        "code": "C09075",
+        "area": "Engineering",
+        "combined_degree": "1",
+        "name": "Bachelor of Engineering (Honours) Bachelor of Medical Science Diploma in Professional Engineering Practice",
+        "majors": [
+            "Data Science Engineering",
+            "Electrical Engineering",
+            "Electronic Engineering",
+            "Flexible Engineering BE (Hons) BBus BSc BAIS",
+            "Software Engineering",
+            "Civil Engineering",
+            "Mechanical Engineering",
+            "Mechatronic Engineering"
+        ],
+        "subjects": []
+    },
+    "C09076": {
+        "code": "C09076",
+        "area": "Engineering",
+        "combined_degree": "1",
+        "name": "Bachelor of Engineering (Honours) Bachelor of Creative Intelligence and Innovation",
+        "majors": [
+            "Biomedical Engineering",
+            "Data Science Engineering",
+            "Electrical Engineering",
+            "Electronic Engineering",
+            "Flexible Engineering BE (Hons)",
+            "Software Engineering",
+            "Civil Engineering",
+            "Mechanical Engineering",
+            "Mechatronic Engineering"
+        ],
+        "subjects": [
+            "41028",
+            "33130",
+            "48230",
+            "68037",
+            "48510",
+            "41099",
+            "81511",
+            "33230",
+            "48023",
+            "41160"
+        ]
+    },
+    "C09087": {
+        "code": "C09087",
+        "area": "Engineering",
+        "combined_degree": "1",
+        "name": "Bachelor of Engineering Science Bachelor of Laws (Honours)",
+        "majors": [
+            " Legal Futures and Technology need to study "
+        ],
+        "subjects": [
+            "76090",
+            "76040",
+            "76106",
+            "76107",
+            "33130",
+            "68037",
+            "70102",
+            "70103",
+            "48230",
+            "70114"
+        ]
+    },
+    "C09123": {
+        "code": "C09123",
+        "area": "Engineering",
+        "combined_degree": "1",
+        "name": "Bachelor of Engineering (Honours) Bachelor of International Studies",
+        "majors": [
+            " Biomedical Engineering",
+            " Civil Engineering",
+            " Data Science Engineering",
+            " Electrical Engineering",
+            " Mechanical Engineering",
+            " Mechatronic Engineering",
+            " Software Engineering",
+            " Flexible Engineering BE (Hons) BBus BSc BAIS",
+            " Electronic Engineering",
+            " Canada",
+            " China",
+            " France",
+            " Germany",
+            " Italy",
+            " Japan",
+            " Spain",
+            " Switzerland",
+            " Latin Americas"
+        ],
+        "subjects": [
+            "48451",
+            "48570",
+            "48560",
+            "48580",
+            "48561",
+            "48550",
+            "48582",
+            "48583",
+            "48434",
+            "48571"
+        ]
+    },
+    "C09124": {
+        "code": "C09124",
+        "area": "Engineering",
+        "combined_degree": "1",
+        "name": "Bachelor of Engineering (Honours) Bachelor of International Studies Diploma in Professional Engineering Practice",
+        "majors": [
+            " Biomedical Engineering",
+            " Civil Engineering",
+            " Data Science Engineering",
+            " Electrical Engineering",
+            " Mechanical Engineering",
+            " Mechatronic Engineering",
+            " Software Engineering",
+            " Flexible Engineering BE (Hons) BBus BSc BAIS",
+            " Electronic Engineering",
+            " Canada",
+            " China",
+            " France",
+            " Germany",
+            " Italy",
+            " Japan",
+            " Spain",
+            " Switzerland",
+            " Latin Americas"
+        ],
+        "subjects": [
+            "48451",
+            "48570",
+            "48560",
+            "48580",
+            "48561",
+            "48550",
+            "48582",
+            "48583",
+            "48434",
+            "48571"
+        ]
+    },
+    "C09127": {
+        "code": "C09127",
+        "area": "Engineering",
+        "combined_degree": "1",
+        "name": "Bachelor of Engineering (Honours) Bachelor of Languages and Cultures",
+        "majors": [
+            " Biomedical Engineering",
+            " Civil Engineering",
+            " Data Science Engineering",
+            " Electrical Engineering",
+            " Mechanical Engineering",
+            " Mechatronic Engineering",
+            " Software Engineering",
+            " Flexible Engineering BE (Hons) BBus BSc BAIS",
+            " Electronic Engineering",
+            " Chinese Language and Culture",
+            " French Language and Culture",
+            " German Language and Culture",
+            " Italian Language and Culture",
+            " Japanese Language and Culture",
+            " Spanish Language and Culture"
+        ],
+        "subjects": [
+            "48451",
+            "48570",
+            "48560",
+            "48580",
+            "48561",
+            "48550",
+            "48582",
+            "48583",
+            "48434",
+            "48571"
+        ]
+    },
+    "C09128": {
+        "code": "C09128",
+        "area": "Engineering",
+        "combined_degree": "1",
+        "name": "Bachelor of Engineering (Honours) Bachelor of Languages and Cultures Diploma in Professional Engineering Practice",
+        "majors": [
+            " Biomedical Engineering",
+            " Civil Engineering",
+            " Data Science Engineering",
+            " Electrical Engineering",
+            " Mechanical Engineering",
+            " Mechatronic Engineering",
+            " Software Engineering",
+            " Flexible Engineering BE (Hons) BBus BSc BAIS",
+            " Electronic Engineering",
+            " Chinese Language and Culture",
+            " French Language and Culture",
+            " German Language and Culture",
+            " Italian Language and Culture",
+            " Japanese Language and Culture",
+            " Spanish Language and Culture"
+        ],
+        "subjects": [
+            "48451",
+            "48570",
+            "48560",
+            "48580",
+            "48561",
+            "48550",
+            "48582",
+            "48583",
+            "48434",
+            "48571"
+        ]
+    },
+    "C09147": {
+        "code": "C09147",
+        "area": "Engineering",
+        "combined_degree": "1",
+        "name": "Bachelor of Engineering (Honours) Bachelor of International Studies (Honours)",
+        "majors": [],
+        "subjects": []
+    },
+    "C09148": {
+        "code": "C09148",
+        "area": "Engineering",
+        "combined_degree": "1",
+        "name": "Bachelor of Engineering (Honours) Bachelor of International Studies (Honours) Diploma in Professional Engineering Practice",
+        "majors": [],
+        "subjects": []
+    },
+    "C10136": {
+        "code": "C10136",
+        "area": "Engineering",
+        "combined_degree": "1",
+        "name": "Bachelor of Engineering Science Bachelor of Laws",
+        "majors": [
+            " Legal Futures and Technology need to study "
+        ],
+        "subjects": [
+            "76106",
+            "76107",
+            "33130",
+            "68037",
+            "70102",
+            "70103",
+            "48230",
+            "70114",
+            "70311",
+            "48510"
+        ]
+    },
+    "C10406": {
+        "code": "C10406",
+        "area": "Engineering",
+        "combined_degree": "1",
+        "name": "Bachelor of Engineering Studies Master of Teaching in Secondary Education",
+        "majors": [
+            " Technological and Applied Studies / Mathematics",
+            " Engineering and Technology Studies"
+        ],
+        "subjects": [
+            "33130",
+            "48230",
+            "68037",
+            "48310",
+            "33230",
+            "60101",
+            "48610",
+            "41039",
+            "48240",
+            "013246"
+        ]
+    }
+}
