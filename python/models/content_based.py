@@ -52,27 +52,18 @@ def cosine_similarity(a, b):
 def interest_similarities(student, subjects):
     return [(subject.code, cosine_similarity(student.interest_vector, subject.topic_vector)) for subject in subjects]
 
-def get_student_recommendation(student_id):
-    recommendations = []
-    with open('data/selected_topic_keywords.csv', 'r') as f:
-        topics = [line.strip('\n').strip() for line in f.readlines()]
 
-        # with open('data/topic_tfidfs.json', 'r') as f:
-        #     compact_tfidf = json.load(f)
-        
+class Recommender:
+    def __init__(self):
+        self.subject_topic_tfidfs = pd.read_pickle('data/selected_topic_keyword_scores.pkl')
+        self.subject_topic_tfidfs.index = self.subject_topic_tfidfs.index.map(str)
+        self.subjects = db.get_subjects()
+        self.topics = db.get_topics()
 
-        subject_topic_tfidfs = pd.read_pickle('data/selected_topic_keyword_scores.pkl')
-        subject_topic_tfidfs.index = subject_topic_tfidfs.index.map(str)
-
-        # degrees = db.get_degrees()
-        subjects = db.get_subjects()
+            
+    def get_student_recommendation(self, student_id):
         students = db.get_students()
-        topics = db.get_topics()
-        
-        
-        kNN_student_subject = kNNStudentSubject(students, subjects, topics, subject_topic_tfidfs)
+        kNN_student_subject = kNNStudentSubject(students, self.subjects, self.topics, self.subject_topic_tfidfs)
         neighbours = kNN_student_subject.get_neighbours(student_id)
-        print(neighbours)
         result = [code for (code,score) in neighbours]
-        print(result)
         return result[:min(5, len(neighbours))]  
