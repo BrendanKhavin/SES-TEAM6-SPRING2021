@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { IDegree } from '../../models/degree.model';
 import { DegreeService } from 'src/services/degree.service';
 import { SubjectService } from 'src/services/subject.service';
+import { InterestService } from 'src/services/interest.service';
 
 @Component({
   selector: 'app-preferences',
@@ -26,13 +27,17 @@ export class PreferencesComponent implements OnInit {
     { label: 'Essays', value: 'Essays', checked: true }
   ];
   degrees: IDegree[] = [];
-  listOfOption: Array<{ label: string; value: string }> = [];
-  listOfTagOptions = [];
+  interests: any;
+  selectedInterests: any;
   log(value: object[]): void {
     console.log(value);
   }
 
-  constructor(private subjectService: SubjectService, private degreeService: DegreeService) { }
+  constructor(
+    private subjectService: SubjectService, 
+    private degreeService: DegreeService,
+    private interestService: InterestService
+    ) { }
 
   ngOnInit(): void {
     const children: Array<{ label: string; value: string }> = [
@@ -44,7 +49,7 @@ export class PreferencesComponent implements OnInit {
       {label: 'innovation', value: 'innovation'},
       {label: 'python', value: 'python'}
     ];
-    this.listOfOption = children;
+    this.interestService.getAllInterests().subscribe(interests => this.interests = interests);
     this.degreeService.getAllDegrees().subscribe(degrees => this.degrees = degrees);
     }
 }

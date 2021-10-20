@@ -37,8 +37,8 @@
                 </div>
                 <div id="preferencesFilter">
                     <h2>Topics of Interest</h2>
-                    <nz-select nzMode="tags" nzPlaceHolder="Type a keyword and press enter" [(ngModel)]="listOfTagOptions">
-                        <nz-option *ngFor="let option of listOfOption" [nzLabel]="option.label" [nzValue]="option.value"></nz-option>
+                    <nz-select nzMode="tags" nzPlaceHolder="Type a keyword and press enter" [(ngModel)]="selectedInterests">
+                        <nz-option *ngFor="let interest of interests" [nzLabel]="interest" [nzValue]="interest"></nz-option>
                     </nz-select>
                 </div>
             </div>
