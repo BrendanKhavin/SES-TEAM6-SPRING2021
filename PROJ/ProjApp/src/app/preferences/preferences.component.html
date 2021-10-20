@@ -45,7 +45,7 @@
             <div nz-col [nzSpan]="12" id="gridCol">
                 <div id="preferencesFilter">
                     <h2>Degree</h2>
-                    <nz-select nzShowSearch nzAllowClear nzPlaceHolder="Degree" [(ngModel)]="degree">
+                    <nz-select nzShowSearch nzAllowClear nzPlaceHolder="Degree" [(ngModel)]="degrees">
                         <nz-option *ngFor="let degree of degrees" [nzLabel]="degree.degreeName" [nzValue]="degree.degreeName"></nz-option>
                     </nz-select>
                 </div>
