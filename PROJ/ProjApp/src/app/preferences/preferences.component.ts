@@ -50,7 +50,7 @@ export class PreferencesComponent implements OnInit {
       {label: 'python', value: 'python'}
     ];
     this.interestService.getAllInterests().subscribe(interests => this.interests = interests);
-    this.degreeService.getAllDegrees().subscribe(degrees => this.degrees = degrees);
+    this.degreeService.getAllDegrees().subscribe(degrees => this.degrees = degrees.sort((a,b)=> a.degreeName > b.degreeName ? 1 : 0));
     }
 }
 
