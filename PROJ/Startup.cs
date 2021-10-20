@@ -36,8 +36,11 @@ namespace PROJ
             //MongoDB Services. Need to figure out if these should be here. 
             //Start of MongoDB Addition
             services.Configure<MyDatabaseSettings>(Configuration.GetSection(nameof(MyDatabaseSettings)));
+            services.Configure<MongoDbSettings>(Configuration.GetSection(nameof(MyDatabaseSettings)));
+            services.AddSingleton<IMongoDbSettings>(serviceProvider => 
+                serviceProvider.GetRequiredService<IOptions<MongoDbSettings>>().Value);
             services.AddSingleton<IMyDataBaseSettings>(sp =>
-            sp.GetRequiredService<IOptions<MyDatabaseSettings>>().Value);
+                sp.GetRequiredService<IOptions<MyDatabaseSettings>>().Value);
 
             
 
@@ -47,6 +50,7 @@ namespace PROJ
             services.AddSingleton<IDegreeRepository, DegreeRepository>();
             services.AddSingleton<IInterestsRepository, InterestsRepository>();
             services.AddControllers();
+            services.AddScoped(typeof(IMongoRepository<>), typeof(MongoRepository<>));
             //End of MongoDB Additions
 
             //Identity
