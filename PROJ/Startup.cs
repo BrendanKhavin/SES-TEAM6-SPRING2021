@@ -10,8 +10,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using PROJ.Models;
-using PROJ.Interface;
-using PROJ.Repository;
 
 using Microsoft.Extensions.Options;
 using PROJ.Services;
@@ -45,10 +43,6 @@ namespace PROJ
             
 
             services.AddSingleton<DatabaseServices>();
-            services.AddSingleton<ICompletedSubjectsRepository, CompletedSubjectsRepository>();
-            services.AddSingleton<ISubjectRepository, SubjectRepository>();
-            services.AddSingleton<IDegreeRepository, DegreeRepository>();
-            services.AddSingleton<IInterestsRepository, InterestsRepository>();
             services.AddControllers();
             services.AddScoped(typeof(IMongoRepository<>), typeof(MongoRepository<>));
             //End of MongoDB Additions
