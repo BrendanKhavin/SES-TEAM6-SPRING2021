@@ -13,18 +13,26 @@ export class CompletedSubjectService {
   constructor(private http: HttpClient) { }
 
   addCompletedSubject(subject: string, score: number): Observable<Object> {
+    var params = new HttpParams()
+      .set("SubjectId", subject)
+      .set("UserId", "1000")
+      .set("Score", score.toString())
+
     var content = {
-      Id: '0000',
-      UserId: '1234',
       SubjectId: subject,
+      UserId: '1234',
       Score: score
     };
-    return this.doPOST(content);
+    return this.doPOST(content, params);
   }
 
-  doPOST(cs: ICompletedSubjects) {
+  doPOST(cs: ICompletedSubjects, params: HttpParams) {
     console.log(cs);
-    return this.http.post<ICompletedSubjects>('api/subject/addcompletedsubject', JSON.stringify(cs), httpOptions);
+    // return this.http.post<ICompletedSubjects>('api/subject/addcompletedsubject', JSON.stringify(cs), httpOptions);
+    return this.http.post('api/completedsubjects/addUserSubject', JSON.stringify(cs), {
+      'headers': new HttpHeaders({ 'Content-Type': 'application/json' }),
+      'params': params
+    });
   }
 
 }
