@@ -37,19 +37,16 @@
                 </div>
                 <div id="preferencesFilter">
                     <h2>Topics of Interest</h2>
-                    <nz-select nzMode="tags" nzPlaceHolder="Type a keyword and press enter" [(ngModel)]="listOfTagOptions">
-                        <nz-option *ngFor="let option of listOfOption" [nzLabel]="option.label" [nzValue]="option.value"></nz-option>
+                    <nz-select nzMode="tags" nzPlaceHolder="Type a keyword and press enter" [(ngModel)]="selectedInterests">
+                        <nz-option *ngFor="let interest of interests" [nzLabel]="interest" [nzValue]="interest"></nz-option>
                     </nz-select>
                 </div>
             </div>
             <div nz-col [nzSpan]="12" id="gridCol">
                 <div id="preferencesFilter">
-                    <h2>Education Level</h2>
-                    <nz-select nzShowSearch nzAllowClear nzPlaceHolder="Experience level" [(ngModel)]="experienceLevel">
-                        <nz-option nzLabel="Bachelor" nzValue="Bachelor"></nz-option>
-                        <nz-option nzLabel="Honours" nzValue="Honours"></nz-option>
-                        <nz-option nzLabel="Masters" nzValue="Masters"></nz-option>
-                        <nz-option nzLabel="PHD" nzValue="PHD"></nz-option>
+                    <h2>Degree</h2>
+                    <nz-select nzShowSearch nzAllowClear nzPlaceHolder="Degree" [(ngModel)]="degrees">
+                        <nz-option *ngFor="let degree of degrees" [nzLabel]="degree.degreeName" [nzValue]="degree.degreeName"></nz-option>
                     </nz-select>
                 </div>
                 <div id="preferencesFilter">

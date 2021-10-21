@@ -1,52 +1,58 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using PROJ.Interface;
 using PROJ.Models;
-using PROJ.Repository;
 using PROJ.Services;
-
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+using Microsoft.AspNetCore.Authorization;
 
 namespace PROJ.Controllers
 {
-    [Route("api/subjects")]
-    [ApiController]
-    public class SubjectsController : Controller
+    [AllowAnonymous]
+    [Route("api/[controller]")]
+    public class SubjectsController : ControllerBase
     {
-
-        private ISubjectRepository  subjectRepository;
+        private IMongoRepository<Subject>  _subjectsRepository;
         private RecommendService recommendService;
 
-        public SubjectsController(ISubjectRepository subjectRepository)
+        public SubjectsController(IMongoRepository<Subject> subjectsRepository)
         {
-            this.subjectRepository = subjectRepository;
+            _subjectsRepository = subjectsRepository;
             this.recommendService = new RecommendService();
         }
 
         [HttpGet]
-        public List<Subject> GetSubjects() =>
-            subjectRepository.GetSubjects().ToList();
+        public IEnumerable<Subject> GetSubjects() =>
+            _subjectsRepository.FindAll().ToList();
 
         // route is: api/subjects/{subjectCode}
         [HttpGet("{code}")]
         public Subject GetSubjectByCode(string code) =>
-            subjectRepository.GetSubjectByCode(code);
+            _subjectsRepository.FindOne(s => s.subjectCode == code);
+            
 
         [HttpGet("recommend/{userId}")]
-        public List<Subject> GetRecommendations(string userId) 
+        public IEnumerable<Subject> GetRecommendations(string userId) 
         {
           string[] recommendedSubjectCodes = recommendService.GetRecommendation(userId); 
           List<Subject> recommendedSubjects = new List<Subject>();
-          foreach (string subjectCode in recommendedSubjectCodes) {
-            Subject s = subjectRepository.GetSubjectByCode(subjectCode);
+          foreach (string code in recommendedSubjectCodes) {
+            Subject s = _subjectsRepository.FindOne(subject => subject.subjectCode.Equals(code));
             recommendedSubjects.Add(s);
           }
 
           return recommendedSubjects;
         }
+
+    //     [HttpPost("addSubject")]
+    //     public async Task AddSubject(String code, String name){
+    //         var subject = new Subject() 
+    //         {
+    //             subjectCode = code,
+    //             subjectName = name
+    //         };
+
+    //         await _subjectsRepository.InsertOneAsync(subject);
+    //     }
     }
 
 

@@ -10,8 +10,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using PROJ.Models;
-using PROJ.Interface;
-using PROJ.Repository;
 
 using Microsoft.Extensions.Options;
 using PROJ.Services;
@@ -36,16 +34,17 @@ namespace PROJ
             //MongoDB Services. Need to figure out if these should be here. 
             //Start of MongoDB Addition
             services.Configure<MyDatabaseSettings>(Configuration.GetSection(nameof(MyDatabaseSettings)));
+            services.Configure<MongoDbSettings>(Configuration.GetSection(nameof(MyDatabaseSettings)));
+            services.AddSingleton<IMongoDbSettings>(serviceProvider => 
+                serviceProvider.GetRequiredService<IOptions<MongoDbSettings>>().Value);
             services.AddSingleton<IMyDataBaseSettings>(sp =>
-            sp.GetRequiredService<IOptions<MyDatabaseSettings>>().Value);
+                sp.GetRequiredService<IOptions<MyDatabaseSettings>>().Value);
 
             
 
             services.AddSingleton<DatabaseServices>();
-            services.AddSingleton<ICompletedSubjectsRepository, CompletedSubjectsRepository>();
-            services.AddSingleton<ISubjectRepository, SubjectRepository>();
-            services.AddSingleton<IDegreeRepository, DegreeRepository>();
             services.AddControllers();
+            services.AddScoped(typeof(IMongoRepository<>), typeof(MongoRepository<>));
             //End of MongoDB Additions
 
             //Identity
