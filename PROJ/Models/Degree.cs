@@ -5,12 +5,9 @@ using MongoDB.Bson.Serialization.Attributes;
 namespace PROJ.Models
 {
     [BsonIgnoreExtraElements] 
-    public class Degree
+    [BsonCollection("degrees")]
+    public class Degree : Document
     {
-        
-        [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
-        public string Id { get; set; }
 
         [BsonElement("code")]       
         public string degreeCode { get; set; }
@@ -29,9 +26,7 @@ namespace PROJ.Models
 
         [BsonElement("subjects")]   
         public List<String> subjectSample { get; set; }
-        public Degree()
-        {
-        }
+
 
     }
 }
