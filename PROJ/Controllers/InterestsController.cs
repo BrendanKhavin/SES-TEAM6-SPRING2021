@@ -1,21 +1,25 @@
-using PROJ.Interface;
+using System.Collections.Generic;
+using PROJ.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace PROJ.Controllers
 {
     [Route("api/[controller]")]
-    [ApiController]
-    public class InterestsController : Controller
+    public class InterestsController : ControllerBase
     {
-      public IInterestsRepository interestsRepository { get; set; }
+      private IMongoRepository<Interest> _interestsRepository;
 
-      public InterestsController(IInterestsRepository interestsRepository) {
-        this.interestsRepository = interestsRepository;
+      public InterestsController(IMongoRepository<Interest> interestsRepository) {
+        _interestsRepository = interestsRepository;
       }
 
       [HttpGet]
-      public string[] GetInterests() {
-        return interestsRepository.GetInterests();
+      public IEnumerable<string> GetInterests() {
+        var interests = new List<string>();
+        foreach (Interest i in _interestsRepository.FindAll()) {
+          interests.Add(i.name);
+        }
+        return interests;
       }
     }
 }
