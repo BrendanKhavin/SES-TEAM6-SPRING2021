@@ -10,7 +10,8 @@ namespace PROJ.Models
         public String firstName { get; set; }
         public String lastName { get; set; }
         public String studentType { get; set; }
-        public string password { get; set; } 
+        public string password { get; set; }
+        public int userId { get; set; }
 
         public newUser(string firstName, string lastName, string studentType, string password) 
         {
