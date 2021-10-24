@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable, Subscription } from 'rxjs';
+import { IStudent } from '../../models/student.model';
 import { ISubject } from '../../models/subject.model';
+import { AuthService } from '../../services/auth.service';
 import { SubjectService } from '../../services/subject.service';
 
 @Component({
@@ -17,8 +19,9 @@ export class RecommendationComponent implements OnInit {
   loading = true;
   searchValue = '';
   cards: ISubject[] = [];
+  currentUser!: IStudent;
 
-  constructor(private subjectService: SubjectService) {
+  constructor(private subjectService: SubjectService, private authService: AuthService) {
   }
 
   showModal(card: { isVisible: boolean; }): void {
@@ -34,11 +37,21 @@ export class RecommendationComponent implements OnInit {
   }
 
   handleRate(card: { id: any; }): void {
-    //will have it redirect to the ratings page
+      //will have it redirect to the ratings page
+  }
+
+  getCurrentUser() {
+    this.authService.getCurrentUser().subscribe(
+      (ret) => {
+        this.currentUser = ret;
+      }
+    );
   }
 
   ngOnInit(): void {
-    this.subjectService.getAllSubjects().subscribe(arr => {
+    this.getCurrentUser();
+    console.log(this.currentUser.studentId)
+    this.subjectService.getRecommendedSubjects("10000003").subscribe(arr => {
       this.cards = arr;
     });
   }
