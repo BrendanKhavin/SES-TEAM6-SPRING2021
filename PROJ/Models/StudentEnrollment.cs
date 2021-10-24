@@ -4,12 +4,16 @@ using MongoDB.Bson.Serialization.Attributes;
 namespace PROJ.Models
 
 {
+    [BsonCollection("StudentEnrolment")]
     public class StudentEnrollment : Document
     {
         //BsonCollection(degree)
 
         [BsonElement("studentId")]
-        public int studentId { get; set; }
+        public string studentId { get; set; }
+
+        [BsonElement("degreeId")]
+        public string degreeId { get; set; }
 
         [BsonElement("degreeName")]
         public string degreeName { get; set; }

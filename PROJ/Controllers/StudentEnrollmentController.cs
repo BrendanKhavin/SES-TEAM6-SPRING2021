@@ -18,9 +18,9 @@ namespace PROJ.Controllers
         }
 
         //get method
-        [HttpGet("{degree:length(10)}")]
-        public StudentEnrollment getDegree(string degreeName) =>
-            _studentEnrollmentRepository.FindOne(s => s.degreeName == degreeName);
+        [HttpGet("{studentId}")]
+        public StudentEnrollment GetDegree(string studentId) =>
+            _studentEnrollmentRepository.FindOne(s => s.studentId == studentId).studentId;
 
 
             
