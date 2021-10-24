@@ -28,5 +28,29 @@ namespace PROJ.Controllers
         public IEnumerable<UserPreferences> GetUserPreferencesByUserId(string userId) =>
           _userPreferencesRepository.FilterBy(s => s.UserId == userId);
 
+        [HttpPost("addUserPreferences")]
+        public async Task AddUserPreferences(string userId, bool groupWork, bool essays, bool presentations, bool exams, string[] interests )
+        {
+            var userPreferences = new UserPreferences()
+            {
+                UserId = userId,
+                Groupwork = groupWork,
+                Essays = essays,
+                Presentations = presentations,
+                Exams = exams,
+                Interests = interests
+            };
+
+            await _userPreferencesRepository.InsertOneAsync(userPreferences);
+        }
+
+        [HttpPost("deleteUserPreferences")]
+        public async Task DeleteUserSubject(string SubjectId, string UserId)
+        {
+            await _userPreferencesRepository.DeleteManyAsync(userPreferences => userPreferences.UserId == UserId);
+        }
+
+
+
     }
 }
