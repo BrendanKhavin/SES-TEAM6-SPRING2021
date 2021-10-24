@@ -12,13 +12,14 @@ import { SubjectService } from '../../services/subject.service';
 })
 
 export class RecommendationComponent implements OnInit {
-  faculties = ['Engineering', 'Law', 'Medicine', 'Science', 'Architecture', 'Design'];
-  selectedFaculties = [];
-  creditPoints = [3, 6, 9, 12, 18, 24];
-  selectedCreditPoints = [];
+  faculties = ['Engineering', 'IT'];
+  selectedFaculty = "";
+  creditPoints = [2, 3, 6, 9, 12, 18, 24];
+  selectedCreditPoint = 0;
   loading = true;
   searchValue = '';
   cards: ISubject[] = [];
+  cardsCurrent: ISubject[] = [];
   currentUser!: IStudent;
 
   constructor(private subjectService: SubjectService, private authService: AuthService) {
@@ -36,8 +37,21 @@ export class RecommendationComponent implements OnInit {
     card.isVisible = false;
   }
 
-  handleRate(card: { id: any; }): void {
-      //will have it redirect to the ratings page
+  updateFilter() {
+    if (!this.selectedFaculty && !this.selectedCreditPoint)
+    {
+      this.cardsCurrent = this.cards;
+    }
+    else if (!this.selectedFaculty) {
+      this.cardsCurrent = this.cards.filter(card => card.creditPoints == this.selectedCreditPoint)
+    }
+    else if (!this.selectedCreditPoint) {
+      this.cardsCurrent = this.cards.filter(card => card.courseArea == this.selectedFaculty)
+    }
+    else {
+      this.cardsCurrent = this.cards.filter(card => card.creditPoints == this.selectedCreditPoint)
+      this.cardsCurrent = this.cardsCurrent.filter(card => card.courseArea == this.selectedFaculty)
+    }
   }
 
   getCurrentUser() {
@@ -50,9 +64,9 @@ export class RecommendationComponent implements OnInit {
 
   ngOnInit(): void {
     this.getCurrentUser();
-    console.log(this.currentUser.studentId)
-    this.subjectService.getRecommendedSubjects("10000003").subscribe(arr => {
+    this.subjectService.getRecommendedSubjects(this.currentUser.studentId).subscribe(arr => {
       this.cards = arr;
+      this.cardsCurrent = arr;
     });
   }
 }

@@ -6,19 +6,19 @@
     <div nz-row>
       <div id="facultyFilter" nz-col nzSpan="12">
         <h2>Faculties</h2>
-        <nz-select nzMode="multiple"
-                   nzPlaceHolder="Select faculties"
+        <nz-select nzPlaceHolder="Select faculties"
                    nzAllowClear='true'
-                   [(ngModel)]="selectedFaculties">
+                   [(ngModel)]="selectedFaculty"
+                   (ngModelChange)="updateFilter()">
           <nz-option *ngFor="let faculty of faculties" [nzLabel]="faculty" [nzValue]="faculty"></nz-option>
         </nz-select>
       </div>
       <div id="creditPointFilter" nz-col nzSpan="12">
         <h2>Credit Points</h2>
-        <nz-select nzMode="multiple"
-                   nzPlaceHolder="Select credit points"
+        <nz-select nzPlaceHolder="Select credit points"
                    nzAllowClear='true'
-                   [(ngModel)]="selectedFaculties">
+                   [(ngModel)]="selectedCreditPoint"
+                   (ngModelChange)="updateFilter()">
           <nz-option *ngFor="let creditPoint of creditPoints" [nzLabel]="creditPoint" [nzValue]="creditPoint"></nz-option>
         </nz-select>
       </div>
@@ -39,7 +39,7 @@
     <div id="recommendationCards">
       <div style="background: #ECECEC;padding:30px;">
         <div nz-row [nzGutter]="8">
-          <div *ngFor="let card of cards | appFilter: searchValue" nz-col [nzSpan]="8">
+          <div *ngFor="let card of cardsCurrent | appFilter: searchValue" nz-col [nzSpan]="8">
             <nz-card [nzTitle]="card.subjectName">
               <p>{{ !(!card.description) ? card.description.substring(0, 100) + "..." : "No description"}}</p>
               <ng-container [ngTemplateOutlet]="extraTemplate" [ngTemplateOutletContext]="{card:card}"></ng-container>
@@ -62,7 +62,6 @@
                   <p>{{card.courseArea}}</p>
                 </div>
               </div>
-              <button nz-button [nzType]="'primary'" (click)="handleRate(card.id)"><span>Rate Subject</span></button>
             </ng-container>
           </nz-modal>
         </ng-template>
