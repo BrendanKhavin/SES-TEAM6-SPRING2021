@@ -23,8 +23,6 @@ public class UserPreferences : Document
     [BsonElement("interests")]
     public string[] Interests { get; set; }
 
-    [BsonElement("international")]
-    public bool international { get; set; }
 }
 
 
