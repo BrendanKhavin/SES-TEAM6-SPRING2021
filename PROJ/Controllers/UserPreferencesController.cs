@@ -50,7 +50,12 @@ namespace PROJ.Controllers
             await _userPreferencesRepository.DeleteManyAsync(userPreferences => userPreferences.UserId == UserId);
         }
 
+        [HttpPost("updateUserPreferences")]
+        public async Task UpdateUserSubject(string userId, bool groupWork, bool essays, bool presentations, bool exams, string[] interests)
+        {
+            _userPreferencesRepository.FilterBy(p => p.UserId == userId);
 
+        }
 
     }
 }
