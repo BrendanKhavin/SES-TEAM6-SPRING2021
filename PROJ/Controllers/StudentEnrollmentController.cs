@@ -6,7 +6,7 @@ using PROJ.Models;
 namespace PROJ.Controllers
 {
 
-    [Route("api/[controller")]
+    [Route("api/[controller]")]
     [ApiController]
     public class StudentEnrollmentController
     {
@@ -18,11 +18,11 @@ namespace PROJ.Controllers
         }
 
         //get method
-        [HttpGet("{degree}")]
+        [HttpGet("{degree:length(10)}")]
         public StudentEnrollment getDegree(string degreeName) =>
             _studentEnrollmentRepository.FindOne(s => s.degreeName == degreeName);
 
-        
+
             
         
 
