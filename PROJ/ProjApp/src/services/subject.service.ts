@@ -13,4 +13,8 @@ export class SubjectService {
   getAllSubjects(): Observable<ISubject[]> {
     return this.http.get<ISubject[]>('/api/subjects');
   }
+
+  getRecommendedSubjects(userId: string): Observable<ISubject[]> {
+    return this.http.get<ISubject[]>('/api/subjects/recommend/' + userId);
+  }
 }
