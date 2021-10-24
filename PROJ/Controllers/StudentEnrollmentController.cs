@@ -20,7 +20,7 @@ namespace PROJ.Controllers
         //get method
         [HttpGet("{studentId}")]
         public StudentEnrollment GetDegree(string studentId) =>
-            _studentEnrollmentRepository.FindOne(s => s.studentId == studentId).studentId;
+            _studentEnrollmentRepository.FindOne(s => s.studentId == studentId);
 
 
             
