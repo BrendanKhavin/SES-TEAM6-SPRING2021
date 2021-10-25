@@ -46,7 +46,6 @@ public class MongoRepository<TDocument> : IMongoRepository<TDocument>
 
   public virtual TDocument FindOne(Expression<Func<TDocument, bool>> filterExpression)
   {
-    Console.WriteLine(filterExpression.ToString());
     return _collection.Find(filterExpression).FirstOrDefault();
   }
 
