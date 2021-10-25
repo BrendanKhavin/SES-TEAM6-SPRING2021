@@ -7,7 +7,7 @@ export interface IDegree {
     combinedDegree: boolean
     resultTypes: string[]
     courseArea: string
-    majors: string
+    majors: string[]
     subjectSample: ISubject[]
 }
 
