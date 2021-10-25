@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ISubject } from '../../models/subject.model';
 import { SubjectService } from '../../services/subject.service';
-import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-search-and-complete-subjects',
@@ -13,9 +11,7 @@ export class SearchAndCompleteSubjectsComponent implements OnInit {
   searchController = new SearchController(this.subjectService);
   searchText = "";
 
-  constructor(private subjectService: SubjectService, private authService: AuthService) {
-    console.log(authService.userValue.studentId);
-  }
+  constructor(private subjectService: SubjectService) { }
 
   ngOnInit(): void {
   }

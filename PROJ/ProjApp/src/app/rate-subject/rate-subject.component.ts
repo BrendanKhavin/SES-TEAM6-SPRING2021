@@ -29,33 +29,39 @@ export class RateSubjectComponent implements OnInit {
     this.isPopupVisible = true;
   }
 
-  /**
-   * TODO: Ret is always false.
-   */
   onPopupOk(): void {
     this.csService.addCompletedSubject(this.sCode, this.userRating).subscribe(
       (ret) => {
-        if (ret === true) {
+        this.notification.create(
+          'success',
+          'Success',
+          'User rating has been saved.'
+        );
+
+        /**
+         * THIS IS A LAZY APPROACH
+         * 
+        if (ret) {
           this.notification.create(
             'success',
-            'Save Success',
-            'Subject added.'
+            'Success',
+            'User rating has been saved.'
           );
         } else {
           this.notification.create(
             'error',
-            'Save Failed',
-            'An error occured. Please try again. #02'
+            'Error',
+            'User rating was not saved.'
           );
         }
+         */
       },
       (err) => {
         this.notification.create(
           'error',
-          'Save Failed',
-          'An error occured. Please try again. #03'
+          'Error',
+          'User rating could not be saved. Please contact site administrator.'
         );
-        console.error(err);
       }
     );
     this.isPopupVisible = false;

@@ -27,9 +27,7 @@ export class CompletedSubjectService {
     return this.doPOST(content, params);
   }
 
-  doPOST(cs: ICompletedSubjects, params: HttpParams) {
-    console.log(cs);
-    // return this.http.post<ICompletedSubjects>('api/subject/addcompletedsubject', JSON.stringify(cs), httpOptions);
+  doPOST(cs: ICompletedSubjects, params: HttpParams): Observable<Object> {
     return this.http.post('api/completedsubjects/addUserSubject', JSON.stringify(cs), {
       'headers': new HttpHeaders({ 'Content-Type': 'application/json' }),
       'params': params
