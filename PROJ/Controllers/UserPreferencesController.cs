@@ -6,6 +6,7 @@ using PROJ.Models;
 using PROJ.Services;
 using Microsoft.AspNetCore.Authorization;
 using System.Threading.Tasks;
+using MongoDB.Driver;
 
 namespace PROJ.Controllers
 {
@@ -53,7 +54,16 @@ namespace PROJ.Controllers
         [HttpPost("updateUserPreferences")]
         public async Task UpdateUserSubject(string userId, bool groupWork, bool essays, bool presentations, bool exams, string[] interests)
         {
-            _userPreferencesRepository.FilterBy(p => p.UserId == userId);
+            var updatedPrefs = new UserPreferences()
+            {
+                UserId = userId,
+                Groupwork = groupWork,
+                Essays = essays,
+                Presentations = presentations,
+                Exams = exams,
+                Interests = interests
+            };
+            await _userPreferencesRepository.ReplaceOneAsync(_userPreferencesRepository.FilterBy(s => s.UserId == userId).First());
 
         }
 
