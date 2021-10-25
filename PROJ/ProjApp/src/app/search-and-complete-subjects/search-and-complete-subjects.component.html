@@ -1,0 +1,27 @@
+
+
+<div id="main-container">
+  <div nz-row>
+    <div nz-col nzSpan="5"></div>
+    <div nz-col nzSpan="14">
+
+      <div>
+        <label>Search Subjects</label>
+        <nz-input-group nzSearch [nzSuffix]="searchIcon">
+          <input nz-input class="searchBar" [(ngModel)]="searchText" />
+        </nz-input-group>
+        <ng-template #searchIcon>
+          <button nz-button class="searchButton" (click)="searchSubjects()" nzSearch><i nz-icon nzType="search"></i></button>
+        </ng-template>
+      </div>
+      <div>
+        <div *ngFor="let x of searchController.results" class="search-result">
+          <p>{{x.code}} {{x.name}}</p>
+          <app-rate-subject sCode={{x.code}} sName={{x.name}}></app-rate-subject>
+        </div>
+      </div>
+
+    </div>
+    <div nz-col nzSpan="5"></div>
+  </div>
+</div>

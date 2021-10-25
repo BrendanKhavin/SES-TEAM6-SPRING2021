@@ -18,6 +18,7 @@ export interface IStudentPreferences {
     interests: string[]
 }
 
+
 export interface IStudentDegree {
     studentId: string
     degreeCode: string;
