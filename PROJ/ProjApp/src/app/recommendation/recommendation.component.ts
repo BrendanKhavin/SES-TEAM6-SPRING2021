@@ -12,7 +12,7 @@ import { SubjectService } from '../../services/subject.service';
 })
 
 export class RecommendationComponent implements OnInit {
-  faculties = ['Engineering', 'IT'];
+  faculties = ['Engineering', 'Information Technology'];
   selectedFaculty = "";
   creditPoints = [2, 3, 6, 9, 12, 18, 24];
   selectedCreditPoint = 0;
@@ -65,8 +65,8 @@ export class RecommendationComponent implements OnInit {
   ngOnInit(): void {
     this.getCurrentUser();
     this.subjectService.getRecommendedSubjects(this.currentUser.studentId).subscribe(arr => {
-      this.cards = arr;
-      this.cardsCurrent = arr;
+      this.cards = arr.filter(subject => subject !== null);
+      this.cardsCurrent = this.cards;
     });
   }
 }
