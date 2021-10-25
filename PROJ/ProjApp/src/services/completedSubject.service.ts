@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { ICompletedSubjects } from '../models/completedSubject.model';
+import { AuthService } from '../services/auth.service';
 
 const httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/json' }) };
 @Injectable({
@@ -10,12 +11,12 @@ const httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/js
 })
 export class CompletedSubjectService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private authService: AuthService) { }
 
   addCompletedSubject(subject: string, score: number): Observable<Object> {
     var params = new HttpParams()
       .set("SubjectId", subject)
-      .set("UserId", "1000")
+      .set("UserId", this.authService.userValue.studentId.toString())
       .set("Score", score.toString())
 
     var content = {

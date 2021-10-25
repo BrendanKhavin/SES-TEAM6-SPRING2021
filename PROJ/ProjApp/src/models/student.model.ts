@@ -1,7 +1,7 @@
 export interface IStudent {
     firstName: string
     lastName: string
-    studentID: number
+    studentId: number
     email: string
     preferences: IStudentPreference[];
 }
