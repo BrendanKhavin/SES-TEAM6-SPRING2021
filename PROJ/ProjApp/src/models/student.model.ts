@@ -1,4 +1,3 @@
-import { IStudentDegree } from "./studentDegree.model";
 
 export interface IStudent {
     firstName: string
@@ -12,7 +11,6 @@ export interface IStudent {
 export interface IStudentPreferences {
     studentId: string;
     groupwork: boolean
-    essays: boolean
     presentations: boolean
     exams: boolean
     interests: string[]
