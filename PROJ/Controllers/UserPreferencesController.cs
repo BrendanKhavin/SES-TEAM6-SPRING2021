@@ -1,6 +1,7 @@
 using System.Reflection;
 using System.Collections.Generic;
 using System.Linq;
+using System;
 using Microsoft.AspNetCore.Mvc;
 using PROJ.Models;
 using PROJ.Services;
@@ -25,8 +26,9 @@ namespace PROJ.Controllers
             _userPreferencesRepository.FindAll();
 
         [HttpGet("{userId}")]
-        public IEnumerable<UserPreferences> GetUserPreferencesByUserId(string userId) =>
-          _userPreferencesRepository.FilterBy(s => s.UserId == userId);
+        public UserPreferences GetUserPreferencesByUserId(string userId) {
+          return _userPreferencesRepository.FindOne(s => s.UserId == userId);
+        }
 
     }
 }
