@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SubjectService } from '../../services/subject.service';
+import { CompletedSubjectService } from '../../services/completedSubject.service';
 
 @Component({
   selector: 'app-search-and-complete-subjects',
@@ -8,10 +9,10 @@ import { SubjectService } from '../../services/subject.service';
 })
 export class SearchAndCompleteSubjectsComponent implements OnInit {
 
-  searchController = new SearchController(this.subjectService);
+  searchController = new SearchController(this.subjectService, this.csService);
   searchText = "";
 
-  constructor(private subjectService: SubjectService) { }
+  constructor(private subjectService: SubjectService, private csService: CompletedSubjectService) { }
 
   ngOnInit(): void {
   }
@@ -27,15 +28,24 @@ class SearchController {
   subjects = new Array();
   results = new Array();
 
-  constructor(private subjectService: SubjectService) {
-    // this.subjects.push({ code: "41095", name: "Software Engineering Studio 2A" });
-    // this.subjects.push({ code: "41096", name: "Software Engineering Studio 2B" });
+  constructor(private subjectService: SubjectService, private csService: CompletedSubjectService) {
+    var completedSubjects = new Set();
 
-    this.subjectService.getAllSubjects().subscribe(subjects => {
-      subjects.map(s => {
-        this.subjects.push({
-          code: s.subjectCode,
-          name: s.subjectName
+    this.csService.getCompletedSubjectsByUserID().subscribe(subjects => {
+      subjects.map((subject, index) => {
+        completedSubjects.add(subject.subjectCode);
+      });
+
+      // GET subjects in database and remove ones the user has
+      // completed before.
+      this.subjectService.getAllSubjects().subscribe(subjects => {
+        subjects.map(s => {
+          if (!completedSubjects.has(s.subjectCode)) {
+            this.subjects.push({
+              code: s.subjectCode,
+              name: s.subjectName
+            });
+          }
         });
       });
     });

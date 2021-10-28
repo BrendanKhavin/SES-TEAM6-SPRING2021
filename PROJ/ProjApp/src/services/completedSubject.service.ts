@@ -34,4 +34,9 @@ export class CompletedSubjectService {
     });
   }
 
+  getCompletedSubjectsByUserID(): Observable<ICompletedSubjects[]> {
+    var userID = this.authService.userValue.studentId;
+    return this.http.get<ICompletedSubjects[]>('api/completedsubjects/user/' + userID);
+  }
+
 }
