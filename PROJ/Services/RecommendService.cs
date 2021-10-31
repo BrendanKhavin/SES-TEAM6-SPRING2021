@@ -14,8 +14,8 @@ namespace PROJ.Services
     public string[] GetRecommendation(string user_id)
     {
 
-      // string url = "http://localhost:8000/recommend/" + user_id;
-      string url = "https://recommendations-r-us.herokuapp.com/recommend/" + user_id;
+      string url = "http://localhost:8000/recommend/" + user_id;
+      // string url = "https://recommendations-r-us.herokuapp.com/recommend/" + user_id;
 
       HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
       string result = "";
